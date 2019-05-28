@@ -9,13 +9,13 @@
 #import <Cocoa/Cocoa.h>
 #import <InputMethodKit/InputMethodKit.h>
 
-const NSString *kConnectionName = @"UnicodeInputConnection";
-IMKServer *server;
+const NSString* kConnectionName = @"UnicodeInputConnection";
+IMKServer* server;
 
-int main(int argc, const char *argv[]) {
+int main(int argc, const char* argv[]) {
   @autoreleasepool {
     server = [[IMKServer alloc]
-            initWithName:(NSString *)kConnectionName
+            initWithName:(NSString*)kConnectionName
         bundleIdentifier:[[NSBundle mainBundle] bundleIdentifier]];
 
     [[NSApplication sharedApplication] run];

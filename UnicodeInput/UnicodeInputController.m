@@ -10,7 +10,7 @@
 
 @implementation UnicodeInputController
 
-- (BOOL)inputText:(NSString *)string client:(id)sender {
+- (BOOL)inputText:(NSString*)string client:(id)sender {
   NSLog(@"%@", string);
   return NO;
 }
