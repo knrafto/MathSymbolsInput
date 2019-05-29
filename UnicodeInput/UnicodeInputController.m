@@ -18,6 +18,8 @@ extern IMKCandidates* candidatesWindow;
   NSMutableString* _compositionBuffer;
   // Array of NSStrings containing candidate replacements.
   NSArray* _candidateReplacements;
+  // The currently-selected candidate, if any.
+  NSString* _currentSelection;
 }
 
 // Gets the current composition buffer, allocating if necessary.
@@ -41,10 +43,11 @@ extern IMKCandidates* candidatesWindow;
   return _candidateReplacements;
 }
 
-// Update the cached candidate replacements and candidates window to match the
-// contents of the buffer.
-- (void)updateCandidates {
+// Update the client's state match the contents of the buffer. This must be
+// called whenever the buffer changes.
+- (void)bufferChanged:(id)sender {
   NSMutableString* buffer = [self compositionBuffer];
+
   // TODO: make this a real map.
   if ([buffer isEqualToString:@"\\r"]) {
     _candidateReplacements = @[
@@ -58,16 +61,12 @@ extern IMKCandidates* candidatesWindow;
   if ([_candidateReplacements count] > 0) {
     [candidatesWindow updateCandidates];
     [candidatesWindow show:kIMKLocateCandidatesBelowHint];
+    _currentSelection = _candidateReplacements[0];
   } else {
     [candidatesWindow hide];
+    _currentSelection = nil;
   }
-}
 
-// Update the client's state match the contents of the buffer. This must be
-// called whenever the buffer changes.
-- (void)updateState:(id)sender {
-  NSMutableString* buffer = [self compositionBuffer];
-  [self updateCandidates];
   // Seems like using an NSAttributedString for setMarkedText is necessary to
   // get the cursor to appear at the end of the marked text instead of selecting
   // the whole range.
@@ -80,6 +79,17 @@ extern IMKCandidates* candidatesWindow;
        replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
 }
 
+// Accepts the currently-chosen replacement.
+- (void)accept:(id)sender {
+  NSMutableString* buffer = [self compositionBuffer];
+  NSString* acceptedString =
+      _currentSelection != nil ? _currentSelection : buffer;
+  [sender insertText:acceptedString
+      replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
+  [buffer setString:@""];
+  [self bufferChanged:sender];
+}
+
 // Inserts the contents of the buffer without making a replacement, returning to
 // an inactive state.
 - (void)deactivate:(id)sender {
@@ -87,7 +97,7 @@ extern IMKCandidates* candidatesWindow;
   [sender insertText:buffer
       replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
   [buffer setString:@""];
-  [self updateCandidates];
+  [self bufferChanged:sender];
 }
 
 // On keydown events, the system will either call inputText: (for most typed
@@ -96,11 +106,24 @@ extern IMKCandidates* candidatesWindow;
 // event should be passed to the client instead. We ensure that the composition
 // is inactive before passing any events on to the client to prevent surprising
 // behavior.
+
+// Handles the following events:
+//   backslash: accept current selection, start new composition
+//   space (if active): accept current selection
+//   all other characters (if active): append to buffer
 - (BOOL)inputText:(NSString*)string client:(id)sender {
   NSLog(@"inputText:%@", string);
-  if ([self isActive] || [string isEqualToString:@"\\"]) {
+  if ([string isEqualToString:@"\\"]) {
+    [self accept:sender];
     [[self compositionBuffer] appendString:string];
-    [self updateState:sender];
+    [self bufferChanged:sender];
+    return YES;
+  } else if ([self isActive] && [string isEqualToString:@" "]) {
+    [self accept:sender];
+    return YES;
+  } else if ([self isActive]) {
+    [[self compositionBuffer] appendString:string];
+    [self bufferChanged:sender];
     return YES;
   }
   return NO;
@@ -120,11 +143,11 @@ extern IMKCandidates* candidatesWindow;
     } else if (aSelector == @selector(deleteBackward:)) {
       NSMutableString* buffer = [self compositionBuffer];
       [buffer deleteCharactersInRange:NSMakeRange([buffer length] - 1, 1)];
-      [self updateState:sender];
+      [self bufferChanged:sender];
       return YES;
     } else if (aSelector == @selector(cancelOperation:)) {
       [[self compositionBuffer] setString:@""];
-      [self updateState:sender];
+      [self bufferChanged:sender];
       return YES;
     } else if ([candidatesWindow isVisible] && aSelector == @selector
                                                    (moveLeft:)) {
@@ -160,6 +183,19 @@ extern IMKCandidates* candidatesWindow;
 - (NSArray*)candidates:(id)sender {
   NSLog(@"candidates:");
   return [self candidateReplacements];
+}
+
+// Called by the system when the user selects a candidate.
+- (void)candidateSelectionChanged:(NSAttributedString*)candidateString {
+  NSLog(@"candidateSelectionChanged:%@", candidateString);
+  _currentSelection = [candidateString string];
+}
+
+// Called by the system when the user accepts a candidate.
+- (void)candidateSelected:(NSAttributedString*)candidateString {
+  NSLog(@"candidateSelected:%@", candidateString);
+  _currentSelection = [candidateString string];
+  [self accept:[self client]];
 }
 
 @end
