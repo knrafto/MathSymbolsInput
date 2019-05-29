@@ -96,7 +96,6 @@ extern IMKCandidates* candidatesWindow;
 // event should be passed to the client instead. We ensure that the composition
 // is inactive before passing any events on to the client to prevent surprising
 // behavior.
-
 - (BOOL)inputText:(NSString*)string client:(id)sender {
   NSLog(@"inputText:%@", string);
   if ([self isActive] || [string isEqualToString:@"\\"]) {
@@ -107,13 +106,21 @@ extern IMKCandidates* candidatesWindow;
   return NO;
 }
 
+// Handles the following events:
+//   newline: deactivate
+//   backspace: remove last character
+//   arrow keys (while candidates window is open): move candidate selection
 - (BOOL)didCommandBySelector:(SEL)aSelector client:(id)sender {
   NSLog(@"didCommandBySelector:%@", NSStringFromSelector(aSelector));
   if ([self isActive]) {
     if (aSelector == @selector(insertNewline:)) {
       [self deactivate:sender];
       return YES;
-      // If the candidates window is open, pass arrow keys through.
+    } if (aSelector == @selector(deleteBackward:)) {
+      NSMutableString* buffer = [self compositionBuffer];
+      [buffer deleteCharactersInRange:NSMakeRange([buffer length] - 1, 1)];
+      [self updateState:sender];
+      return YES;
     } else if ([candidatesWindow isVisible] && aSelector == @selector
                                                    (moveLeft:)) {
       [candidatesWindow moveLeft:sender];
