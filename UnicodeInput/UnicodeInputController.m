@@ -134,13 +134,15 @@ void DLog(NSString* format, ...) {
 
 // Handles the following events:
 //   newline: accept
+//   tab: accept
 //   backspace: remove last character
 //   escape: deactivate (insert composition as-is)
 //   arrow keys (while candidates window is open): move candidate selection
 - (BOOL)didCommandBySelector:(SEL)aSelector client:(id)sender {
   DLog(@"didCommandBySelector:%@", NSStringFromSelector(aSelector));
   if ([self isActive]) {
-    if (aSelector == @selector(insertNewline:)) {
+    if (aSelector == @selector(insertNewline:) || aSelector == @selector
+                                                      (insertTab:)) {
       [self accept:sender];
       return YES;
     } else if (aSelector == @selector(deleteBackward:)) {
