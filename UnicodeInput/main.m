@@ -16,7 +16,7 @@ const NSString* kConnectionName = @"UnicodeInputConnection";
 // UnicodeInputController instance to handle each client connection.
 IMKServer* server = nil;
 // Window that displays candidate replacements.
-IMKCandidates* candidates = nil;
+IMKCandidates* candidatesWindow = nil;
 
 int main(int argc, const char* argv[]) {
   // Create the server.
@@ -24,9 +24,9 @@ int main(int argc, const char* argv[]) {
       [[IMKServer alloc] initWithName:(NSString*)kConnectionName
                      bundleIdentifier:[[NSBundle mainBundle] bundleIdentifier]];
   // Create the candidates window.
-  candidates = [[IMKCandidates alloc]
-      initWithServer:server
-           panelType:kIMKScrollingGridCandidatePanel];
+  candidatesWindow =
+      [[IMKCandidates alloc] initWithServer:server
+                                  panelType:kIMKScrollingGridCandidatePanel];
   // Run the event loop.
   [[NSApplication sharedApplication] run];
   return 0;

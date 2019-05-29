@@ -8,7 +8,7 @@
 
 #import "UnicodeInputController.h"
 
-extern IMKCandidates* candidates;
+extern IMKCandidates* candidatesWindow;
 
 // See IMKInputController.h for documentation of the IMKServerInput protocol.
 @implementation UnicodeInputController {
@@ -28,17 +28,17 @@ extern IMKCandidates* candidates;
   return _compositionBuffer;
 }
 
+// Returns whether there is an active composition session.
+- (BOOL)isActive {
+  return [[self compositionBuffer] length] > 0;
+}
+
 // Gets the current candidate replacements buffer, allocating if necessary.
 - (NSArray*)candidateReplacements {
   if (_candidateReplacements == nil) {
     return @[];
   }
   return _candidateReplacements;
-}
-
-// Returns whether there is an active composition session.
-- (BOOL)isActive {
-  return [[self compositionBuffer] length] > 0;
 }
 
 // Update the cached candidate replacements and candidates window to match the
@@ -56,10 +56,10 @@ extern IMKCandidates* candidates;
   }
 
   if ([_candidateReplacements count] > 0) {
-    [candidates updateCandidates];
-    [candidates show:kIMKLocateCandidatesBelowHint];
+    [candidatesWindow updateCandidates];
+    [candidatesWindow show:kIMKLocateCandidatesBelowHint];
   } else {
-    [candidates hide];
+    [candidatesWindow hide];
   }
 }
 
@@ -109,9 +109,28 @@ extern IMKCandidates* candidates;
 
 - (BOOL)didCommandBySelector:(SEL)aSelector client:(id)sender {
   NSLog(@"didCommandBySelector:%@", NSStringFromSelector(aSelector));
-  if ([self isActive] && aSelector == @selector(insertNewline:)) {
-    [self deactivate:sender];
-    return YES;
+  if ([self isActive]) {
+    if (aSelector == @selector(insertNewline:)) {
+      [self deactivate:sender];
+      return YES;
+      // If the candidates window is open, pass arrow keys through.
+    } else if ([candidatesWindow isVisible] && aSelector == @selector
+                                                   (moveLeft:)) {
+      [candidatesWindow moveLeft:sender];
+      return YES;
+    } else if ([candidatesWindow isVisible] && aSelector == @selector
+                                                   (moveRight:)) {
+      [candidatesWindow moveRight:sender];
+      return YES;
+    } else if ([candidatesWindow isVisible] && aSelector == @selector
+                                                   (moveUp:)) {
+      [candidatesWindow moveUp:sender];
+      return YES;
+    } else if ([candidatesWindow isVisible] && aSelector == @selector
+                                                   (moveDown:)) {
+      [candidatesWindow moveDown:sender];
+      return YES;
+    }
   }
   [self deactivate:sender];
   return NO;
