@@ -129,21 +129,16 @@ NSArray* getReplacements(NSString* target) {
 // behavior.
 
 // Handles the following events:
-//   * backslash: if double-backslash was entered, insert a backslash;
-//       otherwise, accept current selection, start new composition
+//   * backslash: accept current selection, start new composition
 //   * space (if active): accept current selection, insert space
 //   * all other characters (if active): append to buffer
 - (BOOL)inputText:(NSString*)string client:(id)sender {
   DLog(@"inputText:%@", string);
   if ([string isEqualToString:@"\\"]) {
     NSMutableString* buffer = [self compositionBuffer];
-    if ([buffer isEqualToString:@"\\"]) {
-      [self deactivate:sender];
-    } else {
-      [self accept:sender];
-      [buffer appendString:string];
-      [self bufferChanged:sender];
-    }
+    [self accept:sender];
+    [buffer appendString:string];
+    [self bufferChanged:sender];
     return YES;
   } else if ([self isActive] && [string isEqualToString:@" "]) {
     [self accept:sender];
@@ -159,7 +154,7 @@ NSArray* getReplacements(NSString* target) {
 // Handles the following events:
 //   newline: accept
 //   backspace: remove last character
-//   escape: clear composition buffer
+//   escape: deactivate (insert composition as-is)
 //   arrow keys (while candidates window is open): move candidate selection
 - (BOOL)didCommandBySelector:(SEL)aSelector client:(id)sender {
   DLog(@"didCommandBySelector:%@", NSStringFromSelector(aSelector));
@@ -173,8 +168,7 @@ NSArray* getReplacements(NSString* target) {
       [self bufferChanged:sender];
       return YES;
     } else if (aSelector == @selector(cancelOperation:)) {
-      [[self compositionBuffer] setString:@""];
-      [self bufferChanged:sender];
+      [self deactivate:sender];
       return YES;
     } else if ([candidatesWindow isVisible] && aSelector == @selector
                                                    (moveLeft:)) {
