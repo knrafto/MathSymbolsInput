@@ -13,47 +13,43 @@
   // Buffer containing text that the user has input so far in the current
   // composition session. We ensure that the client's marked text always
   // matches the contents.
-  NSMutableString* _compositionBuffer;
+  NSMutableString* _buffer;
 }
 
 // Gets the current composition buffer, allocating if necessary.
-- (NSMutableString*)compositionBuffer {
-  if (_compositionBuffer == nil) {
-    _compositionBuffer = [[NSMutableString alloc] init];
+- (NSMutableString*)buffer {
+  if (_buffer == nil) {
+    _buffer = [[NSMutableString alloc] init];
   }
-  return _compositionBuffer;
+  return _buffer;
 }
 
 // Returns whether there is an active composition session.
 - (BOOL)isActive {
-  return [[self compositionBuffer] length] > 0;
+  return [[self buffer] length] > 0;
 }
 
-// Appends to the current composition, updating to marked text.
-- (void)appendComposition:(NSString*)string client:(id)sender {
-  NSMutableString* compositionBuffer = [self compositionBuffer];
-  [compositionBuffer appendString:string];
-
+// Update the marked text to match the contents of the buffer. This must be called whenever the buffer changes.
+- (void)updateMarkedText:(id)sender {
+  NSMutableString* buffer = [self buffer];
   // Seems like using an NSAttributedString for setMarkedText is necessary to
   // get the cursor to appear at the end of the marked text instead of selecting
   // the whole range.
-  NSDictionary* attrs =
-      [self markForStyle:kTSMHiliteSelectedRawText
-                 atRange:NSMakeRange(0, [compositionBuffer length])];
+  NSDictionary* attrs = [self markForStyle:kTSMHiliteSelectedRawText
+                                   atRange:NSMakeRange(0, [buffer length])];
   NSAttributedString* attrString =
-      [[NSAttributedString alloc] initWithString:compositionBuffer
-                                      attributes:attrs];
+      [[NSAttributedString alloc] initWithString:buffer attributes:attrs];
   [sender setMarkedText:attrString
-         selectionRange:NSMakeRange([compositionBuffer length], 0)
+         selectionRange:NSMakeRange([buffer length], 0)
        replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
 }
 
-// Finishes the current composition，returning to an inactive state.
+// Inserts the contents of the buffer without making a replacement, returning to an inactive state.
 - (void)deactivate:(id)sender {
-  NSMutableString* compositionBuffer = [self compositionBuffer];
-  [sender insertText:compositionBuffer
+  NSMutableString* buffer = [self buffer];
+  [sender insertText:buffer
       replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
-  [compositionBuffer setString:@""];
+  [buffer setString:@""];
 }
 
 // On keydown events, the system will either call inputText: (for most typed
@@ -66,7 +62,8 @@
 - (BOOL)inputText:(NSString*)string client:(id)sender {
   NSLog(@"inputText:%@", string);
   if ([self isActive] || [string isEqualToString:@"\\"]) {
-    [self appendComposition:string client:sender];
+    [[self buffer] appendString:string];
+    [self updateMarkedText:sender];
     return YES;
   }
   return NO;
