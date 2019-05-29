@@ -109,6 +109,7 @@ extern IMKCandidates* candidatesWindow;
 // Handles the following events:
 //   newline: deactivate
 //   backspace: remove last character
+//   escape: clear composition buffer
 //   arrow keys (while candidates window is open): move candidate selection
 - (BOOL)didCommandBySelector:(SEL)aSelector client:(id)sender {
   NSLog(@"didCommandBySelector:%@", NSStringFromSelector(aSelector));
@@ -116,9 +117,13 @@ extern IMKCandidates* candidatesWindow;
     if (aSelector == @selector(insertNewline:)) {
       [self deactivate:sender];
       return YES;
-    } if (aSelector == @selector(deleteBackward:)) {
+    } else if (aSelector == @selector(deleteBackward:)) {
       NSMutableString* buffer = [self compositionBuffer];
       [buffer deleteCharactersInRange:NSMakeRange([buffer length] - 1, 1)];
+      [self updateState:sender];
+      return YES;
+    } else if (aSelector == @selector(cancelOperation:)) {
+      [[self compositionBuffer] setString:@""];
       [self updateState:sender];
       return YES;
     } else if ([candidatesWindow isVisible] && aSelector == @selector
