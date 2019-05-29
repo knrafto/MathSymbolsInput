@@ -10,6 +10,25 @@
 
 extern IMKCandidates* candidatesWindow;
 
+NSArray* getReplacements(NSString* target) {
+  if ([target isEqualToString:@"\\to"]) {
+    return @[ @"→" ];
+  } else if ([target isEqualToString:@"\\Sigma"]) {
+    return @[ @"Σ" ];
+  } else if ([target isEqualToString:@"\\Pi"]) {
+    return @[ @"Π" ];
+  } else if ([target isEqualToString:@"\\bN"]) {
+    return @[ @"ℕ" ];
+  } else if ([target isEqualToString:@"\\r"]) {
+    return @[
+      @"→", @"⇒", @"⇛", @"⇉", @"⇄", @"↦", @"⇨", @"↠", @"⇀", @"⇁",
+      @"⇢", @"⇻", @"↝", @"⇾", @"⟶", @"⟹", @"↛", @"⇏", @"⇸", @"⇶",
+    ];
+  } else {
+    return @[];
+  }
+}
+
 // See IMKInputController.h for documentation of the IMKServerInput protocol.
 @implementation UnicodeInputController {
   // Buffer containing text that the user has input so far in the current
@@ -47,17 +66,7 @@ extern IMKCandidates* candidatesWindow;
 // called whenever the buffer changes.
 - (void)bufferChanged:(id)sender {
   NSMutableString* buffer = [self compositionBuffer];
-
-  // TODO: make this a real map.
-  if ([buffer isEqualToString:@"\\r"]) {
-    _candidateReplacements = @[
-      @"→", @"⇒", @"⇛", @"⇉", @"⇄", @"↦", @"⇨", @"↠", @"⇀", @"⇁",
-      @"⇢", @"⇻", @"↝", @"⇾", @"⟶", @"⟹", @"↛", @"⇏", @"⇸", @"⇶",
-    ];
-  } else {
-    _candidateReplacements = @[];
-  }
-
+  _candidateReplacements = getReplacements(buffer);
   if ([_candidateReplacements count] > 0) {
     [candidatesWindow updateCandidates];
     [candidatesWindow show:kIMKLocateCandidatesBelowHint];
@@ -108,19 +117,25 @@ extern IMKCandidates* candidatesWindow;
 // behavior.
 
 // Handles the following events:
-//   backslash: accept current selection, start new composition
-//   space (if active): accept current selection
-//   all other characters (if active): append to buffer
+//   * backslash: if double-backslash was entered, insert a backslash;
+//       otherwise, accept current selection, start new composition
+//   * space (if active): accept current selection, insert space
+//   * all other characters (if active): append to buffer
 - (BOOL)inputText:(NSString*)string client:(id)sender {
   NSLog(@"inputText:%@", string);
   if ([string isEqualToString:@"\\"]) {
-    [self accept:sender];
-    [[self compositionBuffer] appendString:string];
-    [self bufferChanged:sender];
+    NSMutableString* buffer = [self compositionBuffer];
+    if ([buffer isEqualToString:@"\\"]) {
+      [self deactivate:sender];
+    } else {
+      [self accept:sender];
+      [buffer appendString:string];
+      [self bufferChanged:sender];
+    }
     return YES;
   } else if ([self isActive] && [string isEqualToString:@" "]) {
     [self accept:sender];
-    return YES;
+    return NO;
   } else if ([self isActive]) {
     [[self compositionBuffer] appendString:string];
     [self bufferChanged:sender];
@@ -130,7 +145,7 @@ extern IMKCandidates* candidatesWindow;
 }
 
 // Handles the following events:
-//   newline: deactivate
+//   newline: accept
 //   backspace: remove last character
 //   escape: clear composition buffer
 //   arrow keys (while candidates window is open): move candidate selection
@@ -138,7 +153,7 @@ extern IMKCandidates* candidatesWindow;
   NSLog(@"didCommandBySelector:%@", NSStringFromSelector(aSelector));
   if ([self isActive]) {
     if (aSelector == @selector(insertNewline:)) {
-      [self deactivate:sender];
+      [self accept:sender];
       return YES;
     } else if (aSelector == @selector(deleteBackward:)) {
       NSMutableString* buffer = [self compositionBuffer];
