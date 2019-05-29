@@ -8,6 +8,8 @@
 
 #import "UnicodeInputController.h"
 
+#import "Replacements.h"
+
 extern IMKCandidates* candidatesWindow;
 
 // Like NSLog, but only logs in debug mode.
@@ -18,27 +20,6 @@ void DLog(NSString* format, ...) {
   NSLogv(format, args);
   va_end(args);
 #endif
-}
-
-// Hardcoded map of replacements.
-// TODO: replace this with a text file.
-NSArray* getReplacements(NSString* target) {
-  if ([target isEqualToString:@"\\to"]) {
-    return @[ @"→" ];
-  } else if ([target isEqualToString:@"\\Sigma"]) {
-    return @[ @"Σ" ];
-  } else if ([target isEqualToString:@"\\Pi"]) {
-    return @[ @"Π" ];
-  } else if ([target isEqualToString:@"\\bN"]) {
-    return @[ @"ℕ" ];
-  } else if ([target isEqualToString:@"\\r"]) {
-    return @[
-      @"→", @"⇒", @"⇛", @"⇉", @"⇄", @"↦", @"⇨", @"↠", @"⇀", @"⇁",
-      @"⇢", @"⇻", @"↝", @"⇾", @"⟶", @"⟹", @"↛", @"⇏", @"⇸", @"⇶",
-    ];
-  } else {
-    return @[];
-  }
 }
 
 // See IMKInputController.h for documentation of the IMKServerInput protocol.
