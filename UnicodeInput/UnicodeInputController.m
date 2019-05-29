@@ -10,6 +10,18 @@
 
 extern IMKCandidates* candidatesWindow;
 
+// Like NSLog, but only logs in debug mode.
+void DLog(NSString* format, ...) {
+#ifdef DEBUG
+  va_list args;
+  va_start(args, format);
+  NSLogv(format, args);
+  va_end(args);
+#endif
+}
+
+// Hardcoded map of replacements.
+// TODO: replace this with a text file.
 NSArray* getReplacements(NSString* target) {
   if ([target isEqualToString:@"\\to"]) {
     return @[ @"→" ];
@@ -122,7 +134,7 @@ NSArray* getReplacements(NSString* target) {
 //   * space (if active): accept current selection, insert space
 //   * all other characters (if active): append to buffer
 - (BOOL)inputText:(NSString*)string client:(id)sender {
-  NSLog(@"inputText:%@", string);
+  DLog(@"inputText:%@", string);
   if ([string isEqualToString:@"\\"]) {
     NSMutableString* buffer = [self compositionBuffer];
     if ([buffer isEqualToString:@"\\"]) {
@@ -150,7 +162,7 @@ NSArray* getReplacements(NSString* target) {
 //   escape: clear composition buffer
 //   arrow keys (while candidates window is open): move candidate selection
 - (BOOL)didCommandBySelector:(SEL)aSelector client:(id)sender {
-  NSLog(@"didCommandBySelector:%@", NSStringFromSelector(aSelector));
+  DLog(@"didCommandBySelector:%@", NSStringFromSelector(aSelector));
   if ([self isActive]) {
     if (aSelector == @selector(insertNewline:)) {
       [self accept:sender];
@@ -190,25 +202,25 @@ NSArray* getReplacements(NSString* target) {
 // (e.g. the user selected a new input method, or clicked outside of the marked
 // text).
 - (void)commitComposition:(id)sender {
-  NSLog(@"commitComposition:");
+  DLog(@"commitComposition:");
   [self deactivate:sender];
 }
 
 // Called by the system to get a list of candidates to display.
 - (NSArray*)candidates:(id)sender {
-  NSLog(@"candidates:");
+  DLog(@"candidates:");
   return [self candidateReplacements];
 }
 
 // Called by the system when the user selects a candidate.
 - (void)candidateSelectionChanged:(NSAttributedString*)candidateString {
-  NSLog(@"candidateSelectionChanged:%@", candidateString);
+  DLog(@"candidateSelectionChanged:%@", candidateString);
   _currentSelection = [candidateString string];
 }
 
 // Called by the system when the user accepts a candidate.
 - (void)candidateSelected:(NSAttributedString*)candidateString {
-  NSLog(@"candidateSelected:%@", candidateString);
+  DLog(@"candidateSelected:%@", candidateString);
   _currentSelection = [candidateString string];
   [self accept:[self client]];
 }
