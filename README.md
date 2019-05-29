@@ -12,9 +12,10 @@ sudo chmod 777 /Library/Input Methods
 Then build the Xcode project, log out and log back in, and add the input method
 in `System Preferences > Keyboard > Input Sources`.
 
-After making code changes, kill the running input method `killall UnicodeInput`
-so it can restart. Changes to cached metadata (e.g. input method icon) require
-you to log out and log back in.
+After making code changes, switch to different input method, kill the running
+input method `killall UnicodeInput`, and switch back to the Unicode input
+method. Changes to cached metadata (e.g. input method icon) require you to log
+out and log back in.
 
 ## References
 

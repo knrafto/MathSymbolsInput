@@ -8,30 +8,66 @@
 
 #import "UnicodeInputController.h"
 
+extern IMKCandidates* candidates;
+
 // See IMKInputController.h for documentation of the IMKServerInput protocol.
 @implementation UnicodeInputController {
   // Buffer containing text that the user has input so far in the current
   // composition session. We ensure that the client's marked text always
   // matches the contents.
-  NSMutableString* _buffer;
+  NSMutableString* _compositionBuffer;
+  // Array of NSStrings containing candidate replacements.
+  NSArray* _candidateReplacements;
 }
 
 // Gets the current composition buffer, allocating if necessary.
-- (NSMutableString*)buffer {
-  if (_buffer == nil) {
-    _buffer = [[NSMutableString alloc] init];
+- (NSMutableString*)compositionBuffer {
+  if (_compositionBuffer == nil) {
+    _compositionBuffer = [[NSMutableString alloc] init];
   }
-  return _buffer;
+  return _compositionBuffer;
+}
+
+// Gets the current candidate replacements buffer, allocating if necessary.
+- (NSArray*)candidateReplacements {
+  if (_candidateReplacements == nil) {
+    return @[];
+  }
+  return _candidateReplacements;
 }
 
 // Returns whether there is an active composition session.
 - (BOOL)isActive {
-  return [[self buffer] length] > 0;
+  return [[self compositionBuffer] length] > 0;
 }
 
-// Update the marked text to match the contents of the buffer. This must be called whenever the buffer changes.
-- (void)updateMarkedText:(id)sender {
-  NSMutableString* buffer = [self buffer];
+// Update the cached candidate replacements and candidates window to match the
+// contents of the buffer.
+- (void)updateCandidates {
+  NSMutableString* buffer = [self compositionBuffer];
+  // TODO: make this a real map.
+  if ([buffer isEqualToString:@"\\r"]) {
+    _candidateReplacements = @[
+      @"→", @"⇒", @"⇛", @"⇉", @"⇄", @"↦", @"⇨", @"↠", @"⇀", @"⇁",
+      @"⇢", @"⇻", @"↝", @"⇾", @"⟶", @"⟹", @"↛", @"⇏", @"⇸", @"⇶",
+    ];
+  } else {
+    _candidateReplacements = @[];
+  }
+
+  if ([_candidateReplacements count] > 0) {
+    [candidates updateCandidates];
+    [candidates show:kIMKLocateCandidatesBelowHint];
+  } else {
+    [candidates hide];
+  }
+}
+
+// Update the client's state match the contents of the buffer. This must be
+// called whenever the buffer changes.
+- (void)updateState:(id)sender {
+  NSMutableString* buffer = [self compositionBuffer];
+  [self updateCandidates];
   // Seems like using an NSAttributedString for setMarkedText is necessary to
   // get the cursor to appear at the end of the marked text instead of selecting
   // the whole range.
@@ -44,12 +80,14 @@
        replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
 }
 
-// Inserts the contents of the buffer without making a replacement, returning to an inactive state.
+// Inserts the contents of the buffer without making a replacement, returning to
+// an inactive state.
 - (void)deactivate:(id)sender {
-  NSMutableString* buffer = [self buffer];
+  NSMutableString* buffer = [self compositionBuffer];
   [sender insertText:buffer
       replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
   [buffer setString:@""];
+  [self updateCandidates];
 }
 
 // On keydown events, the system will either call inputText: (for most typed
@@ -62,8 +100,8 @@
 - (BOOL)inputText:(NSString*)string client:(id)sender {
   NSLog(@"inputText:%@", string);
   if ([self isActive] || [string isEqualToString:@"\\"]) {
-    [[self buffer] appendString:string];
-    [self updateMarkedText:sender];
+    [[self compositionBuffer] appendString:string];
+    [self updateState:sender];
     return YES;
   }
   return NO;
@@ -85,6 +123,12 @@
 - (void)commitComposition:(id)sender {
   NSLog(@"commitComposition:");
   [self deactivate:sender];
+}
+
+// Called by the system to get a list of candidates to display.
+- (NSArray*)candidates:(id)sender {
+  NSLog(@"candidates:");
+  return [self candidateReplacements];
 }
 
 @end

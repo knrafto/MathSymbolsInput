@@ -14,17 +14,20 @@ const NSString* kConnectionName = @"UnicodeInputConnection";
 
 // Server that accepts connections from client applications. It will create a
 // UnicodeInputController instance to handle each client connection.
-IMKServer* server;
+IMKServer* server = nil;
+// Window that displays candidate replacements.
+IMKCandidates* candidates = nil;
 
 int main(int argc, const char* argv[]) {
-  @autoreleasepool {
-    // Create the server.
-    server = [[IMKServer alloc]
-            initWithName:(NSString*)kConnectionName
-        bundleIdentifier:[[NSBundle mainBundle] bundleIdentifier]];
-
-    // Run the event loop.
-    [[NSApplication sharedApplication] run];
-  }
+  // Create the server.
+  server =
+      [[IMKServer alloc] initWithName:(NSString*)kConnectionName
+                     bundleIdentifier:[[NSBundle mainBundle] bundleIdentifier]];
+  // Create the candidates window.
+  candidates = [[IMKCandidates alloc]
+      initWithServer:server
+           panelType:kIMKScrollingGridCandidatePanel];
+  // Run the event loop.
+  [[NSApplication sharedApplication] run];
   return 0;
 }
