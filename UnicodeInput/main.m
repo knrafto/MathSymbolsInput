@@ -20,11 +20,11 @@ IMKCandidates* candidatesWindow = nil;
 
 // Map from escape sequences (an NSString*) to NSArray* of NSString*
 // replacements.
-NSDictionary* replacementMap = nil;
+NSDictionary* replacementsMap = nil;
 
 // Initialize the replacements map.
-void loadReplacements(void) {
-  replacementMap = @{
+void loadReplacementsMap(void) {
+  replacementsMap = @{
     @"\\to" : @[ @"→" ],
     @"\\Sigma" : @[ @"Σ" ],
     @"\\Pi" : @[ @"Π" ],
@@ -37,7 +37,15 @@ void loadReplacements(void) {
 }
 
 int main(int argc, const char* argv[]) {
-  loadReplacements();
+  NSBundle* bundle = [NSBundle mainBundle];
+  NSString* replacementsPath = [bundle pathForResource:@"replacemets"
+                                                ofType:@"txt"];
+  if (replacementsPath == nil) {
+    NSLog(@"No file replacements.txt in %@", [bundle resourcePath]);
+    return 1;
+  }
+
+  loadReplacementsMap();
 
   // Create the server.
   server =

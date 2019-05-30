@@ -9,7 +9,7 @@
 #import "UnicodeInputController.h"
 
 extern IMKCandidates* candidatesWindow;
-extern NSDictionary* replacementMap;
+extern NSDictionary* replacementsMap;
 
 // Like NSLog, but only logs in debug mode.
 void DLog(NSString* format, ...) {
@@ -59,7 +59,7 @@ void DLog(NSString* format, ...) {
 - (void)bufferChanged:(id)sender {
   NSMutableString* buffer = [self compositionBuffer];
 
-  _candidateReplacements = replacementMap[buffer];
+  _candidateReplacements = replacementsMap[buffer];
   if (_candidateReplacements == nil) {
     _candidateReplacements = @[];
   }
