@@ -13,7 +13,7 @@
 
 // Initializes the replacements module. This will start a background thread
 // to watch the replacement file for changes.
-void InitReplacements(void);
+void initReplacements(void);
 
 // Get the currently-loaded replacements for a given key.
 NSArray* getReplacements(NSString* key);

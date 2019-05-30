@@ -22,7 +22,7 @@ IMKCandidates* candidatesWindow = nil;
 
 int main(int argc, const char* argv[]) {
   // Initialize the replacements map.
-  InitReplacements();
+  initReplacements();
 
   // Create the server.
   server =

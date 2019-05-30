@@ -13,12 +13,18 @@
 
 NSDictionary* volatile replacementMap;
 
-void* BackgroundThreadMain(void* data) {
+@interface BackgroundThread : NSObject
+@end
+
+@implementation BackgroundThread
+
++ (void)run:(id)param {
   NSLog(@"Started background thread");
-  return NULL;
 }
 
-void InitReplacements(void) {
+@end
+
+void initReplacements(void) {
   replacementMap = @{
     @"\\to" : @[ @"→" ],
     @"\\Sigma" : @[ @"Σ" ],
@@ -30,14 +36,9 @@ void InitReplacements(void) {
     ],
   };
 
-  // Create a detached POSIX thread.
-  pthread_attr_t attr;
-  pthread_t threadId;
-
-  assert(!pthread_attr_init(&attr));
-  assert(!pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_DETACHED));
-  assert(!pthread_create(&threadId, &attr, &BackgroundThreadMain, NULL));
-  assert(!pthread_attr_destroy(&attr));
+  [NSThread detachNewThreadSelector:@selector(run:)
+                           toTarget:[BackgroundThread class]
+                         withObject:nil];
 }
 
 NSArray* getReplacements(NSString* key) {
