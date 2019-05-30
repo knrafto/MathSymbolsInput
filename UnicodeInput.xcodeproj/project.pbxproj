@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1A435DF8229D762A00403647 /* UnicodeInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A435DF6229D762A00403647 /* UnicodeInputController.m */; };
-		1A695F23229EF6F9008DEC0F /* Replacements.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A695F22229EF6F9008DEC0F /* Replacements.m */; };
 		1AD93EC9229D872D000957A3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1AD93EC8229D872D000957A3 /* README.md */; };
 		1AFF817E229D78AC0024EE3F /* nine.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 1AFF817D229D78AC0024EE3F /* nine.tiff */; };
 		F61A7AC31E8182C100EBF660 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F61A7AC21E8182C100EBF660 /* main.m */; };
@@ -19,8 +18,6 @@
 /* Begin PBXFileReference section */
 		1A435DF6229D762A00403647 /* UnicodeInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = UnicodeInputController.m; sourceTree = "<group>"; tabWidth = 2; };
 		1A435DF7229D762A00403647 /* UnicodeInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnicodeInputController.h; sourceTree = "<group>"; };
-		1A695F22229EF6F9008DEC0F /* Replacements.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Replacements.m; sourceTree = "<group>"; };
-		1A695F24229EF706008DEC0F /* Replacements.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Replacements.h; sourceTree = "<group>"; };
 		1AD93EC8229D872D000957A3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1AFF817D229D78AC0024EE3F /* nine.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = nine.tiff; sourceTree = "<group>"; };
 		F61A7ABB1E8182C100EBF660 /* UnicodeInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnicodeInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,8 +66,6 @@
 				1A435DF6229D762A00403647 /* UnicodeInputController.m */,
 				F61A7AC71E8182C100EBF660 /* Assets.xcassets */,
 				F61A7ACC1E8182C100EBF660 /* Info.plist */,
-				1A695F24229EF706008DEC0F /* Replacements.h */,
-				1A695F22229EF6F9008DEC0F /* Replacements.m */,
 			);
 			path = UnicodeInput;
 			sourceTree = "<group>";
@@ -154,7 +149,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A695F23229EF6F9008DEC0F /* Replacements.m in Sources */,
 				F61A7AC31E8182C100EBF660 /* main.m in Sources */,
 				1A435DF8229D762A00403647 /* UnicodeInputController.m in Sources */,
 			);

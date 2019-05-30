@@ -9,8 +9,6 @@
 #import <Cocoa/Cocoa.h>
 #import <InputMethodKit/InputMethodKit.h>
 
-#import "Replacements.h"
-
 // Unique connection name for this input method.
 const NSString* kConnectionName = @"UnicodeInputConnection";
 
@@ -20,9 +18,26 @@ IMKServer* server = nil;
 // Window that displays candidate replacements.
 IMKCandidates* candidatesWindow = nil;
 
+// Map from escape sequences (an NSString*) to NSArray* of NSString*
+// replacements.
+NSDictionary* replacementMap = nil;
+
+// Initialize the replacements map.
+void loadReplacements(void) {
+  replacementMap = @{
+    @"\\to" : @[ @"→" ],
+    @"\\Sigma" : @[ @"Σ" ],
+    @"\\Pi" : @[ @"Π" ],
+    @"\\bN" : @[ @"ℕ" ],
+    @"\\r" : @[
+      @"→", @"⇒", @"⇛", @"⇉", @"⇄", @"↦", @"⇨", @"↠", @"⇀", @"⇁",
+      @"⇢", @"⇻", @"↝", @"⇾", @"⟶", @"⟹", @"↛", @"⇏", @"⇸", @"⇶",
+    ],
+  };
+}
+
 int main(int argc, const char* argv[]) {
-  // Initialize the replacements map.
-  initReplacements();
+  loadReplacements();
 
   // Create the server.
   server =
