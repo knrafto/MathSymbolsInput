@@ -30,8 +30,6 @@ NSDictionary* replacementsMap = nil;
 
 // Load the replacements map. Returns nil on error.
 NSDictionary* loadReplacementsMap(void) {
-  NSLog(@"Loading replacements...");
-
   NSMutableDictionary* mutableReplacementsMap =
       [[NSMutableDictionary alloc] init];
   NSBundle* bundle = [NSBundle mainBundle];
@@ -49,66 +47,67 @@ NSDictionary* loadReplacementsMap(void) {
   }
 
   int line = 0;
-  int num_replacements = 0;
-  char str[BUFFER_SIZE];
+  char buffer[BUFFER_SIZE];
   while (true) {
     line++;
-    if (fgets(str, BUFFER_SIZE, f) == NULL) {
+    if (fgets(buffer, BUFFER_SIZE, f) == NULL) {
       if (ferror(f)) {
         NSLog(@"Error reading file: %s", strerror(errno));
         return nil;
+      } else {
+        // EOF
+        break;
       }
-      // EOF
-      break;
     }
 
-    size_t len = strlen(str);
-
+    char* escape_token = strtok(buffer, " \t\r\n");
     // Blank or comment line
-    if (str[0] == '#' || str[0] == '\n')
+    if (escape_token == NULL || escape_token[0] == '#') {
       continue;
+    }
 
-    if (str[0] != '\\') {
+    if (escape_token[0] != '\\') {
       NSLog(@"Syntax error on line %d: escape sequence must start with a "
             @"backslash",
             line);
       return nil;
     }
 
-    char* space = strchr(str, ' ');
-    if (space == NULL) {
-      NSLog(@"Syntax error on line %d: line does not contain a space", line);
+    NSMutableArray* replacements = [[NSMutableArray alloc] init];
+    char* replacement_token;
+    while ((replacement_token = strtok(NULL, " \t\r\n")) != NULL) {
+      [replacements
+          addObject:[NSString stringWithUTF8String:replacement_token]];
+    }
+
+    if ([replacements count] == 0) {
+      NSLog(@"Syntax error on line %d: no replacements for escape sequence",
+            line);
       return nil;
     }
 
-    // Make C strings out of the escape sequence and replacement
-    *space = '\0';
-    str[len - 1] = '\0';
-
-    NSString* escape = [NSString stringWithUTF8String:str];
-    NSString* replacement = [NSString stringWithUTF8String:(space + 1)];
-
-    NSMutableArray* replacements_for_escape = mutableReplacementsMap[escape];
-    if (replacements_for_escape == nil) {
-      replacements_for_escape = [[NSMutableArray alloc] init];
-      [mutableReplacementsMap setObject:replacements_for_escape forKey:escape];
+    NSString* escape = [NSString stringWithUTF8String:escape_token];
+    if (mutableReplacementsMap[escape] != nil) {
+      NSLog(@"Error on line %d: escape sequence '%@' already has replacements",
+            line, escape);
+      return nil;
     }
-    [replacements_for_escape addObject:replacement];
-
-    num_replacements++;
+    [mutableReplacementsMap setObject:replacements forKey:escape];
   }
 
-  NSLog(@"Loaded %d replacements", num_replacements);
   return mutableReplacementsMap;
 }
 
 int main(int argc, const char* argv[]) {
+  NSLog(@"Loading replacements...");
   replacementsMap = loadReplacementsMap();
   if (replacementsMap == nil) {
     NSLog(@"Failed to load replacements!");
     // Fall back to empty replacements instead of exiting. If the input method
     // crashes, the system will refuse to restart it.
     replacementsMap = @{};
+  } else {
+    NSLog(@"Loaded %lu replacements", (unsigned long)[replacementsMap count]);
   }
 
   // Create the server.

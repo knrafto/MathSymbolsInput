@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		1A435DF6229D762A00403647 /* UnicodeInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = UnicodeInputController.m; sourceTree = "<group>"; tabWidth = 2; };
 		1A435DF7229D762A00403647 /* UnicodeInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnicodeInputController.h; sourceTree = "<group>"; };
-		1A695F25229F8FDD008DEC0F /* replacements.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = replacements.txt; sourceTree = "<group>"; };
+		1A695F25229F8FDD008DEC0F /* replacements.txt */ = {isa = PBXFileReference; indentWidth = 8; lastKnownFileType = text; path = replacements.txt; sourceTree = "<group>"; tabWidth = 8; usesTabs = 1; };
 		1AFF817D229D78AC0024EE3F /* nine.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = nine.tiff; sourceTree = "<group>"; };
 		F61A7ABB1E8182C100EBF660 /* UnicodeInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnicodeInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F61A7AC21E8182C100EBF660 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };

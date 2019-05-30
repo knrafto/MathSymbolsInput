@@ -1,31 +1,12 @@
 # Escape sequences and replacements for the Unicode input method.
-# Each line contains an escape sequence (starting with \), followed
-# by a space. The rest of the line is the replacement.
+# Each line contains an escape sequence (starting with \) followed
+# by one or more replacement sequences, separated by whitespace.
 # Blank lines and lines starting with '#' are ignored.
-\to →
-\Sigma Σ
-\Pi Π
-\bN ℕ
-\r →
-\r ⇒
-\r ⇛
-\r ⇉
-\r ⇄
-\r ↦
-\r ⇨
-\r ↠
-\r ⇀
-\r ⇁,
-\r ⇢
-\r ⇻
-\r ↝
-\r ⇾
-\r ⟶
-\r ⟹
-\r ↛
-\r ⇏
-\r ⇸
-\r ⇶
+\to	→
+\Sigma	Σ
+\Pi	Π
+\bN	ℕ
+\r	→ ⇒ ⇛ ⇉ ⇄ ↦ ⇨ ↠ ⇀ ⇁ ⇢ ⇻ ↝ ⇾ ⟶ ⟹ ↛ ⇏ ⇸ ⇶
 
 # Miscellaneous
-\shrug ¯\_(ツ)_/¯
+\shrug	¯\_(ツ)_/¯
