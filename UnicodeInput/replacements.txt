@@ -2,3 +2,27 @@
 # Each line contains an escape sequence (starting with \), followed
 # by a space. The rest of the line is the replacement.
 # Blank lines and lines starting with '#' are ignored.
+\to →
+\Sigma Σ
+\Pi Π
+\bN ℕ
+\r →
+\r ⇒
+\r ⇛
+\r ⇉
+\r ⇄
+\r ↦
+\r ⇨
+\r ↠
+\r ⇀
+\r ⇁,
+\r ⇢
+\r ⇻
+\r ↝
+\r ⇾
+\r ⟶
+\r ⟹
+\r ↛
+\r ⇏
+\r ⇸
+\r ⇶
