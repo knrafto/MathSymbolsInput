@@ -16,7 +16,7 @@
 const NSString* kConnectionName = @"UnicodeInputConnection";
 
 // Also controls maximum line length.
-const size_t BUFFER_SIZE = 4096;
+const size_t MAX_LINE_LENGTH = 4096;
 
 // Server that accepts connections from client applications. It will create a
 // UnicodeInputController instance to handle each client connection.
@@ -46,11 +46,11 @@ NSDictionary* loadReplacementsMap(void) {
     return nil;
   }
 
-  int line = 0;
-  char buffer[BUFFER_SIZE];
+  int line_number = 0;
+  char line[MAX_LINE_LENGTH];
   while (true) {
-    line++;
-    if (fgets(buffer, BUFFER_SIZE, f) == NULL) {
+    line_number++;
+    if (fgets(line, MAX_LINE_LENGTH, f) == NULL) {
       if (ferror(f)) {
         NSLog(@"Error reading file: %s", strerror(errno));
         return nil;
@@ -60,36 +60,44 @@ NSDictionary* loadReplacementsMap(void) {
       }
     }
 
-    char* escape_token = strtok(buffer, " \t\r\n");
+    // Trim newline
+    size_t line_length = strlen(line);
+    if (line[line_length - 1] == '\n') {
+      line[line_length - 1] = '\0';
+    } else if (!feof(f)) {
+      NSLog(@"Line %d too long", line_number);
+      return nil;
+    }
+
     // Blank or comment line
-    if (escape_token == NULL || escape_token[0] == '#') {
+    if (line[0] == '\0' || line[0] == '#') {
       continue;
     }
 
-    if (escape_token[0] != '\\') {
+    if (line[0] != '\\') {
       NSLog(@"Syntax error on line %d: escape sequence must start with a "
             @"backslash",
-            line);
+            line_number);
       return nil;
     }
+
+    char* space = strchr(line, ' ');
+    if (space == NULL) {
+      NSLog(@"Syntax error on line %d: no replacement for escape sequence",
+            line_number);
+      return nil;
+    }
+
+    *space = '\0';
+    NSString* escape = [NSString stringWithUTF8String:line];
+    NSString* replacement = [NSString stringWithUTF8String:(space + 1)];
 
     NSMutableArray* replacements = [[NSMutableArray alloc] init];
-    char* replacement_token;
-    while ((replacement_token = strtok(NULL, " \t\r\n")) != NULL) {
-      [replacements
-          addObject:[NSString stringWithUTF8String:replacement_token]];
-    }
+    [replacements addObject:replacement];
 
-    if ([replacements count] == 0) {
-      NSLog(@"Syntax error on line %d: no replacements for escape sequence",
-            line);
-      return nil;
-    }
-
-    NSString* escape = [NSString stringWithUTF8String:escape_token];
     if (mutableReplacementsMap[escape] != nil) {
-      NSLog(@"Error on line %d: escape sequence '%@' already has replacements",
-            line, escape);
+      NSLog(@"Error on line %d: escape sequence '%@' already defined",
+            line_number, escape);
       return nil;
     }
     [mutableReplacementsMap setObject:replacements forKey:escape];
