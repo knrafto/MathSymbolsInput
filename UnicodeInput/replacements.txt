@@ -3,6 +3,10 @@
 # replacement, followed by a space.
 # Blank lines and lines starting with '#' are ignored.
 
+### Temporary ###
+
+\to →
+
 ### Greek letters ###
 
 # Letters that look like a Latin character are omitted.
@@ -78,10 +82,83 @@
 \Gp ψ
 \Go ω
 
-### Temporary ###
+### Blackboard bold ###
 
-\to →
+\bA 𝔸
+\bB 𝔹
+\bC ℂ
+\bD 𝔻
+\bE 𝔼
+\bF 𝔽
+\bG 𝔾
+\bH ℍ
+\bI 𝕀
+\bJ 𝕁
+\bK 𝕂
+\bL 𝕃
+\bM 𝕄
 \bN ℕ
+\bO 𝕆
+\bP ℙ
+\bQ ℚ
+\bR ℝ
+\bS 𝕊
+\bT 𝕋
+\bU 𝕌
+\bV 𝕍
+\bW 𝕎
+\bX 𝕏
+\bY 𝕐
+\bZ ℤ
+\ba 𝕒
+\bb 𝕓
+\bc 𝕔
+\bd 𝕕
+\be 𝕖
+\bf 𝕗
+\bg 𝕘
+\bh 𝕙
+\bi 𝕚
+\bj 𝕛
+\bk 𝕜
+\bl 𝕝
+\bm 𝕞
+\bn 𝕟
+\bo 𝕠
+\bp 𝕡
+\bq 𝕢
+\br 𝕣
+\bs 𝕤
+\bt 𝕥
+\bu 𝕦
+\bv 𝕧
+\bw 𝕨
+\bx 𝕩
+\by 𝕪
+\bz 𝕫
+\b0 𝟘
+\b1 𝟙
+\b2 𝟚
+\b3 𝟛
+\b4 𝟜
+\b5 𝟝
+\b6 𝟞
+\b7 𝟟
+\b8 𝟠
+\b9 𝟡
+
+### Mathematical bold ###
+
+\B0 𝟎
+\B1 𝟏
+\B2 𝟐
+\B3 𝟑
+\B4 𝟒
+\B5 𝟓
+\B6 𝟔
+\B7 𝟕
+\B8 𝟖
+\B9 𝟗
 
 ### Miscellaneous ###
 
