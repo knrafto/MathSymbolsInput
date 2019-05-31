@@ -3,13 +3,63 @@
 # replacement, followed by a space.
 # Blank lines and lines starting with '#' are ignored.
 
-### Temporary ###
+### Symbols ###
+# Many symbols have both a LaTeX escape and a shorthand.
 
+\neg ¬
 \to →
+\mapsto ↦
+\times ×
+\x ×
+\circ ∘
+\o ∘
+\bullet ∙
+\. ∙
+\le ≤
+\<= ≤
+\ge ≥
+\>= ≥
+\simeq ≃
+\~- ≃
+\ell ℓ
+\forall ∀
+\all ∀
+\exists ∃
+\ex ∃
+
+### Subscripts and superscripts ###
+# Letters are omitted, because Unicode doesn't provide all of them.
+
+\_0 ₀
+\_1 ₁
+\_2 ₂
+\_3 ₃
+\_4 ₄
+\_5 ₅
+\_6 ₆
+\_7 ₇
+\_8 ₈
+\_9 ₉
+\_+ ₊
+\_- ₋
+\_= ₌
+\^0 ⁰
+\^1 ¹
+\^2 ²
+\^3 ³
+\^4 ⁴
+\^5 ⁵
+\^6 ⁶
+\^7 ⁷
+\^8 ⁸
+\^9 ⁹
+\^+ ⁺
+\^- ⁻
+\^= ⁼
 
 ### Greek letters ###
-
 # Letters that look like a Latin character are omitted.
+
 \Gamma Γ
 \Delta Δ
 \Theta Θ
@@ -46,7 +96,8 @@
 \psi ψ
 \omega ω
 
-# Shorthand versions
+### Shorthand Greek letters ###
+
 \GG Γ
 \GD Δ
 \GTH Θ
@@ -159,7 +210,3 @@
 \B7 𝟕
 \B8 𝟖
 \B9 𝟗
-
-### Miscellaneous ###
-
-\shrug ¯\_(ツ)_/¯
