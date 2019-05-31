@@ -2,10 +2,87 @@
 # Each line contains an escape sequence (starting with \) and its
 # replacement, followed by a space.
 # Blank lines and lines starting with '#' are ignored.
-\to →
-\Sigma Σ
+
+### Greek letters ###
+
+# Letters that look like a Latin character are omitted.
+\Gamma Γ
+\Delta Δ
+\Theta Θ
+\Lambda Λ
+\Xi Ξ
 \Pi Π
+\Sigma Σ
+\Phi Φ
+\Psi Ψ
+\Omega Ω
+\alpha α
+\beta β
+\gamma γ
+\delta δ
+# \varepsilon in LaTeX
+\epsilon ε
+\zeta ζ
+\eta η
+\theta θ
+\iota ι
+\kappa κ
+\lambda λ
+\mu μ
+\nu ν
+\xi ξ
+\pi π
+\rho ρ
+\varsigma ς
+\sigma σ
+\tau τ
+\upsilon υ
+\phi φ
+\chi χ
+\psi ψ
+\omega ω
+
+# Shorthand versions
+\GG Γ
+\GD Δ
+\GTH Θ
+\GL Λ
+\GX Ξ
+# \Pi
+\GS Σ
+\GF Φ
+\GP Ψ
+\GO Ω
+\Ga α
+\Gb β
+\Gg γ
+\Gd δ
+\Ge ε
+\Gz ζ
+# \eta
+\Gth θ
+\Gi ι
+\Gk κ
+\Gl λ
+\Gm μ
+\Gn ν
+\Gx ξ
+# \pi
+\Gr ρ
+# \varsigma
+\Gs σ
+\Gt τ
+\Gu υ
+\Gf φ
+\Gc χ
+\Gp ψ
+\Go ω
+
+### Temporary ###
+
+\to →
 \bN ℕ
 
-# Miscellaneous
+### Miscellaneous ###
+
 \shrug ¯\_(ツ)_/¯
