@@ -4,27 +4,18 @@
 # Blank lines and lines starting with '#' are ignored.
 
 ### Symbols ###
-# Many symbols have both a LaTeX escape and a shorthand.
 
 \neg ¬
 \to →
 \mapsto ↦
-\times ×
 \x ×
-\circ ∘
 \o ∘
-\bullet ∙
 \. ∙
-\le ≤
 \<= ≤
-\ge ≥
 \>= ≥
-\simeq ≃
 \~- ≃
 \ell ℓ
-\forall ∀
 \all ∀
-\exists ∃
 \ex ∃
 
 ### Subscripts and superscripts ###
