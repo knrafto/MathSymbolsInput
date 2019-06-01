@@ -23,7 +23,8 @@ out and log back in.
 
 * https://github.com/palanceli/macIMKSample (blog posts: 
   [part 1](http://palanceli.com/2017/03/05/2017/0305macOSIMKSample1/)
-  [part 2](http://palanceli.com/2017/03/23/2017/0323macOSIMKSample2/))
+  [part 2](http://palanceli.com/2017/03/23/2017/0323macOSIMKSample2/)
+  [part 3](http://palanceli.com/2017/03/27/2017/0327macOSIMKSample3/))
 * https://github.com/pkamb/NumberInput_IMKit_Sample
 
 ### Input method documentation
