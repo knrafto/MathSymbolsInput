@@ -28,9 +28,7 @@ void DLog(NSString* format, ...) {
   // matches the contents.
   NSMutableString* _compositionBuffer;
   // Array of NSStrings containing candidate replacements.
-  NSArray* _candidateReplacements;
-  // The currently-selected candidate, if any.
-  NSString* _currentSelection;
+  NSString* _candidateReplacement;
 }
 
 // Gets the current composition buffer, allocating if necessary.
@@ -46,31 +44,17 @@ void DLog(NSString* format, ...) {
   return [[self compositionBuffer] length] > 0;
 }
 
-// Gets the current candidate replacements buffer, allocating if necessary.
-- (NSArray*)candidateReplacements {
-  if (_candidateReplacements == nil) {
-    return @[];
-  }
-  return _candidateReplacements;
-}
-
 // Update the client's state match the contents of the buffer. This must be
 // called whenever the buffer changes.
 - (void)bufferChanged:(id)sender {
   NSMutableString* buffer = [self compositionBuffer];
 
-  _candidateReplacements = replacementsMap[buffer];
-  if (_candidateReplacements == nil) {
-    _candidateReplacements = @[];
-  }
-
-  if ([_candidateReplacements count] > 0) {
+  _candidateReplacement = replacementsMap[buffer];
+  if (_candidateReplacement != nil) {
     [candidatesWindow updateCandidates];
     [candidatesWindow show:kIMKLocateCandidatesBelowHint];
-    _currentSelection = _candidateReplacements[0];
   } else {
     [candidatesWindow hide];
-    _currentSelection = nil;
   }
 
   // Seems like using an NSAttributedString for setMarkedText is necessary to
@@ -89,7 +73,7 @@ void DLog(NSString* format, ...) {
 - (void)accept:(id)sender {
   NSMutableString* buffer = [self compositionBuffer];
   NSString* acceptedString =
-      _currentSelection != nil ? _currentSelection : buffer;
+      _candidateReplacement != nil ? _candidateReplacement : buffer;
   [sender insertText:acceptedString
       replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
   [buffer setString:@""];
@@ -157,22 +141,6 @@ void DLog(NSString* format, ...) {
     } else if (aSelector == @selector(cancelOperation:)) {
       [self deactivate:sender];
       return YES;
-    } else if ([candidatesWindow isVisible] && aSelector == @selector
-                                                   (moveLeft:)) {
-      [candidatesWindow moveLeft:sender];
-      return YES;
-    } else if ([candidatesWindow isVisible] && aSelector == @selector
-                                                   (moveRight:)) {
-      [candidatesWindow moveRight:sender];
-      return YES;
-    } else if ([candidatesWindow isVisible] && aSelector == @selector
-                                                   (moveUp:)) {
-      [candidatesWindow moveUp:sender];
-      return YES;
-    } else if ([candidatesWindow isVisible] && aSelector == @selector
-                                                   (moveDown:)) {
-      [candidatesWindow moveDown:sender];
-      return YES;
     }
   }
   [self deactivate:sender];
@@ -190,20 +158,11 @@ void DLog(NSString* format, ...) {
 // Called by the system to get a list of candidates to display.
 - (NSArray*)candidates:(id)sender {
   DLog(@"candidates:");
-  return [self candidateReplacements];
-}
-
-// Called by the system when the user selects a candidate.
-- (void)candidateSelectionChanged:(NSAttributedString*)candidateString {
-  DLog(@"candidateSelectionChanged:%@", candidateString);
-  _currentSelection = [candidateString string];
-}
-
-// Called by the system when the user accepts a candidate.
-- (void)candidateSelected:(NSAttributedString*)candidateString {
-  DLog(@"candidateSelected:%@", candidateString);
-  _currentSelection = [candidateString string];
-  [self accept:[self client]];
+  if (_candidateReplacement != nil) {
+    return @[_candidateReplacement];
+  } else {
+    return @[];
+  }
 }
 
 @end

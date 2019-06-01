@@ -24,8 +24,7 @@ IMKServer* server = nil;
 // Window that displays candidate replacements.
 IMKCandidates* candidatesWindow = nil;
 
-// Map from escape sequences (an NSString*) to NSArray* of NSString*
-// replacements.
+// Map from NSString* escape sequences NSString* replacements.
 NSDictionary* replacementsMap = nil;
 
 // Load the replacements map. Returns nil on error.
@@ -92,15 +91,12 @@ NSDictionary* loadReplacementsMap(void) {
     NSString* escape = [NSString stringWithUTF8String:line];
     NSString* replacement = [NSString stringWithUTF8String:(space + 1)];
 
-    NSMutableArray* replacements = [[NSMutableArray alloc] init];
-    [replacements addObject:replacement];
-
     if (mutableReplacementsMap[escape] != nil) {
       NSLog(@"Error on line %d: escape sequence '%@' already defined",
             line_number, escape);
       return nil;
     }
-    [mutableReplacementsMap setObject:replacements forKey:escape];
+    [mutableReplacementsMap setObject:replacement forKey:escape];
   }
 
   return mutableReplacementsMap;
