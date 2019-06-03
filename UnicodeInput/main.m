@@ -21,8 +21,6 @@ const size_t MAX_LINE_LENGTH = 4096;
 // Server that accepts connections from client applications. It will create a
 // UnicodeInputController instance to handle each client connection.
 IMKServer* server = nil;
-// Window that displays candidate replacements.
-IMKCandidates* candidatesWindow = nil;
 
 // Map from NSString* escape sequences NSString* replacements.
 NSDictionary* replacementsMap = nil;
@@ -118,10 +116,6 @@ int main(int argc, const char* argv[]) {
   server =
       [[IMKServer alloc] initWithName:(NSString*)kConnectionName
                      bundleIdentifier:[[NSBundle mainBundle] bundleIdentifier]];
-  // Create the candidates window.
-  candidatesWindow =
-      [[IMKCandidates alloc] initWithServer:server
-                                  panelType:kIMKScrollingGridCandidatePanel];
   // Run the event loop.
   [[NSApplication sharedApplication] run];
   return 0;

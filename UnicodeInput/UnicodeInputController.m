@@ -8,18 +8,7 @@
 
 #import "UnicodeInputController.h"
 
-extern IMKCandidates* candidatesWindow;
 extern NSDictionary* replacementsMap;
-
-// Like NSLog, but only logs in debug mode.
-void DLog(NSString* format, ...) {
-#ifdef DEBUG
-  va_list args;
-  va_start(args, format);
-  NSLogv(format, args);
-  va_end(args);
-#endif
-}
 
 // See IMKInputController.h for documentation of the IMKServerInput protocol.
 @implementation UnicodeInputController {
@@ -27,8 +16,6 @@ void DLog(NSString* format, ...) {
   // composition session. We ensure that the client's marked text always
   // matches the contents.
   NSMutableString* _compositionBuffer;
-  // Array of NSStrings containing candidate replacements.
-  NSString* _candidateReplacement;
 }
 
 // Gets the current composition buffer, allocating if necessary.
@@ -49,14 +36,6 @@ void DLog(NSString* format, ...) {
 - (void)bufferChanged:(id)sender {
   NSMutableString* buffer = [self compositionBuffer];
 
-  _candidateReplacement = replacementsMap[buffer];
-  if (_candidateReplacement != nil) {
-    [candidatesWindow updateCandidates];
-    [candidatesWindow show:kIMKLocateCandidatesBelowHint];
-  } else {
-    [candidatesWindow hide];
-  }
-
   // Seems like using an NSAttributedString for setMarkedText is necessary to
   // get the cursor to appear at the end of the marked text instead of selecting
   // the whole range.
@@ -72,8 +51,9 @@ void DLog(NSString* format, ...) {
 // Accepts the currently-chosen replacement.
 - (void)accept:(id)sender {
   NSMutableString* buffer = [self compositionBuffer];
+  NSString* candidateReplacement = replacementsMap[buffer];
   NSString* acceptedString =
-      _candidateReplacement != nil ? _candidateReplacement : buffer;
+      candidateReplacement != nil ? candidateReplacement : buffer;
   [sender insertText:acceptedString
       replacementRange:NSMakeRange(NSNotFound, NSNotFound)];
   [buffer setString:@""];
@@ -102,7 +82,7 @@ void DLog(NSString* format, ...) {
 //   * space (if active): accept current selection, insert space
 //   * all other characters (if active): append to buffer
 - (BOOL)inputText:(NSString*)string client:(id)sender {
-  DLog(@"inputText:%@", string);
+  NSLog(@"inputText:%@", string);
   if ([string isEqualToString:@"\\"]) {
     NSMutableString* buffer = [self compositionBuffer];
     [self accept:sender];
@@ -127,7 +107,7 @@ void DLog(NSString* format, ...) {
 //   escape: deactivate (insert composition as-is)
 //   arrow keys (while candidates window is open): move candidate selection
 - (BOOL)didCommandBySelector:(SEL)aSelector client:(id)sender {
-  DLog(@"didCommandBySelector:%@", NSStringFromSelector(aSelector));
+  NSLog(@"didCommandBySelector:%@", NSStringFromSelector(aSelector));
   if ([self isActive]) {
     if (aSelector == @selector(insertNewline:) || aSelector == @selector
                                                       (insertTab:)) {
@@ -151,18 +131,8 @@ void DLog(NSString* format, ...) {
 // (e.g. the user selected a new input method, or clicked outside of the marked
 // text).
 - (void)commitComposition:(id)sender {
-  DLog(@"commitComposition:");
+  NSLog(@"commitComposition:");
   [self deactivate:sender];
-}
-
-// Called by the system to get a list of candidates to display.
-- (NSArray*)candidates:(id)sender {
-  DLog(@"candidates:");
-  if (_candidateReplacement != nil) {
-    return @[_candidateReplacement];
-  } else {
-    return @[];
-  }
 }
 
 @end
