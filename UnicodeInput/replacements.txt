@@ -17,6 +17,10 @@
 \ell ℓ
 \all ∀
 \ex ∃
+\top ⊤
+\bot ⊥
+\int ∫
+\inf ∞
 
 ### Subscripts and superscripts ###
 # Letters are omitted, because Unicode doesn't provide all of them.
