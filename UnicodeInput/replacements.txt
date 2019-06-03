@@ -4,6 +4,7 @@
 # Blank lines and lines starting with '#' are ignored.
 
 ### Symbols ###
+# These should be short and easily typeable (i.e. mostly letters, not symbols).
 
 \neg ¬
 \to →
@@ -11,9 +12,9 @@
 \x ×
 \o ∘
 \. ∙
-\<= ≤
-\>= ≥
-\~- ≃
+\le ≤
+\ge ≥
+\equiv ≃
 \ell ℓ
 \all ∀
 \ex ∃
