@@ -3,7 +3,7 @@
 # replacement, followed by a space.
 # Blank lines and lines starting with '#' are ignored.
 
-### Symbols ###
+### Mathematical symbols ###
 # These should be short and easily typeable (i.e. mostly letters, not symbols).
 
 \neg ¬
@@ -22,6 +22,11 @@
 \bot ⊥
 \int ∫
 \inf ∞
+\pm ±
+
+### Typographic symbols ###
+
+\S §
 
 ### Subscripts and superscripts ###
 # Letters are omitted, because Unicode doesn't provide all of them.
