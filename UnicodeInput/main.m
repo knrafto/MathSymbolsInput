@@ -12,6 +12,8 @@
 #import <Cocoa/Cocoa.h>
 #import <InputMethodKit/InputMethodKit.h>
 
+#import "UnicodeInput-Bridging-Header.h"
+
 // Unique connection name for this input method.
 const NSString* kConnectionName = @"UnicodeInputConnection";
 

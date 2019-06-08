@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A435DF8229D762A00403647 /* UnicodeInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A435DF6229D762A00403647 /* UnicodeInputController.m */; };
 		1A695F26229F8FDD008DEC0F /* replacements.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A695F25229F8FDD008DEC0F /* replacements.txt */; };
+		1ACC934222AC5CEB00D924A7 /* UnicodeInputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC934122AC5CEB00D924A7 /* UnicodeInputController.swift */; };
 		1AFF817E229D78AC0024EE3F /* nine.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 1AFF817D229D78AC0024EE3F /* nine.tiff */; };
 		F61A7AC31E8182C100EBF660 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F61A7AC21E8182C100EBF660 /* main.m */; };
 		F61A7AC81E8182C100EBF660 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F61A7AC71E8182C100EBF660 /* Assets.xcassets */; };
@@ -16,9 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A435DF6229D762A00403647 /* UnicodeInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = UnicodeInputController.m; sourceTree = "<group>"; tabWidth = 2; };
-		1A435DF7229D762A00403647 /* UnicodeInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnicodeInputController.h; sourceTree = "<group>"; };
 		1A695F25229F8FDD008DEC0F /* replacements.txt */ = {isa = PBXFileReference; indentWidth = 8; lastKnownFileType = text; path = replacements.txt; sourceTree = "<group>"; tabWidth = 8; usesTabs = 1; };
+		1ACC934122AC5CEB00D924A7 /* UnicodeInputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicodeInputController.swift; sourceTree = "<group>"; };
+		1ACC934522AC62BD00D924A7 /* UnicodeInput-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnicodeInput-Bridging-Header.h"; sourceTree = "<group>"; };
 		1AFF817D229D78AC0024EE3F /* nine.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = nine.tiff; sourceTree = "<group>"; };
 		F61A7ABB1E8182C100EBF660 /* UnicodeInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnicodeInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F61A7AC21E8182C100EBF660 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -61,11 +61,11 @@
 			children = (
 				1AFF817D229D78AC0024EE3F /* nine.tiff */,
 				F61A7AC21E8182C100EBF660 /* main.m */,
-				1A435DF7229D762A00403647 /* UnicodeInputController.h */,
-				1A435DF6229D762A00403647 /* UnicodeInputController.m */,
 				F61A7AC71E8182C100EBF660 /* Assets.xcassets */,
 				F61A7ACC1E8182C100EBF660 /* Info.plist */,
 				1A695F25229F8FDD008DEC0F /* replacements.txt */,
+				1ACC934122AC5CEB00D924A7 /* UnicodeInputController.swift */,
+				1ACC934522AC62BD00D924A7 /* UnicodeInput-Bridging-Header.h */,
 			);
 			path = UnicodeInput;
 			sourceTree = "<group>";
@@ -109,6 +109,7 @@
 				TargetAttributes = {
 					F61A7ABA1E8182C100EBF660 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -150,7 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F61A7AC31E8182C100EBF660 /* main.m in Sources */,
-				1A435DF8229D762A00403647 /* UnicodeInputController.m in Sources */,
+				1ACC934222AC5CEB00D924A7 /* UnicodeInputController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +265,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "/Library/Input Methods";
 				INFOPLIST_FILE = "$(SRCROOT)/UnicodeInput/Info.plist";
@@ -274,6 +276,9 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.knrafto.inputmethod.UnicodeInput;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UnicodeInput/UnicodeInput-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -281,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/UnicodeInput/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -290,6 +296,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.knrafto.inputmethod.UnicodeInput;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UnicodeInput/UnicodeInput-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
