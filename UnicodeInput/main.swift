@@ -13,7 +13,7 @@ import InputMethodKit
 let kConnectionName = "UnicodeInputConnection";
 
 // Load the replacements.
-Replacements.loadReplacementsMap()
+loadReplacementsMap()
 
 // Server that accepts connections from client applications. It will create a
 // UnicodeInputController instance to handle each client connection.
