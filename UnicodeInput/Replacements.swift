@@ -40,7 +40,7 @@ func loadReplacementsMap() {
     let components = line.components(separatedBy: " ")
     if components.count != 2 {
       NSLog("Syntax error on line %d: expected exactly two words separated by whitespace",
-             lineNumber);
+            lineNumber);
       return
     }
     let escape = components[0]
@@ -48,13 +48,13 @@ func loadReplacementsMap() {
 
     if !escape.starts(with: "\\") {
       NSLog("Syntax error on line %d: escape sequence must start with a backslash",
-         lineNumber);
+            lineNumber);
       return
     }
 
     if replacementsMap[escape] != nil {
       NSLog("Error on line %d: escape sequence '%@' already defined",
-             lineNumber, escape);
+            lineNumber, escape);
       return
     }
 

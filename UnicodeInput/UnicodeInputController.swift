@@ -89,7 +89,7 @@ class UnicodeInputController : IMKInputController {
     NSLog("didCommandBySelector(%@)", String(describing: aSelector!))
     if isActive() {
       if aSelector == #selector(NSStandardKeyBindingResponding.insertNewline(_:)) ||
-         aSelector == #selector(NSStandardKeyBindingResponding.insertTab(_:)) {
+        aSelector == #selector(NSStandardKeyBindingResponding.insertTab(_:)) {
         accept()
         return true
       } else if aSelector == #selector(NSStandardKeyBindingResponding.deleteBackward(_:)) {
