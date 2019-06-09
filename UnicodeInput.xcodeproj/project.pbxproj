@@ -12,7 +12,6 @@
 		1ACC934222AC5CEB00D924A7 /* UnicodeInputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC934122AC5CEB00D924A7 /* UnicodeInputController.swift */; };
 		1ADC700522ACAF2600E556A4 /* Replacements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADC700422ACAF2600E556A4 /* Replacements.swift */; };
 		1AFF817E229D78AC0024EE3F /* nine.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 1AFF817D229D78AC0024EE3F /* nine.tiff */; };
-		F61A7AC81E8182C100EBF660 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F61A7AC71E8182C100EBF660 /* Assets.xcassets */; };
 		F61A7AD61E818BF300EBF660 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61A7AD51E818BF300EBF660 /* InputMethodKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +22,6 @@
 		1ADC700422ACAF2600E556A4 /* Replacements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Replacements.swift; sourceTree = "<group>"; };
 		1AFF817D229D78AC0024EE3F /* nine.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = nine.tiff; sourceTree = "<group>"; };
 		F61A7ABB1E8182C100EBF660 /* UnicodeInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnicodeInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F61A7AC71E8182C100EBF660 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F61A7ACC1E8182C100EBF660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F61A7AD51E818BF300EBF660 /* InputMethodKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputMethodKit.framework; path = System/Library/Frameworks/InputMethodKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -61,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				1AFF817D229D78AC0024EE3F /* nine.tiff */,
-				F61A7AC71E8182C100EBF660 /* Assets.xcassets */,
 				F61A7ACC1E8182C100EBF660 /* Info.plist */,
 				1A695F25229F8FDD008DEC0F /* replacements.txt */,
 				1ACC934122AC5CEB00D924A7 /* UnicodeInputController.swift */,
@@ -139,7 +136,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A695F26229F8FDD008DEC0F /* replacements.txt in Resources */,
-				F61A7AC81E8182C100EBF660 /* Assets.xcassets in Resources */,
 				1AFF817E229D78AC0024EE3F /* nine.tiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +262,6 @@
 		F61A7AD01E8182C100EBF660 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "/Library/Input Methods";
@@ -287,7 +282,6 @@
 		F61A7AD11E8182C100EBF660 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/UnicodeInput/Info.plist";
