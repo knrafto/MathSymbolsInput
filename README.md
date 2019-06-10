@@ -18,6 +18,12 @@ to the Unicode input method.
 Changes to cached metadata (e.g. input method icon) require you to log out and
 log back in.
 
+## Keyboard layouts
+
+By default, macOS uses the last keyboard layout when an input method is active.
+So, to use your desired keyboard layout, activate the keyboard layout first and
+then the UnicodeInput input method.
+
 ## References
 
 ### Sample projects

@@ -21,4 +21,3 @@ let server = IMKServer.init(name: kConnectionName, bundleIdentifier: Bundle.main
 
 // Run the app.
 NSApplication.shared.run()
-
