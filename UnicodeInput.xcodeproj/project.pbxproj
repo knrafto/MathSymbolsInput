@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A695F26229F8FDD008DEC0F /* replacements.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A695F25229F8FDD008DEC0F /* replacements.txt */; };
 		1AB0D0F622AD6AE400D71347 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0D0F522AD6AE400D71347 /* main.swift */; };
-		1AC3FFC322AE0BDA00AC8036 /* icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AC3FFC222AE0BDA00AC8036 /* icon.pdf */; };
+		1AC14D8B22AE875100549402 /* icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14D8A22AE875100549402 /* icon.pdf */; };
 		1ACC934222AC5CEB00D924A7 /* UnicodeInputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC934122AC5CEB00D924A7 /* UnicodeInputController.swift */; };
 		1ADC700522ACAF2600E556A4 /* Replacements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADC700422ACAF2600E556A4 /* Replacements.swift */; };
 		F61A7AD61E818BF300EBF660 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61A7AD51E818BF300EBF660 /* InputMethodKit.framework */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		1A695F25229F8FDD008DEC0F /* replacements.txt */ = {isa = PBXFileReference; indentWidth = 8; lastKnownFileType = text; path = replacements.txt; sourceTree = "<group>"; tabWidth = 8; usesTabs = 1; };
 		1AB0D0F522AD6AE400D71347 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		1AC3FFC222AE0BDA00AC8036 /* icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = icon.pdf; path = ../../../Downloads/icon.pdf; sourceTree = "<group>"; };
+		1AC14D8A22AE875100549402 /* icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon.pdf; sourceTree = "<group>"; };
 		1ACC934122AC5CEB00D924A7 /* UnicodeInputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicodeInputController.swift; sourceTree = "<group>"; };
 		1ADC700422ACAF2600E556A4 /* Replacements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Replacements.swift; sourceTree = "<group>"; };
 		F61A7ABB1E8182C100EBF660 /* UnicodeInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnicodeInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,7 +58,7 @@
 		F61A7ABD1E8182C100EBF660 /* UnicodeInput */ = {
 			isa = PBXGroup;
 			children = (
-				1AC3FFC222AE0BDA00AC8036 /* icon.pdf */,
+				1AC14D8A22AE875100549402 /* icon.pdf */,
 				F61A7ACC1E8182C100EBF660 /* Info.plist */,
 				1A695F25229F8FDD008DEC0F /* replacements.txt */,
 				1ACC934122AC5CEB00D924A7 /* UnicodeInputController.swift */,
@@ -136,7 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A695F26229F8FDD008DEC0F /* replacements.txt in Resources */,
-				1AC3FFC322AE0BDA00AC8036 /* icon.pdf in Resources */,
+				1AC14D8B22AE875100549402 /* icon.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
