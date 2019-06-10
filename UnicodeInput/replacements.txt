@@ -4,25 +4,30 @@
 # Blank lines and lines starting with '#' are ignored.
 
 ### Mathematical symbols ###
-# These should be short and easily typeable (i.e. mostly letters, not symbols).
 
+# LaTeX commands
 \neg ¬
 \to →
 \mapsto ↦
-\x ×
-\o ∘
-\. ∙
-\le ≤
-\ge ≥
-\equiv ≃
+\leq ≤
+\geq ≥
+\simeq ≃
+\times ×
+\circ ∘
+\bullet ∙
 \ell ℓ
-\all ∀
-\ex ∃
 \top ⊤
 \bot ⊥
 \int ∫
-\inf ∞
+\infty ∞
 \pm ±
+\forall ∀
+\exists ∃
+
+# Shorthands. These should be short and easily typeable (i.e. mostly letters, not symbols).
+\x ×
+\o ∘
+\. ∙
 
 ### Typographic symbols ###
 
