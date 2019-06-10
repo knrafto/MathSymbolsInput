@@ -2,20 +2,21 @@
 
 ## Development
 
-By default, the project is configured to build into `/Library/Input Methods/`.
-First change permissions on this directory:
+Then build the Xcode project, and copy the result to "~/Library/Input Methods":
 
 ```
-sudo chmod 777 "/Library/Input Methods"
+cp -r build/Debug/UnicodeInput.app "~/Library/Input Methods"
 ```
 
-Then build the Xcode project, log out and log back in, and add the input method
-in `System Preferences > Keyboard > Input Sources`.
+Then log out and log back in, and add the input method in
+`System Preferences > Keyboard > Input Sources`.
 
-After making code changes, switch to different input method, kill the running
-input method `killall UnicodeInput`, wait a little bit, and switch back to the
-Unicode input method. Changes to cached metadata (e.g. input method icon)
-require you to log out and log back in.
+After making code changes, switch to different input method, wait for a little
+bit, kill the running input method with `killall UnicodeInput`, and switch back
+to the Unicode input method.
+
+Changes to cached metadata (e.g. input method icon) require you to log out and
+log back in.
 
 ## References
 
