@@ -2,5 +2,5 @@
 
 set -euxo pipefail
 
-cp -r build/Debug/UnicodeInput.app "$HOME/Library/Input Methods"
-killall UnicodeInput
+cp -r build/Debug/UnicodeIM.app "$HOME/Library/Input Methods"
+killall UnicodeIM

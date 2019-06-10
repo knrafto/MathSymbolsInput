@@ -2,18 +2,13 @@
 
 ## Development
 
-Build the Xcode project, and copy the result to "~/Library/Input Methods":
-
-```
-cp -r build/Debug/UnicodeInput.app "~/Library/Input Methods"
-```
+Build the Xcode project, and run `./install.sh` to copy the result to "~/Library/Input Methods".
 
 Then log out and log back in, and add the input method in
 `System Preferences > Keyboard > Input Sources`.
 
 After making code changes, switch to different input method, wait for a little
-bit, kill the running input method with `killall UnicodeInput`, and switch back
-to the Unicode input method.
+bit, run `./install.sh`, and switch back to the Unicode input method.
 
 Changes to cached metadata (e.g. input method icon) require you to log out and
 log back in.
