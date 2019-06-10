@@ -10,7 +10,7 @@ import Cocoa
 import InputMethodKit
 
 // Unique connection name for this input method.
-let kConnectionName = "UnicodeInputConnection";
+let kConnectionName = "UnicodeInputMethod_1_Connection";
 
 // Load the replacements.
 loadReplacementsMap()
