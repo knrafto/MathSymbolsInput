@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A5DB37B22AE8DCA000F7F92 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1A5DB37A22AE8DCA000F7F92 /* README.md */; };
+		1A5DB37D22AE8E24000F7F92 /* install.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1A5DB37C22AE8E24000F7F92 /* install.sh */; };
 		1A695F26229F8FDD008DEC0F /* replacements.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A695F25229F8FDD008DEC0F /* replacements.txt */; };
 		1AB0D0F622AD6AE400D71347 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0D0F522AD6AE400D71347 /* main.swift */; };
 		1AC14D8B22AE875100549402 /* icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14D8A22AE875100549402 /* icon.pdf */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A5DB37A22AE8DCA000F7F92 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1A5DB37C22AE8E24000F7F92 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		1A695F25229F8FDD008DEC0F /* replacements.txt */ = {isa = PBXFileReference; indentWidth = 8; lastKnownFileType = text; path = replacements.txt; sourceTree = "<group>"; tabWidth = 8; usesTabs = 1; };
 		1AB0D0F522AD6AE400D71347 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1AC14D8A22AE875100549402 /* icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon.pdf; sourceTree = "<group>"; };
@@ -41,6 +45,8 @@
 		F61A7AB21E8182C100EBF660 = {
 			isa = PBXGroup;
 			children = (
+				1A5DB37C22AE8E24000F7F92 /* install.sh */,
+				1A5DB37A22AE8DCA000F7F92 /* README.md */,
 				F61A7ABD1E8182C100EBF660 /* UnicodeInput */,
 				F61A7ABC1E8182C100EBF660 /* Products */,
 				F61A7AD41E818BF300EBF660 /* Frameworks */,
@@ -135,7 +141,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A5DB37B22AE8DCA000F7F92 /* README.md in Resources */,
 				1A695F26229F8FDD008DEC0F /* replacements.txt in Resources */,
+				1A5DB37D22AE8E24000F7F92 /* install.sh in Resources */,
 				1AC14D8B22AE875100549402 /* icon.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
