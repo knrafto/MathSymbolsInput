@@ -2,7 +2,7 @@
 
 ## Development
 
-Then build the Xcode project, and copy the result to "~/Library/Input Methods":
+Build the Xcode project, and copy the result to "~/Library/Input Methods":
 
 ```
 cp -r build/Debug/UnicodeInput.app "~/Library/Input Methods"
