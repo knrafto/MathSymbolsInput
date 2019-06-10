@@ -62,7 +62,6 @@ class UnicodeInputController : IMKInputController {
   //   * space (if active): accept current selection, insert space
   //   * all other characters (if active): append to buffer
   override func inputText(_ string: String, client sender: Any!) -> Bool {
-    NSLog("inputText('%@')", string);
     if string == "\\" {
       accept()
       compositionBuffer += string
@@ -86,7 +85,6 @@ class UnicodeInputController : IMKInputController {
   //   escape: deactivate (insert composition as-is)
   //   arrow keys (while candidates window is open): move candidate selection
   override func didCommand(by aSelector: Selector!, client sender: Any!) -> Bool {
-    NSLog("didCommandBySelector(%@)", String(describing: aSelector!))
     if isActive() {
       if aSelector == #selector(NSStandardKeyBindingResponding.insertNewline(_:)) ||
         aSelector == #selector(NSStandardKeyBindingResponding.insertTab(_:)) {
@@ -109,7 +107,6 @@ class UnicodeInputController : IMKInputController {
   // (e.g. the user selected a new input method, or clicked outside of the marked
   // text).
   override func commitComposition(_ sender: Any!) {
-    NSLog("commitComposition()")
     deactivate()
   }
 }
