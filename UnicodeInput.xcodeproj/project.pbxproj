@@ -9,18 +9,18 @@
 /* Begin PBXBuildFile section */
 		1A695F26229F8FDD008DEC0F /* replacements.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A695F25229F8FDD008DEC0F /* replacements.txt */; };
 		1AB0D0F622AD6AE400D71347 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0D0F522AD6AE400D71347 /* main.swift */; };
+		1AC3FFC322AE0BDA00AC8036 /* icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AC3FFC222AE0BDA00AC8036 /* icon.pdf */; };
 		1ACC934222AC5CEB00D924A7 /* UnicodeInputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC934122AC5CEB00D924A7 /* UnicodeInputController.swift */; };
 		1ADC700522ACAF2600E556A4 /* Replacements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADC700422ACAF2600E556A4 /* Replacements.swift */; };
-		1AFF817E229D78AC0024EE3F /* nine.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 1AFF817D229D78AC0024EE3F /* nine.tiff */; };
 		F61A7AD61E818BF300EBF660 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61A7AD51E818BF300EBF660 /* InputMethodKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A695F25229F8FDD008DEC0F /* replacements.txt */ = {isa = PBXFileReference; indentWidth = 8; lastKnownFileType = text; path = replacements.txt; sourceTree = "<group>"; tabWidth = 8; usesTabs = 1; };
 		1AB0D0F522AD6AE400D71347 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1AC3FFC222AE0BDA00AC8036 /* icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = icon.pdf; path = ../../../Downloads/icon.pdf; sourceTree = "<group>"; };
 		1ACC934122AC5CEB00D924A7 /* UnicodeInputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicodeInputController.swift; sourceTree = "<group>"; };
 		1ADC700422ACAF2600E556A4 /* Replacements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Replacements.swift; sourceTree = "<group>"; };
-		1AFF817D229D78AC0024EE3F /* nine.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = nine.tiff; sourceTree = "<group>"; };
 		F61A7ABB1E8182C100EBF660 /* UnicodeInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnicodeInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F61A7ACC1E8182C100EBF660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F61A7AD51E818BF300EBF660 /* InputMethodKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputMethodKit.framework; path = System/Library/Frameworks/InputMethodKit.framework; sourceTree = SDKROOT; };
@@ -58,7 +58,7 @@
 		F61A7ABD1E8182C100EBF660 /* UnicodeInput */ = {
 			isa = PBXGroup;
 			children = (
-				1AFF817D229D78AC0024EE3F /* nine.tiff */,
+				1AC3FFC222AE0BDA00AC8036 /* icon.pdf */,
 				F61A7ACC1E8182C100EBF660 /* Info.plist */,
 				1A695F25229F8FDD008DEC0F /* replacements.txt */,
 				1ACC934122AC5CEB00D924A7 /* UnicodeInputController.swift */,
@@ -136,7 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A695F26229F8FDD008DEC0F /* replacements.txt in Resources */,
-				1AFF817E229D78AC0024EE3F /* nine.tiff in Resources */,
+				1AC3FFC322AE0BDA00AC8036 /* icon.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
