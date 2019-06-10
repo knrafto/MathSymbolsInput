@@ -42,5 +42,35 @@
 	</array>
 	<key>tsInputMethodIconFileKey</key>
 	<string>icon.pdf</string>
+	<key>ComponentInputModeDict</key>
+	<dict>
+		<key>tsInputModeListKey</key>
+		<dict>
+			<key>Unicode</key>
+			<dict>
+				<key>TISIconLabels</key>
+				<dict>
+					<key>CustomIcon</key>
+					<string>icon.pdf</string>
+				</dict>
+				<key>TISInputSourceID</key>
+				<string>Unicode</string>
+				<key>tsInputModeDefaultStateKey</key>
+				<true/>
+				<key>tsInputModeIsVisibleKey</key>
+				<true/>
+				<key>tsInputModeMenuIconFileKey</key>
+				<string>icon.pdf</string>
+				<key>tsInputModePrimaryInScriptKey</key>
+				<true/>
+				<key>tsInputModeScriptKey</key>
+				<string>smUnicodeScript</string>
+			</dict>
+		</dict>
+		<key>tsVisibleInputModeOrderedArrayKey</key>
+		<array>
+			<string>Unicode</string>
+		</array>
+	</dict>
 </dict>
 </plist>
