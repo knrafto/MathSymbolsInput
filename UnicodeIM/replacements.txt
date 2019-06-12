@@ -9,6 +9,8 @@
 \neg ¬
 \to →
 \mapsto ↦
+\ne ≠
+\approx ≈
 \leq ≤
 \geq ≥
 \simeq ≃
@@ -21,13 +23,24 @@
 \int ∫
 \infty ∞
 \pm ±
+\mp ∓
 \forall ∀
 \exists ∃
 
-# Shorthands. These should be short and easily typeable (i.e. mostly letters, not symbols).
+
+# Shorthands. These should be short and easily typeable.
+\-> →
+\|-> ↦
+\~~ ≈
+\<= ≤
+\>= ≥
+\~- ≃
 \x ×
 \o ∘
 \. ∙
+\inf ∞
+\all ∀
+\ex ∃
 
 ### Typographic symbols ###
 
