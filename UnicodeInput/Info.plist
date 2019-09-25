@@ -23,7 +23,7 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>InputMethodConnectionName</key>
-	<string>UnicodeInputMethod_1_Connection</string>
+	<string>UnicodeInput_1_Connection</string>
 	<key>InputMethodServerControllerClass</key>
 	<string>$(PRODUCT_MODULE_NAME).UnicodeInputController</string>
 	<key>InputMethodServerDelegateClass</key>
@@ -46,7 +46,7 @@
 	<dict>
 		<key>tsInputModeListKey</key>
 		<dict>
-			<key>Unicode</key>
+			<key>Unicode Input</key>
 			<dict>
 				<key>TISIconLabels</key>
 				<dict>
@@ -54,7 +54,7 @@
 					<string>icon.pdf</string>
 				</dict>
 				<key>TISInputSourceID</key>
-				<string>Unicode</string>
+				<string>Unicode Input</string>
 				<key>tsInputModeDefaultStateKey</key>
 				<true/>
 				<key>tsInputModeIsVisibleKey</key>
@@ -69,7 +69,7 @@
 		</dict>
 		<key>tsVisibleInputModeOrderedArrayKey</key>
 		<array>
-			<string>Unicode</string>
+			<string>Unicode Input</string>
 		</array>
 	</dict>
 </dict>
