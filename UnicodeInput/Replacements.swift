@@ -62,5 +62,5 @@ func loadReplacementsMap() {
   }
 
   globalReplacementsMap = replacementsMap
-  NSLog("Loadied %d replacements", globalReplacementsMap.count);
+  NSLog("Loaded %d replacements", globalReplacementsMap.count);
 }
