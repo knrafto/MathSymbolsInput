@@ -11,6 +11,7 @@
 \mapsto ↦
 \ne ≠
 \approx ≈
+\equiv ≡
 \leq ≤
 \geq ≥
 \simeq ≃
@@ -33,6 +34,7 @@
 \-> →
 \|-> ↦
 \~~ ≈
+\== ≡
 \le ≤
 \ge ≥
 \<= ≤
