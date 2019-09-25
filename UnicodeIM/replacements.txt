@@ -28,6 +28,7 @@
 \mp ∓
 \forall ∀
 \exists ∃
+\vdash ⊢
 
 
 # Shorthands. These should be short and easily typeable.
@@ -46,6 +47,7 @@
 \inf ∞
 \all ∀
 \ex ∃
+\|- ⊢
 
 ### Typographic symbols ###
 
