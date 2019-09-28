@@ -29,6 +29,7 @@
 \forall ∀
 \exists ∃
 \vdash ⊢
+\star ⋆
 
 
 # Shorthands. These should be short and easily typeable.
@@ -48,6 +49,7 @@
 \all ∀
 \ex ∃
 \|- ⊢
+\* ⋆
 
 ### Typographic symbols ###
 
