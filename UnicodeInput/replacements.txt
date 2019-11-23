@@ -30,7 +30,10 @@
 \exists ∃
 \vdash ⊢
 \star ⋆
-
+\uparrow ↑
+\downarrow ↓
+\langle ⟨
+\rangle ⟩
 
 # Shorthands. These should be short and easily typeable.
 \-> →
@@ -50,6 +53,8 @@
 \ex ∃
 \|- ⊢
 \* ⋆
+\< ⟨
+\> ⟩
 
 ### Typographic symbols ###
 
