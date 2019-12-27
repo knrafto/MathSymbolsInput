@@ -60,8 +60,72 @@
 
 \S §
 
-### Subscripts and superscripts ###
-# Letters are omitted, because Unicode doesn't provide all of them.
+### Superscripts and subscripts  ###
+# Not all letters are available in Unicode, so some characters may be missing.
+# The ones that are available are defined in many different ranges, so fonts
+# may display characters with different sizes or positions (or not at all).
+
+\^0 ⁰
+\^1 ¹
+\^2 ²
+\^3 ³
+\^4 ⁴
+\^5 ⁵
+\^6 ⁶
+\^7 ⁷
+\^8 ⁸
+\^9 ⁹
+\^+ ⁺
+\^- ⁻
+\^= ⁼
+\^( ⁽
+\^) ⁾
+
+\^A ᴬ
+\^B ᴮ
+\^D ᴰ
+\^E ᴱ
+\^G ᴳ
+\^H ᴴ
+\^I ᴵ
+\^J ᴶ
+\^K ᴷ
+\^L ᴸ
+\^M ᴹ
+\^N ᴺ
+\^O ᴼ
+\^P ᴾ
+\^R ᴿ
+\^T ᵀ
+\^U ᵁ
+\^V ⱽ
+\^W ᵂ
+
+\^a ᵃ
+\^b ᵇ
+\^c ᶜ
+\^d ᵈ
+\^e ᵉ
+\^f ᶠ
+\^g ᵍ
+\^h ʰ
+\^i ⁱ
+\^j ʲ
+\^k ᵏ
+\^l ˡ
+\^m ᵐ
+\^n ⁿ
+\^o ᵒ
+\^p ᵖ
+\^r ʳ
+\^s ˢ
+\^t ᵗ
+\^u ᵘ
+\^v ᵛ
+\^w ʷ
+\^x ˣ
+\^y ʸ
+\^z ᶻ
 
 \_0 ₀
 \_1 ₁
@@ -76,19 +140,26 @@
 \_+ ₊
 \_- ₋
 \_= ₌
-\^0 ⁰
-\^1 ¹
-\^2 ²
-\^3 ³
-\^4 ⁴
-\^5 ⁵
-\^6 ⁶
-\^7 ⁷
-\^8 ⁸
-\^9 ⁹
-\^+ ⁺
-\^- ⁻
-\^= ⁼
+\_( ₍
+\_) ₎
+
+\_a ₐ
+\_e ₑ
+\_h ₕ
+\_i ᵢ
+\_j ⱼ
+\_k ₖ
+\_l ₗ
+\_m ₘ
+\_n ₙ
+\_o ₒ
+\_p ₚ
+\_r ᵣ
+\_s ₛ
+\_t ₜ
+\_u ᵤ
+\_v ᵥ
+\_x ₓ
 
 ### Greek letters ###
 # Letters that look like a Latin character are omitted.
