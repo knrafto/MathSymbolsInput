@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A4AABEE23B7C85000F4DEAB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4AABED23B7C85000F4DEAB /* main.swift */; };
 		1A5DB37B22AE8DCA000F7F92 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1A5DB37A22AE8DCA000F7F92 /* README.md */; };
-		1A5DB37D22AE8E24000F7F92 /* install.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1A5DB37C22AE8E24000F7F92 /* install.sh */; };
 		1A695F26229F8FDD008DEC0F /* replacements.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A695F25229F8FDD008DEC0F /* replacements.txt */; };
 		1AB0D0F622AD6AE400D71347 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0D0F522AD6AE400D71347 /* main.swift */; };
 		1AC14D8B22AE875100549402 /* icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14D8A22AE875100549402 /* icon.pdf */; };
@@ -18,7 +18,22 @@
 		F61A7AD61E818BF300EBF660 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61A7AD51E818BF300EBF660 /* InputMethodKit.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1A4AABE923B7C84F00F4DEAB /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = foo;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1A4AABEB23B7C84F00F4DEAB /* UnicodeInputInstaller */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnicodeInputInstaller; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A4AABED23B7C85000F4DEAB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1A5DB37A22AE8DCA000F7F92 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1A5DB37C22AE8E24000F7F92 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		1A695F25229F8FDD008DEC0F /* replacements.txt */ = {isa = PBXFileReference; indentWidth = 8; lastKnownFileType = text; path = replacements.txt; sourceTree = "<group>"; tabWidth = 8; usesTabs = 1; };
@@ -33,6 +48,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1A4AABE823B7C84F00F4DEAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F61A7AB81E8182C100EBF660 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -44,12 +66,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A4AABEC23B7C85000F4DEAB /* UnicodeInputInstaller */ = {
+			isa = PBXGroup;
+			children = (
+				1A4AABED23B7C85000F4DEAB /* main.swift */,
+			);
+			path = UnicodeInputInstaller;
+			sourceTree = "<group>";
+		};
 		F61A7AB21E8182C100EBF660 = {
 			isa = PBXGroup;
 			children = (
 				1A5DB37C22AE8E24000F7F92 /* install.sh */,
 				1A5DB37A22AE8DCA000F7F92 /* README.md */,
 				F61A7ABD1E8182C100EBF660 /* UnicodeInput */,
+				1A4AABEC23B7C85000F4DEAB /* UnicodeInputInstaller */,
 				F61A7ABC1E8182C100EBF660 /* Products */,
 				F61A7AD41E818BF300EBF660 /* Frameworks */,
 			);
@@ -59,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				F61A7ABB1E8182C100EBF660 /* UnicodeInput.app */,
+				1A4AABEB23B7C84F00F4DEAB /* UnicodeInputInstaller */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,6 +120,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1A4AABEA23B7C84F00F4DEAB /* UnicodeInputInstaller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A4AABEF23B7C85000F4DEAB /* Build configuration list for PBXNativeTarget "UnicodeInputInstaller" */;
+			buildPhases = (
+				1A4AABE723B7C84F00F4DEAB /* Sources */,
+				1A4AABE823B7C84F00F4DEAB /* Frameworks */,
+				1A4AABE923B7C84F00F4DEAB /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnicodeInputInstaller;
+			productName = UnicodeInputInstaller;
+			productReference = 1A4AABEB23B7C84F00F4DEAB /* UnicodeInputInstaller */;
+			productType = "com.apple.product-type.tool";
+		};
 		F61A7ABA1E8182C100EBF660 /* UnicodeInput */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F61A7ACF1E8182C100EBF660 /* Build configuration list for PBXNativeTarget "UnicodeInput" */;
@@ -111,9 +160,14 @@
 		F61A7AB31E8182C100EBF660 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Kyle Raftogianis";
 				TargetAttributes = {
+					1A4AABEA23B7C84F00F4DEAB = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
+					};
 					F61A7ABA1E8182C100EBF660 = {
 						CreatedOnToolsVersion = 8.2.1;
 						LastSwiftMigration = 1030;
@@ -135,6 +189,7 @@
 			projectRoot = "";
 			targets = (
 				F61A7ABA1E8182C100EBF660 /* UnicodeInput */,
+				1A4AABEA23B7C84F00F4DEAB /* UnicodeInputInstaller */,
 			);
 		};
 /* End PBXProject section */
@@ -146,7 +201,6 @@
 			files = (
 				1A5DB37B22AE8DCA000F7F92 /* README.md in Resources */,
 				1A695F26229F8FDD008DEC0F /* replacements.txt in Resources */,
-				1A5DB37D22AE8E24000F7F92 /* install.sh in Resources */,
 				1AC14D8B22AE875100549402 /* icon.pdf in Resources */,
 				1AC76A9D23B6D9D0009BD2D7 /* InfoPlist.strings in Resources */,
 			);
@@ -155,6 +209,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1A4AABE723B7C84F00F4DEAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A4AABEE23B7C85000F4DEAB /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F61A7AB71E8182C100EBF660 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -179,6 +241,58 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1A4AABF023B7C85000F4DEAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1A4AABF123B7C85000F4DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		F61A7ACD1E8182C100EBF660 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -324,6 +438,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1A4AABEF23B7C85000F4DEAB /* Build configuration list for PBXNativeTarget "UnicodeInputInstaller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A4AABF023B7C85000F4DEAB /* Debug */,
+				1A4AABF123B7C85000F4DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F61A7AB61E8182C100EBF660 /* Build configuration list for PBXProject "UnicodeInput" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
