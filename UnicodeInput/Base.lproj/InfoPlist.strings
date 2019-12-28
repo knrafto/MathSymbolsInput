@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  UnicodeInput
+
+  Created by Kyle Raftogianis on 12/27/19.
+  Copyright © 2019 Kyle Raftogianis. All rights reserved.
+*/
+CFBundleName = "Unicode Input";
+NSHumanReadableCopyright = "Copyright © 2019 Kyle Raftogianis. All rights reserved.";

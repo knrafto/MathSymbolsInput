@@ -12,6 +12,7 @@
 		1A695F26229F8FDD008DEC0F /* replacements.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A695F25229F8FDD008DEC0F /* replacements.txt */; };
 		1AB0D0F622AD6AE400D71347 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0D0F522AD6AE400D71347 /* main.swift */; };
 		1AC14D8B22AE875100549402 /* icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14D8A22AE875100549402 /* icon.pdf */; };
+		1AC76A9D23B6D9D0009BD2D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AC76A9B23B6D9D0009BD2D7 /* InfoPlist.strings */; };
 		1ACC934222AC5CEB00D924A7 /* UnicodeInputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC934122AC5CEB00D924A7 /* UnicodeInputController.swift */; };
 		1ADC700522ACAF2600E556A4 /* Replacements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADC700422ACAF2600E556A4 /* Replacements.swift */; };
 		F61A7AD61E818BF300EBF660 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61A7AD51E818BF300EBF660 /* InputMethodKit.framework */; };
@@ -23,6 +24,7 @@
 		1A695F25229F8FDD008DEC0F /* replacements.txt */ = {isa = PBXFileReference; indentWidth = 8; lastKnownFileType = text; path = replacements.txt; sourceTree = "<group>"; tabWidth = 8; usesTabs = 1; };
 		1AB0D0F522AD6AE400D71347 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1AC14D8A22AE875100549402 /* icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon.pdf; sourceTree = "<group>"; };
+		1AC76A9C23B6D9D0009BD2D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1ACC934122AC5CEB00D924A7 /* UnicodeInputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicodeInputController.swift; sourceTree = "<group>"; };
 		1ADC700422ACAF2600E556A4 /* Replacements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Replacements.swift; sourceTree = "<group>"; };
 		F61A7ABB1E8182C100EBF660 /* UnicodeInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnicodeInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +72,7 @@
 				1ACC934122AC5CEB00D924A7 /* UnicodeInputController.swift */,
 				1ADC700422ACAF2600E556A4 /* Replacements.swift */,
 				1AB0D0F522AD6AE400D71347 /* main.swift */,
+				1AC76A9B23B6D9D0009BD2D7 /* InfoPlist.strings */,
 			);
 			path = UnicodeInput;
 			sourceTree = "<group>";
@@ -123,8 +126,8 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				Base,
 				en,
+				Base,
 			);
 			mainGroup = F61A7AB21E8182C100EBF660;
 			productRefGroup = F61A7ABC1E8182C100EBF660 /* Products */;
@@ -145,6 +148,7 @@
 				1A695F26229F8FDD008DEC0F /* replacements.txt in Resources */,
 				1A5DB37D22AE8E24000F7F92 /* install.sh in Resources */,
 				1AC14D8B22AE875100549402 /* icon.pdf in Resources */,
+				1AC76A9D23B6D9D0009BD2D7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +166,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1AC76A9B23B6D9D0009BD2D7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AC76A9C23B6D9D0009BD2D7 /* Base */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F61A7ACD1E8182C100EBF660 /* Debug */ = {
