@@ -109,4 +109,9 @@ class UnicodeInputController : IMKInputController {
   override func commitComposition(_ sender: Any!) {
     deactivate()
   }
+
+  // Returns the menu that appears in the menu bar.
+  override func menu() -> NSMenu {
+    return mainMenu
+  }
 }
