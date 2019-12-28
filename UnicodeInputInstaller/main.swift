@@ -37,8 +37,6 @@ if inputSources.isEmpty {
 }
 let inputSource = inputSources[0]!
 
-print("Disabling input source", inputSourceId)
-checkStatus(TISDisableInputSource(inputSource))
 print("Enabling input source", inputSourceId)
 checkStatus(TISEnableInputSource(inputSource))
 print("Selecting input source", inputSourceId)
