@@ -2,12 +2,11 @@
 
 ## Development
 
-Build the Xcode project, and run `./install.sh`, copy the result to "~/Library/Input Methods",
-and add the "Unicode Input" input method in `System Preferences > Keyboard > Input Sources`.
-You may have to log out and log back in for the input method to show up.
+To update the input method with your local debug build
 
-After making code changes, switch to different input method, wait for a little
-bit, run `./install.sh`, and switch back to the Unicode input method.
+1. Remove the "Unicode Input" input method in `System Preferences > Keyboard > Input Sources`.
+1. Run `./install.sh` to copy the debug build to `~/Library/Input Methods` and kill the previous version.
+1. Add the "Unicode Input" input method again in `System Preferences > Keyboard > Input Sources`.
 
 ## Keyboard layouts
 
