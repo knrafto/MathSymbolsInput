@@ -36,41 +36,9 @@
 	<string>Copyright © 2019 Kyle Raftogianis. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
-	<key>tsInputMethodCharacterRepertoireKey</key>
-	<array>
-		<string>Latn</string>
-	</array>
+	<key>TISInputSourceID</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>tsInputMethodIconFileKey</key>
 	<string>icon.pdf</string>
-	<key>ComponentInputModeDict</key>
-	<dict>
-		<key>tsInputModeListKey</key>
-		<dict>
-			<key>Unicode Input</key>
-			<dict>
-				<key>TISIconLabels</key>
-				<dict>
-					<key>CustomIcon</key>
-					<string>icon.pdf</string>
-				</dict>
-				<key>TISInputSourceID</key>
-				<string>Unicode Input</string>
-				<key>tsInputModeDefaultStateKey</key>
-				<true/>
-				<key>tsInputModeIsVisibleKey</key>
-				<true/>
-				<key>tsInputModeMenuIconFileKey</key>
-				<string>icon.pdf</string>
-				<key>tsInputModePrimaryInScriptKey</key>
-				<true/>
-				<key>tsInputModeScriptKey</key>
-				<string>smUnicodeScript</string>
-			</dict>
-		</dict>
-		<key>tsVisibleInputModeOrderedArrayKey</key>
-		<array>
-			<string>Unicode Input</string>
-		</array>
-	</dict>
 </dict>
 </plist>
