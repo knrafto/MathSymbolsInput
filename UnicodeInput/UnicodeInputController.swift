@@ -83,7 +83,6 @@ class UnicodeInputController : IMKInputController {
   //   tab: accept
   //   backspace: remove last character
   //   escape: deactivate (insert composition as-is)
-  //   arrow keys (while candidates window is open): move candidate selection
   override func didCommand(by aSelector: Selector!, client sender: Any!) -> Bool {
     if isActive() {
       if aSelector == #selector(NSStandardKeyBindingResponding.insertNewline(_:)) ||
