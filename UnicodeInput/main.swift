@@ -15,9 +15,9 @@ let kConnectionName = "UnicodeInput_1_Connection";
 // Load the replacements.
 loadReplacementsMap()
 
-// Create the main menu.
-let mainMenu = NSMenu.init(title: "Unicode Input Menu")
-mainMenu.addItem(withTitle: "Edit Custom Commands…", action: nil, keyEquivalent: "")
+// Set up the menu in the menu bar.
+let mainMenu = NSMenu()
+mainMenu.addItem(withTitle: "Edit Custom Commands…", action: #selector(UnicodeInputController.editCustomCommands(_:)), keyEquivalent: "")
 
 // Server that accepts connections from client applications. It will create a
 // UnicodeInputController instance to handle each client connection.
