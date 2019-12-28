@@ -2,12 +2,7 @@
 
 ## Development
 
-To update the input method with your local debug build
-
-1. Remove the "Unicode Input" input method in `System Preferences > Keyboard > Input Sources`.
-1. Run `./install.sh` to copy the debug build to `~/Library/Input Methods` and kill the previous version.
-1. Add the "Unicode Input" input method again in `System Preferences > Keyboard > Input Sources`.
-
+To update the input method with your local debug build, switch to a different input method and run `./install.sh`.
 ## Keyboard layouts
 
 By default, macOS uses the last keyboard layout when an input method is active.

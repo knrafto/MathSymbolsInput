@@ -19,6 +19,9 @@ loadReplacementsMap()
 let mainMenu = NSMenu()
 mainMenu.addItem(withTitle: "Edit Custom Commands…", action: #selector(UnicodeInputController.editCustomCommands(_:)), keyEquivalent: "")
 
+// Load UI.
+let customCommandsController = NSStoryboard(name: "CustomCommands", bundle: nil).instantiateInitialController() as! NSWindowController
+
 // Server that accepts connections from client applications. It will create a
 // UnicodeInputController instance to handle each client connection.
 let server = IMKServer.init(name: kConnectionName, bundleIdentifier: Bundle.main.bundleIdentifier!)

@@ -116,6 +116,7 @@ class UnicodeInputController : IMKInputController {
 
   // Called when the custom commands menu item is selected.
   @objc func editCustomCommands(_ sender: Any) {
-    NSLog("editCustomCommands")
+    customCommandsController.showWindow(nil)
+    customCommandsController.window?.level = .floating
   }
 }

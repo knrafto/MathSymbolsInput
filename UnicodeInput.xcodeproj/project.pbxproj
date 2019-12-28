@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A4AABEE23B7C85000F4DEAB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4AABED23B7C85000F4DEAB /* main.swift */; };
+		1A4BC5F123B80F550053F236 /* CustomCommands.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4BC5F023B80F550053F236 /* CustomCommands.storyboard */; };
 		1A695F26229F8FDD008DEC0F /* replacements.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A695F25229F8FDD008DEC0F /* replacements.txt */; };
 		1AB0D0F622AD6AE400D71347 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0D0F522AD6AE400D71347 /* main.swift */; };
 		1AC14D8B22AE875100549402 /* icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14D8A22AE875100549402 /* icon.pdf */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		1A4AABEB23B7C84F00F4DEAB /* UnicodeInputInstaller */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnicodeInputInstaller; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4AABED23B7C85000F4DEAB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1A4BC5F023B80F550053F236 /* CustomCommands.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomCommands.storyboard; sourceTree = "<group>"; };
 		1A5DB37A22AE8DCA000F7F92 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1A5DB37C22AE8E24000F7F92 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		1A695F25229F8FDD008DEC0F /* replacements.txt */ = {isa = PBXFileReference; indentWidth = 8; lastKnownFileType = text; path = replacements.txt; sourceTree = "<group>"; tabWidth = 8; usesTabs = 1; };
@@ -104,6 +106,7 @@
 				1ADC700422ACAF2600E556A4 /* Replacements.swift */,
 				1AB0D0F522AD6AE400D71347 /* main.swift */,
 				1AC76A9B23B6D9D0009BD2D7 /* InfoPlist.strings */,
+				1A4BC5F023B80F550053F236 /* CustomCommands.storyboard */,
 			);
 			path = UnicodeInput;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A695F26229F8FDD008DEC0F /* replacements.txt in Resources */,
+				1A4BC5F123B80F550053F236 /* CustomCommands.storyboard in Resources */,
 				1AC14D8B22AE875100549402 /* icon.pdf in Resources */,
 				1AC76A9D23B6D9D0009BD2D7 /* InfoPlist.strings in Resources */,
 			);
