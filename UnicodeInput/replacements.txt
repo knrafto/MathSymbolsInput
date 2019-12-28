@@ -59,6 +59,7 @@
 ### Typographic symbols ###
 
 \S §
+\... …
 
 ### Superscripts and subscripts  ###
 # Not all letters are available in Unicode, so some characters may be missing.
