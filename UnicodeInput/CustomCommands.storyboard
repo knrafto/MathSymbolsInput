@@ -32,24 +32,24 @@
             <objects>
                 <viewController id="rdL-VQ-f2q" sceneMemberID="viewController">
                     <view key="view" id="5gE-QL-EiH">
-                        <rect key="frame" x="0.0" y="0.0" width="353" height="230"/>
+                        <rect key="frame" x="0.0" y="0.0" width="520" height="380"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNv-Hp-SNj">
-                                <rect key="frame" x="20" y="49" width="313" height="161"/>
+                                <rect key="frame" x="20" y="49" width="480" height="269"/>
                                 <clipView key="contentView" id="hDO-Uz-hzf">
-                                    <rect key="frame" x="1" y="0.0" width="311" height="160"/>
+                                    <rect key="frame" x="1" y="0.0" width="478" height="268"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" alternatingRowBackgroundColors="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="T8K-SJ-nsg" viewBased="YES" id="65b-Ce-xZC">
-                                            <rect key="frame" x="0.0" y="0.0" width="311" height="135"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="478" height="243"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <tableViewGridLines key="gridStyleMask" vertical="YES"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn width="152.5" minWidth="40" maxWidth="1000" id="EmW-db-Rnf">
+                                                <tableColumn width="236" minWidth="40" maxWidth="1000" id="EmW-db-Rnf">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Command">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -63,12 +63,12 @@
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView id="Pat-L3-1zX">
-                                                            <rect key="frame" x="1" y="1" width="153" height="17"/>
+                                                            <rect key="frame" x="1" y="1" width="236" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>
-                                                <tableColumn width="152.5" minWidth="40" maxWidth="1000" id="Iia-kf-UUc">
+                                                <tableColumn width="236" minWidth="40" maxWidth="1000" id="Iia-kf-UUc">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Replacement">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -82,7 +82,7 @@
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView id="bAD-8m-NiN">
-                                                            <rect key="frame" x="157" y="1" width="152" height="17"/>
+                                                            <rect key="frame" x="240" y="1" width="236" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </tableCellView>
                                                     </prototypeCellViews>
@@ -92,11 +92,11 @@
                                     </subviews>
                                 </clipView>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="135" id="C0B-VN-FK9"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="jA0-Ig-Kwu"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="C0B-VN-FK9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="480" id="jA0-Ig-Kwu"/>
                                 </constraints>
                                 <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="6uV-Hi-upQ">
-                                    <rect key="frame" x="1" y="144" width="311" height="16"/>
+                                    <rect key="frame" x="1" y="184" width="238" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="QRH-qH-Ab5">
@@ -104,7 +104,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <tableHeaderView key="headerView" id="T8K-SJ-nsg">
-                                    <rect key="frame" x="0.0" y="0.0" width="311" height="25"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="478" height="25"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableHeaderView>
                             </scrollView>
@@ -118,13 +118,24 @@
                                     </segments>
                                 </segmentedCell>
                             </segmentedControl>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vv4-3i-Pmu">
+                                <rect key="frame" x="18" y="326" width="484" height="34"/>
+                                <textFieldCell key="cell" selectable="YES" title="Enter custom commands, including the leading backslash (e.g. \mycommand). Custom commands will override any built-in ones." id="iUm-no-Sdj">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="QNv-Hp-SNj" firstAttribute="top" secondItem="Vv4-3i-Pmu" secondAttribute="bottom" constant="8" id="Fiz-ji-x1a"/>
+                            <constraint firstItem="Vv4-3i-Pmu" firstAttribute="top" secondItem="5gE-QL-EiH" secondAttribute="top" constant="20" id="Ile-eC-BNg"/>
                             <constraint firstItem="gLG-Sf-XGT" firstAttribute="leading" secondItem="5gE-QL-EiH" secondAttribute="leading" constant="20" id="SIr-27-Lny"/>
-                            <constraint firstItem="QNv-Hp-SNj" firstAttribute="top" secondItem="5gE-QL-EiH" secondAttribute="top" constant="20" id="W3F-D8-xVB"/>
+                            <constraint firstAttribute="trailing" secondItem="Vv4-3i-Pmu" secondAttribute="trailing" constant="20" id="UBe-ma-nrO"/>
                             <constraint firstItem="gLG-Sf-XGT" firstAttribute="top" secondItem="QNv-Hp-SNj" secondAttribute="bottom" constant="8" id="aCY-Q6-a3O"/>
                             <constraint firstAttribute="trailing" secondItem="QNv-Hp-SNj" secondAttribute="trailing" constant="20" id="aFv-1g-sN7"/>
                             <constraint firstItem="QNv-Hp-SNj" firstAttribute="leading" secondItem="5gE-QL-EiH" secondAttribute="leading" constant="20" id="i1m-Rm-Ylz"/>
+                            <constraint firstItem="Vv4-3i-Pmu" firstAttribute="leading" secondItem="5gE-QL-EiH" secondAttribute="leading" constant="20" id="ivg-Bf-KjN"/>
                             <constraint firstAttribute="bottom" secondItem="gLG-Sf-XGT" secondAttribute="bottom" constant="20" id="n4S-so-BHs"/>
                             <constraint firstItem="gLG-Sf-XGT" firstAttribute="top" secondItem="QNv-Hp-SNj" secondAttribute="bottom" constant="8" id="zYh-Fx-soz"/>
                         </constraints>
@@ -132,7 +143,7 @@
                 </viewController>
                 <customObject id="7Th-5i-FlV" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="666" y="99"/>
+            <point key="canvasLocation" x="705" y="35"/>
         </scene>
     </scenes>
     <resources>
