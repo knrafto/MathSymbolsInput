@@ -61,5 +61,40 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     contents[row][column] = sender.stringValue
     savePreferences()
   }
+
+  // Called when a +/- button is clicked.
+  @IBAction func buttonClicked(_ sender: NSSegmentedControl) {
+    if sender.selectedSegment == 0 {
+      addItem()
+    } else if sender.selectedSegment == 1 {
+      removeItem()
+    }
+  }
+
+  func addItem() {
+    contents.append([
+      "command": "\\",
+      "replacement": "",
+    ])
+    tableView.reloadData()
+
+    // Automatically edit the new item.
+    let view = tableView.view(atColumn: 0, row: contents.count - 1, makeIfNecessary: true) as! NSTableCellView
+    view.textField?.becomeFirstResponder()
+    let range = view.textField?.currentEditor()?.selectedRange
+    view.textField?.currentEditor()?.selectedRange = NSMakeRange(range?.length ?? 0, 0)
+
+    savePreferences()
+  }
+
+  func removeItem() {
+    if tableView.selectedRow == -1 {
+      return
+    }
+    contents.remove(at: tableView.selectedRow)
+
+    tableView.reloadData()
+    savePreferences()
+  }
 }
 
