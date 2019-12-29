@@ -10,6 +10,7 @@
 		1A4AABEE23B7C85000F4DEAB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4AABED23B7C85000F4DEAB /* main.swift */; };
 		1A4BC5F123B80F550053F236 /* CustomCommands.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4BC5F023B80F550053F236 /* CustomCommands.storyboard */; };
 		1A695F26229F8FDD008DEC0F /* replacements.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A695F25229F8FDD008DEC0F /* replacements.txt */; };
+		1AA1470123B841AE00D1282A /* CustomCommandsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1470023B841AE00D1282A /* CustomCommandsController.swift */; };
 		1AB0D0F622AD6AE400D71347 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0D0F522AD6AE400D71347 /* main.swift */; };
 		1AC14D8B22AE875100549402 /* icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14D8A22AE875100549402 /* icon.pdf */; };
 		1AC76A9D23B6D9D0009BD2D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AC76A9B23B6D9D0009BD2D7 /* InfoPlist.strings */; };
@@ -38,6 +39,7 @@
 		1A5DB37A22AE8DCA000F7F92 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1A5DB37C22AE8E24000F7F92 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		1A695F25229F8FDD008DEC0F /* replacements.txt */ = {isa = PBXFileReference; indentWidth = 8; lastKnownFileType = text; path = replacements.txt; sourceTree = "<group>"; tabWidth = 8; usesTabs = 1; };
+		1AA1470023B841AE00D1282A /* CustomCommandsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCommandsController.swift; sourceTree = "<group>"; };
 		1AB0D0F522AD6AE400D71347 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1AC14D8A22AE875100549402 /* icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon.pdf; sourceTree = "<group>"; };
 		1AC76A9C23B6D9D0009BD2D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				1AB0D0F522AD6AE400D71347 /* main.swift */,
 				1AC76A9B23B6D9D0009BD2D7 /* InfoPlist.strings */,
 				1A4BC5F023B80F550053F236 /* CustomCommands.storyboard */,
+				1AA1470023B841AE00D1282A /* CustomCommandsController.swift */,
 			);
 			path = UnicodeInput;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			files = (
 				1ADC700522ACAF2600E556A4 /* Replacements.swift in Sources */,
 				1AB0D0F622AD6AE400D71347 /* main.swift in Sources */,
+				1AA1470123B841AE00D1282A /* CustomCommandsController.swift in Sources */,
 				1ACC934222AC5CEB00D924A7 /* UnicodeInputController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

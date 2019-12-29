@@ -27,10 +27,10 @@
             </objects>
             <point key="canvasLocation" x="139" y="107"/>
         </scene>
-        <!--View Controller-->
+        <!--Custom Commands Controller-->
         <scene sceneID="b0K-2u-5Fd">
             <objects>
-                <viewController id="rdL-VQ-f2q" sceneMemberID="viewController">
+                <viewController id="rdL-VQ-f2q" customClass="CustomCommandsController" customModule="UnicodeInput" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="5gE-QL-EiH">
                         <rect key="frame" x="0.0" y="0.0" width="578" height="380"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -49,7 +49,7 @@
                                             <tableViewGridLines key="gridStyleMask" vertical="YES"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn width="265" minWidth="40" maxWidth="1000" id="EmW-db-Rnf">
+                                                <tableColumn identifier="command" width="265" minWidth="40" maxWidth="1000" id="EmW-db-Rnf">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Command">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -68,7 +68,7 @@
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>
-                                                <tableColumn width="265" minWidth="40" maxWidth="1000" id="Iia-kf-UUc">
+                                                <tableColumn identifier="replacement" width="265" minWidth="40" maxWidth="1000" id="Iia-kf-UUc">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Replacement">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -88,6 +88,10 @@
                                                     </prototypeCellViews>
                                                 </tableColumn>
                                             </tableColumns>
+                                            <connections>
+                                                <outlet property="dataSource" destination="rdL-VQ-f2q" id="Zd3-nK-7zI"/>
+                                                <outlet property="delegate" destination="rdL-VQ-f2q" id="os3-JP-lND"/>
+                                            </connections>
                                         </tableView>
                                     </subviews>
                                 </clipView>
@@ -117,6 +121,9 @@
                                         <segment image="NSRemoveTemplate" width="32" tag="1"/>
                                     </segments>
                                 </segmentedCell>
+                                <connections>
+                                    <action selector="buttonClicked:" target="rdL-VQ-f2q" id="IhE-n2-clX"/>
+                                </connections>
                             </segmentedControl>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vv4-3i-Pmu">
                                 <rect key="frame" x="18" y="326" width="542" height="34"/>
@@ -141,6 +148,9 @@
                             <constraint firstItem="gLG-Sf-XGT" firstAttribute="top" secondItem="QNv-Hp-SNj" secondAttribute="bottom" constant="8" id="zYh-Fx-soz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="65b-Ce-xZC" id="2pt-DE-OS0"/>
+                    </connections>
                 </viewController>
                 <customObject id="7Th-5i-FlV" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
