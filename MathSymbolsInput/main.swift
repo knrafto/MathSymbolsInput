@@ -10,7 +10,7 @@ import Cocoa
 import InputMethodKit
 
 // Unique connection name for this input method.
-let kConnectionName = "UnicodeInput_1_Connection"
+let kConnectionName = "MathSymbolsInput_1_Connection"
 // .txt file containing built-in commands.
 let kBuiltinCommandsResourceName = "commands"
 // Preferences app name.

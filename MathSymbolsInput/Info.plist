@@ -23,7 +23,7 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>InputMethodConnectionName</key>
-	<string>UnicodeInput_1_Connection</string>
+	<string>MathSymbolsInput_1_Connection</string>
 	<key>InputMethodServerControllerClass</key>
 	<string>$(PRODUCT_MODULE_NAME).InputController</string>
 	<key>InputMethodServerDelegateClass</key>
