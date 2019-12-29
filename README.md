@@ -7,4 +7,4 @@ To update the input method with your local debug build, switch to a different in
 
 By default, macOS uses the last keyboard layout when an input method is active.
 So, to use your desired keyboard layout, activate the keyboard layout first and
-then the UnicodeInput input method.
+then the MathSymbolsInput input method.

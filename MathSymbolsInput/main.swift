@@ -1,6 +1,6 @@
 //
 //  main.swift
-//  UnicodeInput
+//  MathSymbolsInput
 //
 //  Created by Kyle Raftogianis on 6/9/19.
 //  Copyright © 2019 Kyle Raftogianis. All rights reserved.
@@ -25,8 +25,8 @@ loadBuiltinCommands()
 let mainMenu = NSMenu()
 mainMenu.addItem(withTitle: "Preferences...", action: #selector(InputController.showPreferences(_:)), keyEquivalent: "")
 
-// Server that accepts connections from client applications. It will create a
-// UnicodeInputController instance to handle each client connection.
+// Server that accepts connections from client applications. It will create an
+// InputController instance to handle each client connection.
 let server = IMKServer.init(name: kConnectionName, bundleIdentifier: Bundle.main.bundleIdentifier!)
 
 // Run the app.

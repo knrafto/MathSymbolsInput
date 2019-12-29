@@ -1,6 +1,6 @@
 //
 //  InputController.swift
-//  UnicodeInput
+//  MathSymbolsInput
 //
 //  Created by Kyle Raftogianis on 6/8/19.
 //  Copyright © 2019 Kyle Raftogianis. All rights reserved.
