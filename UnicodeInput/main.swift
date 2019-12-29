@@ -13,7 +13,8 @@ import InputMethodKit
 let kConnectionName = "UnicodeInput_1_Connection";
 
 // Load the replacements.
-loadReplacementsMap()
+loadBuiltinReplacements()
+loadCustomReplacements()
 
 // Set up the menu in the menu bar.
 let mainMenu = NSMenu()
