@@ -70,7 +70,7 @@ func loadBuiltinReplacements() {
 }
 
 func loadCustomReplacements() {
-  builtinReplacements = Dictionary<String, String>()
+  customReplacements = Dictionary<String, String>()
 
   let replacementsArray = UserDefaults.standard.array(forKey: customReplacementsKey)
   if replacementsArray != nil {
@@ -90,9 +90,9 @@ func loadCustomReplacements() {
         NSLog("Malformed preferences: elements of pair are not strings")
         continue
       }
-      builtinReplacements[first! as String] = second! as String
+      customReplacements[first! as String] = second! as String
     }
   }
 
-  NSLog("Loaded %d custom replacements", builtinReplacements.count);
+  NSLog("Loaded %d custom replacements", customReplacements.count);
 }
