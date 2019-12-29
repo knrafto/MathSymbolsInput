@@ -1,6 +1,4 @@
-# Escape sequences and replacements for the Unicode input method.
-# Each line contains an escape sequence (starting with \) and its
-# replacement, followed by a space.
+# Each line contains an command (starting with \) and its replacement, separated by a space.
 # Blank lines and lines starting with '#' are ignored.
 
 ### Mathematical symbols ###
@@ -62,9 +60,7 @@
 \... …
 
 ### Superscripts and subscripts  ###
-# Not all letters are available in Unicode, so some characters may be missing.
-# The ones that are available are defined in many different ranges, so fonts
-# may display characters with different sizes or positions (or not at all).
+# Not all letters are available in Unicode.
 
 \^0 ⁰
 \^1 ¹
