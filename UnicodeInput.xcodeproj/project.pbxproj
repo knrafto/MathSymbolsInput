@@ -40,7 +40,6 @@
 		1A16BB4C23B907E100E667C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A16BB4F23B907E100E667C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A16BB5123B907E100E667C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A4AABEB23B7C84F00F4DEAB /* UnicodeInputInstaller */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnicodeInputInstaller; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A5DB37A22AE8DCA000F7F92 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1A5DB37C22AE8E24000F7F92 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		1A695F25229F8FDD008DEC0F /* commands.txt */ = {isa = PBXFileReference; indentWidth = 8; lastKnownFileType = text; path = commands.txt; sourceTree = "<group>"; tabWidth = 8; usesTabs = 1; };
@@ -108,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				F61A7ABB1E8182C100EBF660 /* UnicodeInput.app */,
-				1A4AABEB23B7C84F00F4DEAB /* UnicodeInputInstaller */,
 				1A16BB4623B907E000E667C4 /* UnicodeInputPreferences.app */,
 			);
 			name = Products;
@@ -155,23 +153,6 @@
 			productName = UnicodeInputPreferences;
 			productReference = 1A16BB4623B907E000E667C4 /* UnicodeInputPreferences.app */;
 			productType = "com.apple.product-type.application";
-		};
-		1A4AABEA23B7C84F00F4DEAB /* UnicodeInputInstaller */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1A4AABEF23B7C85000F4DEAB /* Build configuration list for PBXNativeTarget "UnicodeInputInstaller" */;
-			buildPhases = (
-				1A4AABE723B7C84F00F4DEAB /* Sources */,
-				1A4AABE823B7C84F00F4DEAB /* Frameworks */,
-				1A4AABE923B7C84F00F4DEAB /* Copy Files */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = UnicodeInputInstaller;
-			productName = UnicodeInputInstaller;
-			productReference = 1A4AABEB23B7C84F00F4DEAB /* UnicodeInputInstaller */;
-			productType = "com.apple.product-type.tool";
 		};
 		F61A7ABA1E8182C100EBF660 /* UnicodeInput */ = {
 			isa = PBXNativeTarget;
@@ -233,7 +214,6 @@
 			projectRoot = "";
 			targets = (
 				F61A7ABA1E8182C100EBF660 /* UnicodeInput */,
-				1A4AABEA23B7C84F00F4DEAB /* UnicodeInputInstaller */,
 				1A16BB4523B907E000E667C4 /* UnicodeInputPreferences */,
 			);
 		};
@@ -569,15 +549,6 @@
 			buildConfigurations = (
 				1A16BB5323B907E100E667C4 /* Debug */,
 				1A16BB5423B907E100E667C4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1A4AABEF23B7C85000F4DEAB /* Build configuration list for PBXNativeTarget "UnicodeInputInstaller" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A4AABF023B7C85000F4DEAB /* Debug */,
-				1A4AABF123B7C85000F4DEAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
