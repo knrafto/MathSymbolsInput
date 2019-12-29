@@ -14,7 +14,7 @@ class UnicodeInputController : IMKInputController {
   // Buffer containing text that the user has input so far in the current
   // composition session. We ensure that the client's marked text always
   // matches the contents.
-  private var compositionBuffer: String = "";
+  private var compositionBuffer: String = ""
 
   // Returns whether there is an active composition session.
   func isActive() -> Bool {
@@ -35,10 +35,10 @@ class UnicodeInputController : IMKInputController {
 
   // Accepts the currently-chosen replacement.
   func accept() {
-    let replacement = builtinReplacements[compositionBuffer];
-    let acceptedString = replacement != nil ? replacement : compositionBuffer;
+    let replacement = builtinReplacements[compositionBuffer]
+    let acceptedString = replacement != nil ? replacement : compositionBuffer
     client().insertText(acceptedString, replacementRange: NSMakeRange(NSNotFound, NSNotFound))
-    compositionBuffer = "";
+    compositionBuffer = ""
     bufferChanged()
   }
 
@@ -46,7 +46,7 @@ class UnicodeInputController : IMKInputController {
   // an inactive state.
   func deactivate() {
     client().insertText(compositionBuffer, replacementRange: NSMakeRange(NSNotFound, NSNotFound))
-    compositionBuffer = "";
+    compositionBuffer = ""
     bufferChanged()
   }
 
