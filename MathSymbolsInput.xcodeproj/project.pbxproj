@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A16BB4623B907E000E667C4 /* MathSymbolsInputPreferences.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathSymbolsInputPreferences.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A16BB4623B907E000E667C4 /* Math Symbols Preferences.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math Symbols Preferences.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A16BB4823B907E000E667C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A16BB4A23B907E000E667C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1A16BB4C23B907E100E667C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A16BB4723B907E000E667C4 /* MathSymbolsInputPreferences */ = {
+		1A16BB4723B907E000E667C4 /* MathSymbolsPreferences */ = {
 			isa = PBXGroup;
 			children = (
 				1A16BB4823B907E000E667C4 /* AppDelegate.swift */,
@@ -68,7 +68,7 @@
 				1A16BB4E23B907E100E667C4 /* Main.storyboard */,
 				1A16BB5123B907E100E667C4 /* Info.plist */,
 			);
-			path = MathSymbolsInputPreferences;
+			path = MathSymbolsPreferences;
 			sourceTree = "<group>";
 		};
 		F61A7AB21E8182C100EBF660 = {
@@ -77,7 +77,7 @@
 				1A5DB37C22AE8E24000F7F92 /* install.sh */,
 				1A5DB37A22AE8DCA000F7F92 /* README.md */,
 				F61A7ABD1E8182C100EBF660 /* MathSymbolsInput */,
-				1A16BB4723B907E000E667C4 /* MathSymbolsInputPreferences */,
+				1A16BB4723B907E000E667C4 /* MathSymbolsPreferences */,
 				F61A7ABC1E8182C100EBF660 /* Products */,
 				F61A7AD41E818BF300EBF660 /* Frameworks */,
 			);
@@ -87,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				F61A7ABB1E8182C100EBF660 /* MathSymbolsInput.app */,
-				1A16BB4623B907E000E667C4 /* MathSymbolsInputPreferences.app */,
+				1A16BB4623B907E000E667C4 /* Math Symbols Preferences.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,9 +117,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A16BB4523B907E000E667C4 /* MathSymbolsInputPreferences */ = {
+		1A16BB4523B907E000E667C4 /* Math Symbols Preferences */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A16BB5523B907E100E667C4 /* Build configuration list for PBXNativeTarget "MathSymbolsInputPreferences" */;
+			buildConfigurationList = 1A16BB5523B907E100E667C4 /* Build configuration list for PBXNativeTarget "Math Symbols Preferences" */;
 			buildPhases = (
 				1A16BB4223B907E000E667C4 /* Sources */,
 				1A16BB4323B907E000E667C4 /* Frameworks */,
@@ -129,9 +129,9 @@
 			);
 			dependencies = (
 			);
-			name = MathSymbolsInputPreferences;
-			productName = MathSymbolsInputPreferences;
-			productReference = 1A16BB4623B907E000E667C4 /* MathSymbolsInputPreferences.app */;
+			name = "Math Symbols Preferences";
+			productName = "Math Symbols Preferences";
+			productReference = 1A16BB4623B907E000E667C4 /* Math Symbols Preferences.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F61A7ABA1E8182C100EBF660 /* MathSymbolsInput */ = {
@@ -190,7 +190,7 @@
 			projectRoot = "";
 			targets = (
 				F61A7ABA1E8182C100EBF660 /* MathSymbolsInput */,
-				1A16BB4523B907E000E667C4 /* MathSymbolsInputPreferences */,
+				1A16BB4523B907E000E667C4 /* Math Symbols Preferences */,
 			);
 		};
 /* End PBXProject section */
@@ -272,7 +272,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = build/Debug;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "$(SRCROOT)/MathSymbolsInputPreferences/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MathSymbolsPreferences/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -280,7 +280,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mathsymbolsinput.MathSymbolsInputPreferences;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mathsymbolsinput.MathSymbolsPreferences;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -301,14 +301,14 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = build/Release;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "$(SRCROOT)/MathSymbolsInputPreferences/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MathSymbolsPreferences/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mathsymbolsinput.MathSymbolsInputPreferences;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mathsymbolsinput.MathSymbolsPreferences;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
@@ -461,7 +461,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A16BB5523B907E100E667C4 /* Build configuration list for PBXNativeTarget "MathSymbolsInputPreferences" */ = {
+		1A16BB5523B907E100E667C4 /* Build configuration list for PBXNativeTarget "Math Symbols Preferences" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A16BB5323B907E100E667C4 /* Debug */,

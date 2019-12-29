@@ -14,7 +14,7 @@ let kConnectionName = "MathSymbolsInput_1_Connection"
 // .txt file containing built-in commands.
 let kBuiltinCommandsResourceName = "commands"
 // Preferences app name.
-let kPreferencesAppBundleIdentifier = "com.mathsymbolsinput.MathSymbolsInputPreferences"
+let kPreferencesAppBundleIdentifier = "com.mathsymbolsinput.MathSymbolsPreferences"
 // UserDefaults key for custom commands.
 let kCustomCommandsKey = "CustomCommands"
 
