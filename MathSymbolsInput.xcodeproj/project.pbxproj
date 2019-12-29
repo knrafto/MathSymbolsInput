@@ -15,7 +15,7 @@
 		1AB0D0F622AD6AE400D71347 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0D0F522AD6AE400D71347 /* main.swift */; };
 		1AC14D8B22AE875100549402 /* icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14D8A22AE875100549402 /* icon.pdf */; };
 		1AC76A9D23B6D9D0009BD2D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AC76A9B23B6D9D0009BD2D7 /* InfoPlist.strings */; };
-		1ACC934222AC5CEB00D924A7 /* UnicodeInputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC934122AC5CEB00D924A7 /* UnicodeInputController.swift */; };
+		1ACC934222AC5CEB00D924A7 /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC934122AC5CEB00D924A7 /* InputController.swift */; };
 		1ADC700522ACAF2600E556A4 /* Commands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADC700422ACAF2600E556A4 /* Commands.swift */; };
 		F61A7AD61E818BF300EBF660 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61A7AD51E818BF300EBF660 /* InputMethodKit.framework */; };
 /* End PBXBuildFile section */
@@ -33,7 +33,7 @@
 		1AB0D0F522AD6AE400D71347 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1AC14D8A22AE875100549402 /* icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon.pdf; sourceTree = "<group>"; };
 		1AC76A9C23B6D9D0009BD2D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1ACC934122AC5CEB00D924A7 /* UnicodeInputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicodeInputController.swift; sourceTree = "<group>"; };
+		1ACC934122AC5CEB00D924A7 /* InputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
 		1ADC700422ACAF2600E556A4 /* Commands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commands.swift; sourceTree = "<group>"; };
 		F61A7ABB1E8182C100EBF660 /* MathSymbolsInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathSymbolsInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F61A7ACC1E8182C100EBF660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 				1AC14D8A22AE875100549402 /* icon.pdf */,
 				F61A7ACC1E8182C100EBF660 /* Info.plist */,
 				1A695F25229F8FDD008DEC0F /* commands.txt */,
-				1ACC934122AC5CEB00D924A7 /* UnicodeInputController.swift */,
+				1ACC934122AC5CEB00D924A7 /* InputController.swift */,
 				1ADC700422ACAF2600E556A4 /* Commands.swift */,
 				1AB0D0F522AD6AE400D71347 /* main.swift */,
 				1AC76A9B23B6D9D0009BD2D7 /* InfoPlist.strings */,
@@ -233,7 +233,7 @@
 			files = (
 				1ADC700522ACAF2600E556A4 /* Commands.swift in Sources */,
 				1AB0D0F622AD6AE400D71347 /* main.swift in Sources */,
-				1ACC934222AC5CEB00D924A7 /* UnicodeInputController.swift in Sources */,
+				1ACC934222AC5CEB00D924A7 /* InputController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

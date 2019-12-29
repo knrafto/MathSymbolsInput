@@ -25,9 +25,9 @@
 	<key>InputMethodConnectionName</key>
 	<string>UnicodeInput_1_Connection</string>
 	<key>InputMethodServerControllerClass</key>
-	<string>$(PRODUCT_MODULE_NAME).UnicodeInputController</string>
+	<string>$(PRODUCT_MODULE_NAME).InputController</string>
 	<key>InputMethodServerDelegateClass</key>
-	<string>$(PRODUCT_MODULE_NAME).UnicodeInputController</string>
+	<string>$(PRODUCT_MODULE_NAME).InputController</string>
 	<key>LSBackgroundOnly</key>
 	<true/>
 	<key>LSMinimumSystemVersion</key>

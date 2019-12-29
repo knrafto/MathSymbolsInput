@@ -1,5 +1,5 @@
 //
-//  UnicodeInputController.swift
+//  InputController.swift
 //  UnicodeInput
 //
 //  Created by Kyle Raftogianis on 6/8/19.
@@ -10,7 +10,7 @@ import Foundation
 import InputMethodKit
 
 // See IMKInputController.h for documentation of the IMKServerInput protocol.
-class UnicodeInputController : IMKInputController {
+class InputController : IMKInputController {
   // Buffer containing text that the user has input so far in the current
   // composition session. We ensure that the client's marked text always
   // matches the contents.

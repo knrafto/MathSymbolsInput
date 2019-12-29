@@ -23,7 +23,7 @@ loadBuiltinCommands()
 
 // Set up the menu in the menu bar.
 let mainMenu = NSMenu()
-mainMenu.addItem(withTitle: "Preferences...", action: #selector(UnicodeInputController.showPreferences(_:)), keyEquivalent: "")
+mainMenu.addItem(withTitle: "Preferences...", action: #selector(InputController.showPreferences(_:)), keyEquivalent: "")
 
 // Server that accepts connections from client applications. It will create a
 // UnicodeInputController instance to handle each client connection.
