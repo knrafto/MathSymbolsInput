@@ -20,21 +20,8 @@
 		F61A7AD61E818BF300EBF660 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61A7AD51E818BF300EBF660 /* InputMethodKit.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		1A4AABE923B7C84F00F4DEAB /* Copy Files */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
-			dstPath = foo;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			name = "Copy Files";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		1A16BB4623B907E000E667C4 /* UnicodeInputPreferences.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnicodeInputPreferences.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A16BB4623B907E000E667C4 /* MathSymbolsInputPreferences.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathSymbolsInputPreferences.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A16BB4823B907E000E667C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A16BB4A23B907E000E667C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1A16BB4C23B907E100E667C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,20 +35,13 @@
 		1AC76A9C23B6D9D0009BD2D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1ACC934122AC5CEB00D924A7 /* UnicodeInputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicodeInputController.swift; sourceTree = "<group>"; };
 		1ADC700422ACAF2600E556A4 /* Commands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commands.swift; sourceTree = "<group>"; };
-		F61A7ABB1E8182C100EBF660 /* UnicodeInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnicodeInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F61A7ABB1E8182C100EBF660 /* MathSymbolsInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathSymbolsInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F61A7ACC1E8182C100EBF660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F61A7AD51E818BF300EBF660 /* InputMethodKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputMethodKit.framework; path = System/Library/Frameworks/InputMethodKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1A16BB4323B907E000E667C4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A4AABE823B7C84F00F4DEAB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -79,7 +59,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A16BB4723B907E000E667C4 /* UnicodeInputPreferences */ = {
+		1A16BB4723B907E000E667C4 /* MathSymbolsInputPreferences */ = {
 			isa = PBXGroup;
 			children = (
 				1A16BB4823B907E000E667C4 /* AppDelegate.swift */,
@@ -88,7 +68,7 @@
 				1A16BB4E23B907E100E667C4 /* Main.storyboard */,
 				1A16BB5123B907E100E667C4 /* Info.plist */,
 			);
-			path = UnicodeInputPreferences;
+			path = MathSymbolsInputPreferences;
 			sourceTree = "<group>";
 		};
 		F61A7AB21E8182C100EBF660 = {
@@ -96,8 +76,8 @@
 			children = (
 				1A5DB37C22AE8E24000F7F92 /* install.sh */,
 				1A5DB37A22AE8DCA000F7F92 /* README.md */,
-				F61A7ABD1E8182C100EBF660 /* UnicodeInput */,
-				1A16BB4723B907E000E667C4 /* UnicodeInputPreferences */,
+				F61A7ABD1E8182C100EBF660 /* MathSymbolsInput */,
+				1A16BB4723B907E000E667C4 /* MathSymbolsInputPreferences */,
 				F61A7ABC1E8182C100EBF660 /* Products */,
 				F61A7AD41E818BF300EBF660 /* Frameworks */,
 			);
@@ -106,13 +86,13 @@
 		F61A7ABC1E8182C100EBF660 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F61A7ABB1E8182C100EBF660 /* UnicodeInput.app */,
-				1A16BB4623B907E000E667C4 /* UnicodeInputPreferences.app */,
+				F61A7ABB1E8182C100EBF660 /* MathSymbolsInput.app */,
+				1A16BB4623B907E000E667C4 /* MathSymbolsInputPreferences.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F61A7ABD1E8182C100EBF660 /* UnicodeInput */ = {
+		F61A7ABD1E8182C100EBF660 /* MathSymbolsInput */ = {
 			isa = PBXGroup;
 			children = (
 				1AC14D8A22AE875100549402 /* icon.pdf */,
@@ -123,7 +103,7 @@
 				1AB0D0F522AD6AE400D71347 /* main.swift */,
 				1AC76A9B23B6D9D0009BD2D7 /* InfoPlist.strings */,
 			);
-			path = UnicodeInput;
+			path = MathSymbolsInput;
 			sourceTree = "<group>";
 		};
 		F61A7AD41E818BF300EBF660 /* Frameworks */ = {
@@ -137,9 +117,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A16BB4523B907E000E667C4 /* UnicodeInputPreferences */ = {
+		1A16BB4523B907E000E667C4 /* MathSymbolsInputPreferences */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A16BB5523B907E100E667C4 /* Build configuration list for PBXNativeTarget "UnicodeInputPreferences" */;
+			buildConfigurationList = 1A16BB5523B907E100E667C4 /* Build configuration list for PBXNativeTarget "MathSymbolsInputPreferences" */;
 			buildPhases = (
 				1A16BB4223B907E000E667C4 /* Sources */,
 				1A16BB4323B907E000E667C4 /* Frameworks */,
@@ -149,14 +129,14 @@
 			);
 			dependencies = (
 			);
-			name = UnicodeInputPreferences;
+			name = MathSymbolsInputPreferences;
 			productName = UnicodeInputPreferences;
-			productReference = 1A16BB4623B907E000E667C4 /* UnicodeInputPreferences.app */;
+			productReference = 1A16BB4623B907E000E667C4 /* MathSymbolsInputPreferences.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F61A7ABA1E8182C100EBF660 /* UnicodeInput */ = {
+		F61A7ABA1E8182C100EBF660 /* MathSymbolsInput */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F61A7ACF1E8182C100EBF660 /* Build configuration list for PBXNativeTarget "UnicodeInput" */;
+			buildConfigurationList = F61A7ACF1E8182C100EBF660 /* Build configuration list for PBXNativeTarget "MathSymbolsInput" */;
 			buildPhases = (
 				F61A7AB71E8182C100EBF660 /* Sources */,
 				F61A7AB81E8182C100EBF660 /* Frameworks */,
@@ -166,9 +146,9 @@
 			);
 			dependencies = (
 			);
-			name = UnicodeInput;
+			name = MathSymbolsInput;
 			productName = UnicodeInput;
-			productReference = F61A7ABB1E8182C100EBF660 /* UnicodeInput.app */;
+			productReference = F61A7ABB1E8182C100EBF660 /* MathSymbolsInput.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -189,10 +169,6 @@
 							};
 						};
 					};
-					1A4AABEA23B7C84F00F4DEAB = {
-						CreatedOnToolsVersion = 10.3;
-						LastSwiftMigration = 1030;
-					};
 					F61A7ABA1E8182C100EBF660 = {
 						CreatedOnToolsVersion = 8.2.1;
 						LastSwiftMigration = 1030;
@@ -200,7 +176,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F61A7AB61E8182C100EBF660 /* Build configuration list for PBXProject "UnicodeInput" */;
+			buildConfigurationList = F61A7AB61E8182C100EBF660 /* Build configuration list for PBXProject "MathSymbolsInput" */;
 			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -213,8 +189,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F61A7ABA1E8182C100EBF660 /* UnicodeInput */,
-				1A16BB4523B907E000E667C4 /* UnicodeInputPreferences */,
+				F61A7ABA1E8182C100EBF660 /* MathSymbolsInput */,
+				1A16BB4523B907E000E667C4 /* MathSymbolsInputPreferences */,
 			);
 		};
 /* End PBXProject section */
@@ -248,13 +224,6 @@
 			files = (
 				1A16BB4B23B907E000E667C4 /* ViewController.swift in Sources */,
 				1A16BB4923B907E000E667C4 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A4AABE723B7C84F00F4DEAB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +272,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = build/Debug;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = UnicodeInputPreferences/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MathSymbolsInputPreferences/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -332,7 +301,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = build/Release;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = UnicodeInputPreferences/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MathSymbolsInputPreferences/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -341,58 +310,6 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.knrafto.UnicodeInputPreferences;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		1A4AABF023B7C85000F4DEAB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		1A4AABF123B7C85000F4DEAB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 			};
@@ -508,7 +425,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = build/Debug;
-				INFOPLIST_FILE = "$(SRCROOT)/UnicodeInput/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MathSymbolsInput/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -528,7 +445,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = build/Release;
-				INFOPLIST_FILE = "$(SRCROOT)/UnicodeInput/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MathSymbolsInput/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -544,7 +461,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A16BB5523B907E100E667C4 /* Build configuration list for PBXNativeTarget "UnicodeInputPreferences" */ = {
+		1A16BB5523B907E100E667C4 /* Build configuration list for PBXNativeTarget "MathSymbolsInputPreferences" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A16BB5323B907E100E667C4 /* Debug */,
@@ -553,7 +470,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F61A7AB61E8182C100EBF660 /* Build configuration list for PBXProject "UnicodeInput" */ = {
+		F61A7AB61E8182C100EBF660 /* Build configuration list for PBXProject "MathSymbolsInput" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F61A7ACD1E8182C100EBF660 /* Debug */,
@@ -562,7 +479,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F61A7ACF1E8182C100EBF660 /* Build configuration list for PBXNativeTarget "UnicodeInput" */ = {
+		F61A7ACF1E8182C100EBF660 /* Build configuration list for PBXNativeTarget "MathSymbolsInput" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F61A7AD01E8182C100EBF660 /* Debug */,

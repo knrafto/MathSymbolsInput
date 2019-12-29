@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F61A7ABA1E8182C100EBF660"
-               BuildableName = "UnicodeInput.app"
-               BlueprintName = "UnicodeInput"
-               ReferencedContainer = "container:UnicodeInput.xcodeproj">
+               BuildableName = "MathSymbolsInput.app"
+               BlueprintName = "MathSymbolsInput"
+               ReferencedContainer = "container:MathSymbolsInput.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F61A7ABA1E8182C100EBF660"
-            BuildableName = "UnicodeInput.app"
-            BlueprintName = "UnicodeInput"
-            ReferencedContainer = "container:UnicodeInput.xcodeproj">
+            BuildableName = "MathSymbolsInput.app"
+            BlueprintName = "MathSymbolsInput"
+            ReferencedContainer = "container:MathSymbolsInput.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F61A7ABA1E8182C100EBF660"
-            BuildableName = "UnicodeInput.app"
-            BlueprintName = "UnicodeInput"
-            ReferencedContainer = "container:UnicodeInput.xcodeproj">
+            BuildableName = "MathSymbolsInput.app"
+            BlueprintName = "MathSymbolsInput"
+            ReferencedContainer = "container:MathSymbolsInput.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F61A7ABA1E8182C100EBF660"
-            BuildableName = "UnicodeInput.app"
-            BlueprintName = "UnicodeInput"
-            ReferencedContainer = "container:UnicodeInput.xcodeproj">
+            BuildableName = "MathSymbolsInput.app"
+            BlueprintName = "MathSymbolsInput"
+            ReferencedContainer = "container:MathSymbolsInput.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
