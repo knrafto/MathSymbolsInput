@@ -12,10 +12,10 @@ import Cocoa
 let customReplacementsKey = "CustomCommands"
 
 // Map from escape sequences to replacements.
-var builtinReplacements = Dictionary<String, String>()
+var builtinReplacements : [String : String] = [:]
 
 func loadBuiltinReplacements() {
-  var replacementsMap = Dictionary<String, String>()
+  var replacementsMap : [String : String] = [:]
 
   let path = Bundle.main.path(forResource: "replacements", ofType: "txt")
   if path == nil {
