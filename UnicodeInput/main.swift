@@ -18,7 +18,7 @@ loadCustomReplacements()
 
 // Set up the menu in the menu bar.
 let mainMenu = NSMenu()
-mainMenu.addItem(withTitle: "Edit Custom Commands…", action: #selector(UnicodeInputController.editCustomCommands(_:)), keyEquivalent: "")
+mainMenu.addItem(withTitle: "Preferences…", action: #selector(UnicodeInputController.showPreferences(_:)), keyEquivalent: "")
 
 // Load UI.
 let customCommandsController = NSStoryboard(name: "CustomCommands", bundle: nil).instantiateInitialController() as! NSWindowController
