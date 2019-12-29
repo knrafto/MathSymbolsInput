@@ -13,7 +13,6 @@ let customReplacementsKey = "customCommands"
 
 // Map from escape sequences to replacements.
 var builtinReplacements = Dictionary<String, String>()
-var customReplacements = Dictionary<String, String>()
 
 func loadBuiltinReplacements() {
   var replacementsMap = Dictionary<String, String>()
@@ -67,32 +66,4 @@ func loadBuiltinReplacements() {
 
   builtinReplacements = replacementsMap
   NSLog("Loaded %d built-in replacements", builtinReplacements.count);
-}
-
-func loadCustomReplacements() {
-  customReplacements = Dictionary<String, String>()
-
-  let replacementsArray = UserDefaults.standard.array(forKey: customReplacementsKey)
-  if replacementsArray != nil {
-    for object in replacementsArray! {
-      let pair = object as? NSArray
-      if pair == nil {
-        NSLog("Malformed preferences: element is not an array")
-        continue
-      }
-      if pair!.count != 2 {
-        NSLog("Malformed preferences: element is not a pair")
-        continue
-      }
-      let first = pair![0] as? NSString
-      let second = pair![1] as? NSString
-      if first == nil || second == nil {
-        NSLog("Malformed preferences: elements of pair are not strings")
-        continue
-      }
-      customReplacements[first! as String] = second! as String
-    }
-  }
-
-  NSLog("Loaded %d custom replacements", customReplacements.count);
 }

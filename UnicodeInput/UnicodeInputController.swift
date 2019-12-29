@@ -35,10 +35,7 @@ class UnicodeInputController : IMKInputController {
 
   // Accepts the currently-chosen replacement.
   func accept() {
-    var replacement = customReplacements[compositionBuffer];
-    if replacement == nil {
-      replacement = builtinReplacements[compositionBuffer];
-    }
+    let replacement = builtinReplacements[compositionBuffer];
     let acceptedString = replacement != nil ? replacement : compositionBuffer;
     client().insertText(acceptedString, replacementRange: NSMakeRange(NSNotFound, NSNotFound))
     compositionBuffer = "";
