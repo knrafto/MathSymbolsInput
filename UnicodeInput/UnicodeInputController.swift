@@ -116,4 +116,10 @@ class UnicodeInputController : IMKInputController {
   override func menu() -> NSMenu {
     return mainMenu
   }
+
+  // Called when the "Preferences..." menu item is selected.
+  override func showPreferences(_ sender: Any!) {
+    // TODO: implement
+    NSLog("showPreferences")
+  }
 }
