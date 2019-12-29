@@ -120,6 +120,7 @@ class UnicodeInputController : IMKInputController {
       NSLog("Could not find preferences application with bundle id %@", kPreferencesAppBundleIdentifier)
       return
     }
+    NSLog("Opening URL: %@", url.absoluteString)
     NSWorkspace.shared.open(url)
   }
 }

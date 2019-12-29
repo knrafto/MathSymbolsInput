@@ -11,7 +11,6 @@
 		1A16BB4B23B907E000E667C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A16BB4A23B907E000E667C4 /* ViewController.swift */; };
 		1A16BB4D23B907E100E667C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A16BB4C23B907E100E667C4 /* Assets.xcassets */; };
 		1A16BB5023B907E100E667C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A16BB4E23B907E100E667C4 /* Main.storyboard */; };
-		1A4AABEE23B7C85000F4DEAB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4AABED23B7C85000F4DEAB /* main.swift */; };
 		1A695F26229F8FDD008DEC0F /* commands.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A695F25229F8FDD008DEC0F /* commands.txt */; };
 		1AB0D0F622AD6AE400D71347 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0D0F522AD6AE400D71347 /* main.swift */; };
 		1AC14D8B22AE875100549402 /* icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14D8A22AE875100549402 /* icon.pdf */; };
@@ -42,7 +41,6 @@
 		1A16BB4F23B907E100E667C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A16BB5123B907E100E667C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A4AABEB23B7C84F00F4DEAB /* UnicodeInputInstaller */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnicodeInputInstaller; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A4AABED23B7C85000F4DEAB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1A5DB37A22AE8DCA000F7F92 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1A5DB37C22AE8E24000F7F92 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		1A695F25229F8FDD008DEC0F /* commands.txt */ = {isa = PBXFileReference; indentWidth = 8; lastKnownFileType = text; path = commands.txt; sourceTree = "<group>"; tabWidth = 8; usesTabs = 1; };
@@ -94,21 +92,12 @@
 			path = UnicodeInputPreferences;
 			sourceTree = "<group>";
 		};
-		1A4AABEC23B7C85000F4DEAB /* UnicodeInputInstaller */ = {
-			isa = PBXGroup;
-			children = (
-				1A4AABED23B7C85000F4DEAB /* main.swift */,
-			);
-			path = UnicodeInputInstaller;
-			sourceTree = "<group>";
-		};
 		F61A7AB21E8182C100EBF660 = {
 			isa = PBXGroup;
 			children = (
 				1A5DB37C22AE8E24000F7F92 /* install.sh */,
 				1A5DB37A22AE8DCA000F7F92 /* README.md */,
 				F61A7ABD1E8182C100EBF660 /* UnicodeInput */,
-				1A4AABEC23B7C85000F4DEAB /* UnicodeInputInstaller */,
 				1A16BB4723B907E000E667C4 /* UnicodeInputPreferences */,
 				F61A7ABC1E8182C100EBF660 /* Products */,
 				F61A7AD41E818BF300EBF660 /* Frameworks */,
@@ -286,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A4AABEE23B7C85000F4DEAB /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +321,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = build/Debug;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = UnicodeInputPreferences/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -361,6 +350,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = build/Release;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = UnicodeInputPreferences/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -557,6 +547,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = build/Release;
 				INFOPLIST_FILE = "$(SRCROOT)/UnicodeInput/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
