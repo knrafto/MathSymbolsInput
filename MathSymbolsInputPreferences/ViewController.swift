@@ -8,9 +8,6 @@
 
 import Cocoa
 
-let suiteName = "com.knrafto.inputmethod.UnicodeInput"
-let customCommandsKey = "CustomCommands"
-
 class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
   @IBOutlet weak var tableView: NSTableView!
   var preferences: UserDefaults?

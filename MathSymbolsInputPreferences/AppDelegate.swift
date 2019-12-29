@@ -8,6 +8,9 @@
 
 import Cocoa
 
+let suiteName = "com.mathsymbolsinput.inputmethod.MathSymbolsInput"
+let customCommandsKey = "CustomCommands"
+
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
   func applicationShouldTerminateAfterLastWindowClosed(_ theApplication: NSApplication) -> Bool {
