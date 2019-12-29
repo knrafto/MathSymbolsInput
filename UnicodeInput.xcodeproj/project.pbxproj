@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A16BB4923B907E000E667C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A16BB4823B907E000E667C4 /* AppDelegate.swift */; };
+		1A16BB4B23B907E000E667C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A16BB4A23B907E000E667C4 /* ViewController.swift */; };
+		1A16BB4D23B907E100E667C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A16BB4C23B907E100E667C4 /* Assets.xcassets */; };
+		1A16BB5023B907E100E667C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A16BB4E23B907E100E667C4 /* Main.storyboard */; };
 		1A4AABEE23B7C85000F4DEAB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4AABED23B7C85000F4DEAB /* main.swift */; };
 		1A695F26229F8FDD008DEC0F /* replacements.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A695F25229F8FDD008DEC0F /* replacements.txt */; };
 		1AB0D0F622AD6AE400D71347 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0D0F522AD6AE400D71347 /* main.swift */; };
@@ -31,6 +35,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1A16BB4623B907E000E667C4 /* UnicodeInputPreferences.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnicodeInputPreferences.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A16BB4823B907E000E667C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A16BB4A23B907E000E667C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A16BB4C23B907E100E667C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A16BB4F23B907E100E667C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A16BB5123B907E100E667C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A4AABEB23B7C84F00F4DEAB /* UnicodeInputInstaller */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnicodeInputInstaller; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4AABED23B7C85000F4DEAB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1A5DB37A22AE8DCA000F7F92 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -47,6 +57,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1A16BB4323B907E000E667C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1A4AABE823B7C84F00F4DEAB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -65,6 +82,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A16BB4723B907E000E667C4 /* UnicodeInputPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				1A16BB4823B907E000E667C4 /* AppDelegate.swift */,
+				1A16BB4A23B907E000E667C4 /* ViewController.swift */,
+				1A16BB4C23B907E100E667C4 /* Assets.xcassets */,
+				1A16BB4E23B907E100E667C4 /* Main.storyboard */,
+				1A16BB5123B907E100E667C4 /* Info.plist */,
+			);
+			path = UnicodeInputPreferences;
+			sourceTree = "<group>";
+		};
 		1A4AABEC23B7C85000F4DEAB /* UnicodeInputInstaller */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +109,7 @@
 				1A5DB37A22AE8DCA000F7F92 /* README.md */,
 				F61A7ABD1E8182C100EBF660 /* UnicodeInput */,
 				1A4AABEC23B7C85000F4DEAB /* UnicodeInputInstaller */,
+				1A16BB4723B907E000E667C4 /* UnicodeInputPreferences */,
 				F61A7ABC1E8182C100EBF660 /* Products */,
 				F61A7AD41E818BF300EBF660 /* Frameworks */,
 			);
@@ -90,6 +120,7 @@
 			children = (
 				F61A7ABB1E8182C100EBF660 /* UnicodeInput.app */,
 				1A4AABEB23B7C84F00F4DEAB /* UnicodeInputInstaller */,
+				1A16BB4623B907E000E667C4 /* UnicodeInputPreferences.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +150,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1A16BB4523B907E000E667C4 /* UnicodeInputPreferences */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A16BB5523B907E100E667C4 /* Build configuration list for PBXNativeTarget "UnicodeInputPreferences" */;
+			buildPhases = (
+				1A16BB4223B907E000E667C4 /* Sources */,
+				1A16BB4323B907E000E667C4 /* Frameworks */,
+				1A16BB4423B907E000E667C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnicodeInputPreferences;
+			productName = UnicodeInputPreferences;
+			productReference = 1A16BB4623B907E000E667C4 /* UnicodeInputPreferences.app */;
+			productType = "com.apple.product-type.application";
+		};
 		1A4AABEA23B7C84F00F4DEAB /* UnicodeInputInstaller */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A4AABEF23B7C85000F4DEAB /* Build configuration list for PBXNativeTarget "UnicodeInputInstaller" */;
@@ -163,6 +211,14 @@
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Kyle Raftogianis";
 				TargetAttributes = {
+					1A16BB4523B907E000E667C4 = {
+						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
 					1A4AABEA23B7C84F00F4DEAB = {
 						CreatedOnToolsVersion = 10.3;
 						LastSwiftMigration = 1030;
@@ -189,11 +245,21 @@
 			targets = (
 				F61A7ABA1E8182C100EBF660 /* UnicodeInput */,
 				1A4AABEA23B7C84F00F4DEAB /* UnicodeInputInstaller */,
+				1A16BB4523B907E000E667C4 /* UnicodeInputPreferences */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1A16BB4423B907E000E667C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A16BB4D23B907E100E667C4 /* Assets.xcassets in Resources */,
+				1A16BB5023B907E100E667C4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F61A7AB91E8182C100EBF660 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -207,6 +273,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1A16BB4223B907E000E667C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A16BB4B23B907E000E667C4 /* ViewController.swift in Sources */,
+				1A16BB4923B907E000E667C4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1A4AABE723B7C84F00F4DEAB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,6 +303,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		1A16BB4E23B907E100E667C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A16BB4F23B907E100E667C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		1AC76A9B23B6D9D0009BD2D7 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -239,6 +322,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1A16BB5323B907E100E667C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = UnicodeInputPreferences/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.knrafto.UnicodeInputPreferences;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1A16BB5423B907E100E667C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = UnicodeInputPreferences/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.knrafto.UnicodeInputPreferences;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		1A4AABF023B7C85000F4DEAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -436,6 +573,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1A16BB5523B907E100E667C4 /* Build configuration list for PBXNativeTarget "UnicodeInputPreferences" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A16BB5323B907E100E667C4 /* Debug */,
+				1A16BB5423B907E100E667C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1A4AABEF23B7C85000F4DEAB /* Build configuration list for PBXNativeTarget "UnicodeInputInstaller" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
