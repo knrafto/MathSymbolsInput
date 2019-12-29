@@ -9,7 +9,7 @@
 import Foundation
 import Cocoa
 
-let customReplacementsKey = "customCommands"
+let customReplacementsKey = "CustomCommands"
 
 // Map from escape sequences to replacements.
 var builtinReplacements = Dictionary<String, String>()
@@ -66,4 +66,19 @@ func loadBuiltinReplacements() {
 
   builtinReplacements = replacementsMap
   NSLog("Loaded %d built-in replacements", builtinReplacements.count)
+}
+
+// Look up the command in the user's preferences.
+func findCustomReplacement(forCommand command: String) -> String? {
+  let dict = UserDefaults.standard.dictionary(forKey: customReplacementsKey)
+  return dict?[command] as? String
+}
+
+// Look up a command's replacement. Custom commands will override any built-in ones.
+func findReplacement(forCommand command: String) -> String? {
+  var replacement = findCustomReplacement(forCommand: command)
+  if replacement == nil {
+    replacement = builtinReplacements[command]
+  }
+  return replacement
 }
