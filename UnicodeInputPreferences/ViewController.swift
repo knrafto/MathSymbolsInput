@@ -78,8 +78,10 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     ])
     tableView.reloadData()
 
-    // Automatically edit the new item.
-    let view = tableView.view(atColumn: 0, row: contents.count - 1, makeIfNecessary: true) as! NSTableCellView
+    // Automatically select and edit the new item.
+    let newRow = contents.count - 1
+    tableView.selectRowIndexes(IndexSet(integer: newRow), byExtendingSelection: false)
+    let view = tableView.view(atColumn: 0, row: newRow, makeIfNecessary: true) as! NSTableCellView
     view.textField?.becomeFirstResponder()
     let range = view.textField?.currentEditor()?.selectedRange
     view.textField?.currentEditor()?.selectedRange = NSMakeRange(range?.length ?? 0, 0)
