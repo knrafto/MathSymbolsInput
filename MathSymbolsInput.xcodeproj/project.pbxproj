@@ -130,7 +130,7 @@
 			dependencies = (
 			);
 			name = MathSymbolsInputPreferences;
-			productName = UnicodeInputPreferences;
+			productName = MathSymbolsInputPreferences;
 			productReference = 1A16BB4623B907E000E667C4 /* MathSymbolsInputPreferences.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -147,7 +147,7 @@
 			dependencies = (
 			);
 			name = MathSymbolsInput;
-			productName = UnicodeInput;
+			productName = MathSymbolsInput;
 			productReference = F61A7ABB1E8182C100EBF660 /* MathSymbolsInput.app */;
 			productType = "com.apple.product-type.application";
 		};
