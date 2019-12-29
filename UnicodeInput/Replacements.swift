@@ -10,17 +10,15 @@ import Foundation
 import Cocoa
 
 // Map from escape sequences to replacements.
-var builtinReplacements : [String : String] = [:]
+var builtinCommands : [String : String] = [:]
 
-func loadBuiltinReplacements() {
-  var replacementsMap : [String : String] = [:]
-
+func loadBuiltinCommands() {
   let path = Bundle.main.path(forResource: kBuiltinCommandsResourceName, ofType: "txt")
   if path == nil {
     NSLog("No file %@.txt in %@", kBuiltinCommandsResourceName, Bundle.main.resourcePath!)
     return
   }
-  NSLog("Loading replacements from %@", path!)
+  NSLog("Loading commands from %@", path!)
 
   var contents = ""
   do {
@@ -42,41 +40,36 @@ func loadBuiltinReplacements() {
     if components.count != 2 {
       NSLog("Syntax error on line %d: expected exactly two words separated by whitespace",
             lineNumber)
-      return
+      continue
     }
-    let escape = components[0]
+    let command = components[0]
     let replacement = components[1]
 
-    if !escape.starts(with: "\\") {
-      NSLog("Syntax error on line %d: escape sequence must start with a backslash",
+    if !command.starts(with: "\\") {
+      NSLog("Syntax error on line %d: command must start with a backslash",
             lineNumber)
-      return
+      continue
     }
 
-    if replacementsMap[escape] != nil {
-      NSLog("Error on line %d: escape sequence '%@' already defined",
-            lineNumber, escape)
-      return
+    if builtinCommands[command] != nil {
+      NSLog("Error on line %d: command '%@' already defined",
+            lineNumber, command)
+      continue
     }
 
-    replacementsMap[escape] = replacement
+    builtinCommands[command] = replacement
   }
 
-  builtinReplacements = replacementsMap
-  NSLog("Loaded %d built-in replacements", builtinReplacements.count)
+  NSLog("Loaded %d built-in commands", builtinCommands.count)
 }
 
-// Look up the command in the user's preferences.
-func findCustomReplacement(forCommand command: String) -> String? {
-  let dict = UserDefaults.standard.dictionary(forKey: kCustomCommandsKey)
-  return dict?[command] as? String
-}
-
-// Look up a command's replacement. Custom commands will override any built-in ones.
+// Look up a command's replacement, first in the user's preferences and then
+// in the built-in commands.
 func findReplacement(forCommand command: String) -> String? {
-  var replacement = findCustomReplacement(forCommand: command)
+  let customCommands = UserDefaults.standard.dictionary(forKey: kCustomCommandsKey)
+  var replacement = customCommands?[command] as? String
   if replacement == nil {
-    replacement = builtinReplacements[command]
+    replacement = builtinCommands[command]
   }
   return replacement
 }

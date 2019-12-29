@@ -19,7 +19,7 @@ let kPreferencesAppBundleIdentifier = "com.knrafto.UnicodeInputPreferences"
 let kCustomCommandsKey = "CustomCommands"
 
 // Load the replacements.
-loadBuiltinReplacements()
+loadBuiltinCommands()
 
 // Set up the menu in the menu bar.
 let mainMenu = NSMenu()
