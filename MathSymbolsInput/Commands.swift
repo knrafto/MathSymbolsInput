@@ -60,6 +60,9 @@ func loadBuiltinCommands() {
     builtinCommands[command] = replacement
   }
 
+  // Save commands to UserDefaults so the preferences app can read them easily.
+  UserDefaults.standard.set(builtinCommands, forKey: kBuiltinCommandsKey)
+
   NSLog("Loaded %d built-in commands", builtinCommands.count)
 }
 

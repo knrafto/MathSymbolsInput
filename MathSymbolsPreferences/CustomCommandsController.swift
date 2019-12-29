@@ -17,8 +17,8 @@ class CustomCommandsController: NSViewController, NSTableViewDataSource, NSTable
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    preferences = UserDefaults(suiteName: suiteName)
-    let customCommands = preferences?.dictionary(forKey: customCommandsKey) ?? [:]
+    preferences = UserDefaults(suiteName: kSuiteName)
+    let customCommands = preferences?.dictionary(forKey: kCustomCommandsKey) ?? [:]
     for command in Array(customCommands.keys).sorted() {
       guard let replacement = customCommands[command] as? String else {
         continue
@@ -36,7 +36,7 @@ class CustomCommandsController: NSViewController, NSTableViewDataSource, NSTable
     for rowDict in contents {
       customCommands[rowDict["command"]!] = rowDict["replacement"]!
     }
-    preferences?.set(customCommands, forKey: customCommandsKey)
+    preferences?.set(customCommands, forKey: kCustomCommandsKey)
   }
 
   // For NSTableViewDataSource.
