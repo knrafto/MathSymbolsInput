@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
+class CustomCommandsController: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
   @IBOutlet weak var tableView: NSTableView!
   var preferences: UserDefaults?
   // Table contents, as a list of (column id -> value) dictionaries.
@@ -54,6 +54,9 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
   // Called when a table cell is edited.
   @IBAction func doneEditing(_ sender: NSTextField) {
     let row = tableView.row(for: sender.superview!)
+    if row == -1 {
+      return
+    }
     let column = sender.superview!.identifier!.rawValue
     contents[row][column] = sender.stringValue
     savePreferences()

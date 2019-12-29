@@ -73,29 +73,79 @@
                         </connections>
                     </window>
                     <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                        <segue destination="eU3-8d-6Aa" kind="relationship" relationship="window.shadowedContentViewController" id="aCQ-ex-AgA"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--View Controller-->
+        <!--Tab View Controller-->
+        <scene sceneID="u7a-0Z-6mx">
+            <objects>
+                <tabViewController selectedTabViewItemIndex="1" id="eU3-8d-6Aa" sceneMemberID="viewController">
+                    <tabViewItems>
+                        <tabViewItem label="Custom Commands" identifier="" id="U5V-xK-k9c"/>
+                        <tabViewItem label="Built-in Commands" identifier="" id="gdA-n9-2fP"/>
+                        <tabViewItem label="About" id="k9T-0a-8Pk"/>
+                    </tabViewItems>
+                    <viewControllerTransitionOptions key="transitionOptions" allowUserInteraction="YES"/>
+                    <tabView key="tabView" type="noTabsBezelBorder" id="rLs-nB-pjc">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <font key="font" metaFont="system"/>
+                        <connections>
+                            <outlet property="delegate" destination="eU3-8d-6Aa" id="PnZ-Ae-z5x"/>
+                        </connections>
+                    </tabView>
+                    <connections>
+                        <outlet property="tabView" destination="rLs-nB-pjc" id="aJc-21-zEh"/>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="tabItems" id="4Q4-hu-bNw"/>
+                        <segue destination="jkV-2A-vOA" kind="relationship" relationship="tabItems" id="irg-K8-RSc"/>
+                        <segue destination="Clv-Ll-Yj2" kind="relationship" relationship="tabItems" id="uRm-0A-rcK"/>
+                    </connections>
+                </tabViewController>
+                <customObject id="xev-LC-mN2" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="677"/>
+        </scene>
+        <!--Custom Commands-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Math_Symbols_Preferences" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Custom Commands" id="XfG-lQ-9wD" customClass="CustomCommandsController" customModule="Math_Symbols_Preferences" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="311"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="383"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gpv-uV-O0y">
+                                <rect key="frame" x="18" y="18" width="71" height="24"/>
+                                <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="momentary" id="MLJ-GP-9z9">
+                                    <font key="font" metaFont="system"/>
+                                    <segments>
+                                        <segment image="NSAddTemplate" width="32"/>
+                                        <segment image="NSRemoveTemplate" width="32" tag="1"/>
+                                    </segments>
+                                </segmentedCell>
+                                <connections>
+                                    <action selector="buttonClicked:" target="XfG-lQ-9wD" id="PDZ-b1-d4R"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="j1h-dT-hxB">
+                                <rect key="frame" x="20" y="346" width="440" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Custom commands override any built-in ones." id="VD2-Cz-dLI">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhI-xZ-Z6V">
-                                <rect key="frame" x="20" y="49" width="440" height="242"/>
+                                <rect key="frame" x="20" y="49" width="440" height="289"/>
                                 <clipView key="contentView" id="A3I-b2-0J5">
-                                    <rect key="frame" x="1" y="0.0" width="438" height="241"/>
+                                    <rect key="frame" x="1" y="0.0" width="438" height="288"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" alternatingRowBackgroundColors="YES" columnReordering="NO" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="jux-Yf-gzt" viewBased="YES" id="rs6-Xi-HpD">
-                                            <rect key="frame" x="0.0" y="0.0" width="438" height="216"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="438" height="263"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -202,27 +252,17 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableHeaderView>
                             </scrollView>
-                            <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gpv-uV-O0y">
-                                <rect key="frame" x="18" y="18" width="71" height="24"/>
-                                <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="momentary" id="MLJ-GP-9z9">
-                                    <font key="font" metaFont="system"/>
-                                    <segments>
-                                        <segment image="NSAddTemplate" width="32"/>
-                                        <segment image="NSRemoveTemplate" width="32" tag="1"/>
-                                    </segments>
-                                </segmentedCell>
-                                <connections>
-                                    <action selector="buttonClicked:" target="XfG-lQ-9wD" id="PDZ-b1-d4R"/>
-                                </connections>
-                            </segmentedControl>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="j1h-dT-hxB" secondAttribute="trailing" constant="22" id="1Le-jw-XdY"/>
                             <constraint firstAttribute="trailing" secondItem="mhI-xZ-Z6V" secondAttribute="trailing" constant="20" id="7Tk-yN-pDz"/>
+                            <constraint firstItem="j1h-dT-hxB" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="8n1-wd-baP"/>
                             <constraint firstItem="gpv-uV-O0y" firstAttribute="top" secondItem="mhI-xZ-Z6V" secondAttribute="bottom" constant="8" id="R12-bI-7jm"/>
-                            <constraint firstItem="mhI-xZ-Z6V" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="ckK-ro-OBX"/>
                             <constraint firstItem="gpv-uV-O0y" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="egR-az-EuX"/>
                             <constraint firstItem="mhI-xZ-Z6V" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="g1D-yM-azt"/>
+                            <constraint firstItem="mhI-xZ-Z6V" firstAttribute="top" secondItem="j1h-dT-hxB" secondAttribute="bottom" constant="8" id="m7P-LL-hw2"/>
                             <constraint firstAttribute="bottom" secondItem="gpv-uV-O0y" secondAttribute="bottom" constant="20" id="mBN-uB-JCG"/>
+                            <constraint firstItem="j1h-dT-hxB" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="22" id="ml9-sG-dOD"/>
                         </constraints>
                     </view>
                     <connections>
@@ -231,7 +271,33 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="675.5"/>
+            <point key="canvasLocation" x="-449" y="1204.5"/>
+        </scene>
+        <!--Built-in Commands-->
+        <scene sceneID="ADd-0T-xqo">
+            <objects>
+                <viewController title="Built-in Commands" id="jkV-2A-vOA" sceneMemberID="viewController">
+                    <view key="view" id="jyS-c3-rBU">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="xkI-ch-TBC" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="1168"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RLN-Yb-yz0">
+            <objects>
+                <viewController id="Clv-Ll-Yj2" sceneMemberID="viewController">
+                    <view key="view" id="fQP-tJ-I8p">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="fZX-TX-QeE" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="556" y="1168"/>
         </scene>
     </scenes>
     <resources>
