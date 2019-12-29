@@ -12,6 +12,7 @@ let suiteName = "com.knrafto.inputmethod.UnicodeInput"
 let customCommandsKey = "CustomCommands"
 
 class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
+  @IBOutlet weak var tableView: NSTableView!
   var preferences: UserDefaults?
   // Table contents, as a list of (column id -> value) dictionaries.
   var contents: [[String: String]] = []
@@ -32,6 +33,15 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     }
   }
 
+  // Saves the current state to preferences.
+  func savePreferences() {
+    var customCommands: [String : String] = [:]
+    for rowDict in contents {
+      customCommands[rowDict["command"]!] = rowDict["replacement"]!
+    }
+    preferences?.set(customCommands, forKey: customCommandsKey)
+  }
+
   // For NSTableViewDataSource.
   func numberOfRows(in tableView: NSTableView) -> Int {
     return contents.count
@@ -42,6 +52,14 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     let view = tableView.makeView(withIdentifier: tableColumn!.identifier, owner: self) as! NSTableCellView
     view.textField?.stringValue = contents[row][tableColumn!.identifier.rawValue]!
     return view
+  }
+
+  // Called when a table cell is edited.
+  @IBAction func doneEditing(_ sender: NSTextField) {
+    let row = tableView.row(for: sender.superview!)
+    let column = sender.superview!.identifier!.rawValue
+    contents[row][column] = sender.stringValue
+    savePreferences()
   }
 }
 
