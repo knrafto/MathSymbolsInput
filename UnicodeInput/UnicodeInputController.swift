@@ -116,7 +116,10 @@ class UnicodeInputController : IMKInputController {
 
   // Called when the "Preferences..." menu item is selected.
   override func showPreferences(_ sender: Any!) {
-    // TODO: implement
-    NSLog("showPreferences")
+    guard let url = NSWorkspace.shared.urlForApplication(withBundleIdentifier: kPreferencesAppBundleIdentifier) else {
+      NSLog("Could not find preferences application with bundle id %@", kPreferencesAppBundleIdentifier)
+      return
+    }
+    NSWorkspace.shared.open(url)
   }
 }

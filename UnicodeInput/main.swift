@@ -11,6 +11,12 @@ import InputMethodKit
 
 // Unique connection name for this input method.
 let kConnectionName = "UnicodeInput_1_Connection"
+// .txt file containing built-in commands.
+let kBuiltinCommandsResourceName = "replacements"
+// Preferences app name.
+let kPreferencesAppBundleIdentifier = "com.knrafto.UnicodeInputPreferences"
+// UserDefaults key for custom commands.
+let kCustomCommandsKey = "CustomCommands"
 
 // Load the replacements.
 loadBuiltinReplacements()

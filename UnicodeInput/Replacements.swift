@@ -9,17 +9,15 @@
 import Foundation
 import Cocoa
 
-let customReplacementsKey = "CustomCommands"
-
 // Map from escape sequences to replacements.
 var builtinReplacements : [String : String] = [:]
 
 func loadBuiltinReplacements() {
   var replacementsMap : [String : String] = [:]
 
-  let path = Bundle.main.path(forResource: "replacements", ofType: "txt")
+  let path = Bundle.main.path(forResource: kBuiltinCommandsResourceName, ofType: "txt")
   if path == nil {
-    NSLog("No file replacements.txt in %@", Bundle.main.resourcePath!)
+    NSLog("No file %@.txt in %@", kBuiltinCommandsResourceName, Bundle.main.resourcePath!)
     return
   }
   NSLog("Loading replacements from %@", path!)
@@ -70,7 +68,7 @@ func loadBuiltinReplacements() {
 
 // Look up the command in the user's preferences.
 func findCustomReplacement(forCommand command: String) -> String? {
-  let dict = UserDefaults.standard.dictionary(forKey: customReplacementsKey)
+  let dict = UserDefaults.standard.dictionary(forKey: kCustomCommandsKey)
   return dict?[command] as? String
 }
 
