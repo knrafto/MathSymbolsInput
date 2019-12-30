@@ -8,6 +8,8 @@
 
 #import <InstallerPlugins/InstallerPlugins.h>
 
-@interface ActivatePane : InstallerPane
-
+@interface ActivatePane : InstallerPane {
+  // Whether the input method was previously installed.
+  BOOL isUpgrade;
+}
 @end
