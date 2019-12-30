@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <installer-gui-script minSpecVersion="1">
-    <pkg-ref id="com.mathsymbolsinput.inputmethod.MathSymbolsInput"/>
-    <pkg-ref id="com.mathsymbolsinput.MathSymbolsPreferences"/>
+    <title>Math Symbols Input</title>
     <options customize="never" require-scripts="false"/>
     <choices-outline>
         <line choice="default">
