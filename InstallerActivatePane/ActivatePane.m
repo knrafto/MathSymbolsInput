@@ -70,6 +70,7 @@ static void enableInputMethod() {
 - (void)didEnterPane:(InstallerSectionDirection)dir
 {
   // TODO: if upgrade, show message. Else, show option to enable.
+  NSLog(@"ActivatePane didEnterPane");
 }
 
 - (void)willExitPane:(InstallerSectionDirection)dir
