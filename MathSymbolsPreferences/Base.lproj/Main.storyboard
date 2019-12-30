@@ -30,7 +30,7 @@
         <!--Tab View Controller-->
         <scene sceneID="u7a-0Z-6mx">
             <objects>
-                <tabViewController selectedTabViewItemIndex="1" id="eU3-8d-6Aa" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="0" id="eU3-8d-6Aa" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem label="Custom Commands" identifier="" id="U5V-xK-k9c"/>
                         <tabViewItem label="Built-in Commands" identifier="" id="gdA-n9-2fP"/>
