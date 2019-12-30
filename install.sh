@@ -2,5 +2,5 @@
 
 set -euxo pipefail
 
-cp -r build/Debug/MathSymbolsInput.app "$HOME/Library/Input Methods"
+sudo cp -r build/Debug/MathSymbolsInput.app "/Library/Input Methods"
 killall MathSymbolsInput
