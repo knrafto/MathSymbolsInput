@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <installer-gui-script minSpecVersion="1">
     <title>Math Symbols Input</title>
-    <options customize="never" require-scripts="false"/>
+    <options customize="never" rootVolumeOnly="true" require-scripts="false"/>
     <choices-outline>
         <line choice="default">
             <line choice="com.mathsymbolsinput.inputmethod.MathSymbolsInput"/>
