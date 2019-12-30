@@ -15,4 +15,9 @@
     return [[NSBundle bundleForClass:[self class]] localizedStringForKey:@"PaneTitle" value:nil table:nil];
 }
 
+- (void)didEnterPane:(InstallerSectionDirection)dir
+{
+    NSLog(@"MyInstallerPane");
+}
+
 @end
