@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-gui-script minSpecVersion="1">
+    <pkg-ref id="com.mathsymbolsinput.inputmethod.MathSymbolsInput"/>
+    <pkg-ref id="com.mathsymbolsinput.MathSymbolsPreferences"/>
+    <options customize="never" require-scripts="false"/>
+    <choices-outline>
+        <line choice="default">
+            <line choice="com.mathsymbolsinput.inputmethod.MathSymbolsInput"/>
+            <line choice="com.mathsymbolsinput.MathSymbolsPreferences"/>
+        </line>
+    </choices-outline>
+    <choice id="default"/>
+    <choice id="com.mathsymbolsinput.inputmethod.MathSymbolsInput" visible="false">
+        <pkg-ref id="com.mathsymbolsinput.inputmethod.MathSymbolsInput"/>
+    </choice>
+    <pkg-ref id="com.mathsymbolsinput.inputmethod.MathSymbolsInput" version="0.9.0" onConclusion="none">MathSymbolsInput.pkg</pkg-ref>
+    <choice id="com.mathsymbolsinput.MathSymbolsPreferences" visible="false">
+        <pkg-ref id="com.mathsymbolsinput.MathSymbolsPreferences"/>
+    </choice>
+    <pkg-ref id="com.mathsymbolsinput.MathSymbolsPreferences" version="0.9.0" onConclusion="none">MathSymbolsPreferences.pkg</pkg-ref>
+</installer-gui-script>
