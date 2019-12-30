@@ -16,9 +16,5 @@ let kBuiltinCommandsKey = "BuiltinCommands"
 let kCustomCommandsKey = "CustomCommands"
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
-  func applicationShouldTerminateAfterLastWindowClosed(_ theApplication: NSApplication) -> Bool {
-    return true
-  }
-}
+class AppDelegate: NSObject, NSApplicationDelegate {}
 
