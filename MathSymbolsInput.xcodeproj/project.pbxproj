@@ -15,6 +15,11 @@
 		1A6DBD6223B969C600AA8924 /* BuiltinCommandsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6DBD6023B966B900AA8924 /* BuiltinCommandsController.swift */; };
 		1A6DBD6423B99B0200AA8924 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A6DBD6323B99B0200AA8924 /* InfoPlist.strings */; };
 		1A6DBD6623B9A63C00AA8924 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6DBD6523B9A63C00AA8924 /* AboutController.swift */; };
+		1A6DBD8723BA4D4D00AA8924 /* MyInstallerPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6DBD8623BA4D4D00AA8924 /* MyInstallerPane.m */; };
+		1A6DBD8A23BA4D4D00AA8924 /* MyInstallerPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6DBD8823BA4D4D00AA8924 /* MyInstallerPane.xib */; };
+		1A6DBD8D23BA4D4D00AA8924 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A6DBD8B23BA4D4D00AA8924 /* Localizable.strings */; };
+		1A6DBD8F23BA4D4D00AA8924 /* InstallerSections.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A6DBD8E23BA4D4D00AA8924 /* InstallerSections.plist */; };
+		1A6DBD9323BA4D4D00AA8924 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A6DBD9123BA4D4D00AA8924 /* InfoPlist.strings */; };
 		1AB0D0F622AD6AE400D71347 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0D0F522AD6AE400D71347 /* main.swift */; };
 		1AC14D8B22AE875100549402 /* icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14D8A22AE875100549402 /* icon.pdf */; };
 		1AC76A9D23B6D9D0009BD2D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AC76A9B23B6D9D0009BD2D7 /* InfoPlist.strings */; };
@@ -36,6 +41,14 @@
 		1A6DBD6023B966B900AA8924 /* BuiltinCommandsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuiltinCommandsController.swift; sourceTree = "<group>"; };
 		1A6DBD6323B99B0200AA8924 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		1A6DBD6523B9A63C00AA8924 /* AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
+		1A6DBD8323BA4D4D00AA8924 /* InstallerActivatePane.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstallerActivatePane.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A6DBD8523BA4D4D00AA8924 /* MyInstallerPane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyInstallerPane.h; sourceTree = "<group>"; };
+		1A6DBD8623BA4D4D00AA8924 /* MyInstallerPane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyInstallerPane.m; sourceTree = "<group>"; };
+		1A6DBD8923BA4D4D00AA8924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MyInstallerPane.xib; sourceTree = "<group>"; };
+		1A6DBD8C23BA4D4D00AA8924 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1A6DBD8E23BA4D4D00AA8924 /* InstallerSections.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InstallerSections.plist; sourceTree = "<group>"; };
+		1A6DBD9023BA4D4D00AA8924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A6DBD9223BA4D4D00AA8924 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1AB0D0F522AD6AE400D71347 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1AC14D8A22AE875100549402 /* icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon.pdf; sourceTree = "<group>"; };
 		1AC76A9C23B6D9D0009BD2D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -48,6 +61,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		1A16BB4323B907E000E667C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A6DBD8023BA4D4C00AA8924 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,6 +100,20 @@
 			path = MathSymbolsPreferences;
 			sourceTree = "<group>";
 		};
+		1A6DBD8423BA4D4D00AA8924 /* InstallerActivatePane */ = {
+			isa = PBXGroup;
+			children = (
+				1A6DBD8523BA4D4D00AA8924 /* MyInstallerPane.h */,
+				1A6DBD8623BA4D4D00AA8924 /* MyInstallerPane.m */,
+				1A6DBD8823BA4D4D00AA8924 /* MyInstallerPane.xib */,
+				1A6DBD8B23BA4D4D00AA8924 /* Localizable.strings */,
+				1A6DBD8E23BA4D4D00AA8924 /* InstallerSections.plist */,
+				1A6DBD9023BA4D4D00AA8924 /* Info.plist */,
+				1A6DBD9123BA4D4D00AA8924 /* InfoPlist.strings */,
+			);
+			path = InstallerActivatePane;
+			sourceTree = "<group>";
+		};
 		F61A7AB21E8182C100EBF660 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +121,7 @@
 				1A5DB37A22AE8DCA000F7F92 /* README.md */,
 				F61A7ABD1E8182C100EBF660 /* MathSymbolsInput */,
 				1A16BB4723B907E000E667C4 /* MathSymbolsPreferences */,
+				1A6DBD8423BA4D4D00AA8924 /* InstallerActivatePane */,
 				F61A7ABC1E8182C100EBF660 /* Products */,
 				F61A7AD41E818BF300EBF660 /* Frameworks */,
 			);
@@ -97,6 +132,7 @@
 			children = (
 				F61A7ABB1E8182C100EBF660 /* MathSymbolsInput.app */,
 				1A16BB4623B907E000E667C4 /* MathSymbolsPreferences.app */,
+				1A6DBD8323BA4D4D00AA8924 /* InstallerActivatePane.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +179,23 @@
 			productReference = 1A16BB4623B907E000E667C4 /* MathSymbolsPreferences.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1A6DBD8223BA4D4C00AA8924 /* InstallerActivatePane */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A6DBD9623BA4D4D00AA8924 /* Build configuration list for PBXNativeTarget "InstallerActivatePane" */;
+			buildPhases = (
+				1A6DBD7F23BA4D4C00AA8924 /* Sources */,
+				1A6DBD8023BA4D4C00AA8924 /* Frameworks */,
+				1A6DBD8123BA4D4C00AA8924 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstallerActivatePane;
+			productName = InstallerActivatePane;
+			productReference = 1A6DBD8323BA4D4D00AA8924 /* InstallerActivatePane.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		F61A7ABA1E8182C100EBF660 /* MathSymbolsInput */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F61A7ACF1E8182C100EBF660 /* Build configuration list for PBXNativeTarget "MathSymbolsInput" */;
@@ -178,6 +231,9 @@
 							};
 						};
 					};
+					1A6DBD8223BA4D4C00AA8924 = {
+						CreatedOnToolsVersion = 10.3;
+					};
 					F61A7ABA1E8182C100EBF660 = {
 						CreatedOnToolsVersion = 8.2.1;
 						LastSwiftMigration = 1030;
@@ -200,6 +256,7 @@
 			targets = (
 				F61A7ABA1E8182C100EBF660 /* MathSymbolsInput */,
 				1A16BB4523B907E000E667C4 /* MathSymbolsPreferences */,
+				1A6DBD8223BA4D4C00AA8924 /* InstallerActivatePane */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +269,17 @@
 				1A16BB4D23B907E100E667C4 /* Assets.xcassets in Resources */,
 				1A6DBD6423B99B0200AA8924 /* InfoPlist.strings in Resources */,
 				1A16BB5023B907E100E667C4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A6DBD8123BA4D4C00AA8924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A6DBD8A23BA4D4D00AA8924 /* MyInstallerPane.xib in Resources */,
+				1A6DBD9323BA4D4D00AA8924 /* InfoPlist.strings in Resources */,
+				1A6DBD8D23BA4D4D00AA8924 /* Localizable.strings in Resources */,
+				1A6DBD8F23BA4D4D00AA8924 /* InstallerSections.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +307,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1A6DBD7F23BA4D4C00AA8924 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A6DBD8723BA4D4D00AA8924 /* MyInstallerPane.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F61A7AB71E8182C100EBF660 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,6 +334,30 @@
 				1A16BB4F23B907E100E667C4 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1A6DBD8823BA4D4D00AA8924 /* MyInstallerPane.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A6DBD8923BA4D4D00AA8924 /* Base */,
+			);
+			name = MyInstallerPane.xib;
+			sourceTree = "<group>";
+		};
+		1A6DBD8B23BA4D4D00AA8924 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A6DBD8C23BA4D4D00AA8924 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		1A6DBD9123BA4D4D00AA8924 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A6DBD9223BA4D4D00AA8924 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		1AC76A9B23B6D9D0009BD2D7 /* InfoPlist.strings */ = {
@@ -324,6 +424,49 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1A6DBD9423BA4D4D00AA8924 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = InstallerActivatePane/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mathsymbolsinput.InstallerActivatePane;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		1A6DBD9523BA4D4D00AA8924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = InstallerActivatePane/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mathsymbolsinput.InstallerActivatePane;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -480,6 +623,15 @@
 			buildConfigurations = (
 				1A16BB5323B907E100E667C4 /* Debug */,
 				1A16BB5423B907E100E667C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A6DBD9623BA4D4D00AA8924 /* Build configuration list for PBXNativeTarget "InstallerActivatePane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A6DBD9423BA4D4D00AA8924 /* Debug */,
+				1A6DBD9523BA4D4D00AA8924 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
