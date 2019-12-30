@@ -22,7 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A16BB4623B907E000E667C4 /* Math Symbols Preferences.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math Symbols Preferences.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A16BB4623B907E000E667C4 /* MathSymbolsPreferences.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MathSymbolsPreferences.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A16BB4823B907E000E667C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A16BB4A23B907E000E667C4 /* CustomCommandsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCommandsController.swift; sourceTree = "<group>"; };
 		1A16BB4C23B907E100E667C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				F61A7ABB1E8182C100EBF660 /* MathSymbolsInput.app */,
-				1A16BB4623B907E000E667C4 /* Math Symbols Preferences.app */,
+				1A16BB4623B907E000E667C4 /* MathSymbolsPreferences.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,9 +120,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A16BB4523B907E000E667C4 /* Math Symbols Preferences */ = {
+		1A16BB4523B907E000E667C4 /* MathSymbolsPreferences */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A16BB5523B907E100E667C4 /* Build configuration list for PBXNativeTarget "Math Symbols Preferences" */;
+			buildConfigurationList = 1A16BB5523B907E100E667C4 /* Build configuration list for PBXNativeTarget "MathSymbolsPreferences" */;
 			buildPhases = (
 				1A16BB4223B907E000E667C4 /* Sources */,
 				1A16BB4323B907E000E667C4 /* Frameworks */,
@@ -132,9 +132,9 @@
 			);
 			dependencies = (
 			);
-			name = "Math Symbols Preferences";
-			productName = "Math Symbols Preferences";
-			productReference = 1A16BB4623B907E000E667C4 /* Math Symbols Preferences.app */;
+			name = "MathSymbolsPreferences";
+			productName = "MathSymbolsPreferences";
+			productReference = 1A16BB4623B907E000E667C4 /* MathSymbolsPreferences.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F61A7ABA1E8182C100EBF660 /* MathSymbolsInput */ = {
@@ -193,7 +193,7 @@
 			projectRoot = "";
 			targets = (
 				F61A7ABA1E8182C100EBF660 /* MathSymbolsInput */,
-				1A16BB4523B907E000E667C4 /* Math Symbols Preferences */,
+				1A16BB4523B907E000E667C4 /* MathSymbolsPreferences */,
 			);
 		};
 /* End PBXProject section */
@@ -465,7 +465,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A16BB5523B907E100E667C4 /* Build configuration list for PBXNativeTarget "Math Symbols Preferences" */ = {
+		1A16BB5523B907E100E667C4 /* Build configuration list for PBXNativeTarget "MathSymbolsPreferences" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A16BB5323B907E100E667C4 /* Debug */,

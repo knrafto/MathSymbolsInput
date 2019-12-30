@@ -53,7 +53,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Math_Symbols_Preferences" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="MathSymbolsPreferences" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -112,7 +112,7 @@
         <!--Custom Commands-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController title="Custom Commands" id="XfG-lQ-9wD" customClass="CustomCommandsController" customModule="Math_Symbols_Preferences" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Custom Commands" id="XfG-lQ-9wD" customClass="CustomCommandsController" customModule="MathSymbolsPreferences" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="383"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -276,7 +276,7 @@
         <!--Built-in Commands-->
         <scene sceneID="ADd-0T-xqo">
             <objects>
-                <viewController title="Built-in Commands" id="jkV-2A-vOA" customClass="BuiltinCommandsController" customModule="Math_Symbols_Preferences" sceneMemberID="viewController">
+                <viewController title="Built-in Commands" id="jkV-2A-vOA" customClass="BuiltinCommandsController" customModule="MathSymbolsPreferences" sceneMemberID="viewController">
                     <view key="view" id="jyS-c3-rBU">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>

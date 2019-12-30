@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1A16BB4523B907E000E667C4"
-               BuildableName = "Math Symbols Preferences.app"
-               BlueprintName = "Math Symbols Preferences"
+               BuildableName = "MathSymbolsPreferences.app"
+               BlueprintName = "MathSymbolsPreferences"
                ReferencedContainer = "container:MathSymbolsInput.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1A16BB4523B907E000E667C4"
-            BuildableName = "Math Symbols Preferences.app"
-            BlueprintName = "Math Symbols Preferences"
+            BuildableName = "MathSymbolsPreferences.app"
+            BlueprintName = "MathSymbolsPreferences"
             ReferencedContainer = "container:MathSymbolsInput.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1A16BB4523B907E000E667C4"
-            BuildableName = "Math Symbols Preferences.app"
-            BlueprintName = "Math Symbols Preferences"
+            BuildableName = "MathSymbolsPreferences.app"
+            BlueprintName = "MathSymbolsPreferences"
             ReferencedContainer = "container:MathSymbolsInput.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1A16BB4523B907E000E667C4"
-            BuildableName = "Math Symbols Preferences.app"
-            BlueprintName = "Math Symbols Preferences"
+            BuildableName = "MathSymbolsPreferences.app"
+            BlueprintName = "MathSymbolsPreferences"
             ReferencedContainer = "container:MathSymbolsInput.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
