@@ -36,7 +36,7 @@
 		1A16BB4F23B907E100E667C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A16BB5123B907E100E667C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A5DB37A22AE8DCA000F7F92 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		1A5DB37C22AE8E24000F7F92 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
+		1A5DB37C22AE8E24000F7F92 /* install_dev_version.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install_dev_version.sh; sourceTree = "<group>"; };
 		1A695F25229F8FDD008DEC0F /* commands.txt */ = {isa = PBXFileReference; indentWidth = 8; lastKnownFileType = text; path = commands.txt; sourceTree = "<group>"; tabWidth = 8; usesTabs = 1; };
 		1A6DBD6023B966B900AA8924 /* BuiltinCommandsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuiltinCommandsController.swift; sourceTree = "<group>"; };
 		1A6DBD6323B99B0200AA8924 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 			children = (
 				1A6DBD9C23BA62EC00AA8924 /* build_package.sh */,
 				1A6DBD9B23BA62EC00AA8924 /* distribution.xml */,
-				1A5DB37C22AE8E24000F7F92 /* install.sh */,
+				1A5DB37C22AE8E24000F7F92 /* install_dev_version.sh */,
 				1A5DB37A22AE8DCA000F7F92 /* README.md */,
 				F61A7ABD1E8182C100EBF660 /* MathSymbolsInput */,
 				1A16BB4723B907E000E667C4 /* MathSymbolsPreferences */,
