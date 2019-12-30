@@ -23,7 +23,7 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2019 Kyle Raftogianis. All rights reserved.</string>
 	<key>NSMainNibFile</key>
-	<string>MyInstallerPane</string>
+	<string>ActivatePane</string>
 	<key>NSPrincipalClass</key>
 	<string>InstallerSection</string>
 </dict>

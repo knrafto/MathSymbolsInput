@@ -1,5 +1,5 @@
 //
-//  MyInstallerPane.h
+//  ActivatePane.h
 //  InstallerActivatePane
 //
 //  Created by Kyle Raftogianis on 12/30/19.
@@ -8,6 +8,6 @@
 
 #import <InstallerPlugins/InstallerPlugins.h>
 
-@interface MyInstallerPane : InstallerPane
+@interface ActivatePane : InstallerPane
 
 @end

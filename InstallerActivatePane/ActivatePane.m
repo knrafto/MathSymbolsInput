@@ -1,14 +1,14 @@
 //
-//  MyInstallerPane.m
+//  ActivatePane.m
 //  InstallerActivatePane
 //
 //  Created by Kyle Raftogianis on 12/30/19.
 //  Copyright © 2019 Kyle Raftogianis. All rights reserved.
 //
 
-#import "MyInstallerPane.h"
+#import "ActivatePane.h"
 
-@implementation MyInstallerPane
+@implementation ActivatePane
 
 - (NSString *)title
 {
@@ -17,7 +17,7 @@
 
 - (void)didEnterPane:(InstallerSectionDirection)dir
 {
-    NSLog(@"MyInstallerPane");
+    NSLog(@"ActivatePane");
 }
 
 @end
