@@ -12,9 +12,9 @@
     <choice id="com.mathsymbolsinput.inputmethod.MathSymbolsInput" visible="false">
         <pkg-ref id="com.mathsymbolsinput.inputmethod.MathSymbolsInput"/>
     </choice>
-    <pkg-ref id="com.mathsymbolsinput.inputmethod.MathSymbolsInput" version="0.9.0" onConclusion="none">MathSymbolsInput.pkg</pkg-ref>
+    <pkg-ref id="com.mathsymbolsinput.inputmethod.MathSymbolsInput">MathSymbolsInput.pkg</pkg-ref>
     <choice id="com.mathsymbolsinput.MathSymbolsPreferences" visible="false">
         <pkg-ref id="com.mathsymbolsinput.MathSymbolsPreferences"/>
     </choice>
-    <pkg-ref id="com.mathsymbolsinput.MathSymbolsPreferences" version="0.9.0" onConclusion="none">MathSymbolsPreferences.pkg</pkg-ref>
+    <pkg-ref id="com.mathsymbolsinput.MathSymbolsPreferences">MathSymbolsPreferences.pkg</pkg-ref>
 </installer-gui-script>
