@@ -391,11 +391,14 @@
                             </scrollView>
                             <searchField wantsLayer="YES" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6W-hg-0He">
                                 <rect key="frame" x="20" y="258" width="410" height="22"/>
-                                <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="zT9-6u-flw">
+                                <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="Filter" usesSingleLineMode="YES" bezelStyle="round" sendsSearchStringImmediately="YES" maximumRecents="0" id="zT9-6u-flw">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </searchFieldCell>
+                                <connections>
+                                    <action selector="search:" target="jkV-2A-vOA" id="WR9-ba-kDd"/>
+                                </connections>
                             </searchField>
                         </subviews>
                         <constraints>
@@ -408,6 +411,9 @@
                             <constraint firstAttribute="trailing" secondItem="74n-s5-b8T" secondAttribute="trailing" constant="20" id="qy6-RY-nua"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="KGr-cK-6AM" id="7H9-uV-GN1"/>
+                    </connections>
                 </viewController>
                 <customObject id="xkI-ch-TBC" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
