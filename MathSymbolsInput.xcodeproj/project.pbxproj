@@ -14,6 +14,7 @@
 		1A695F26229F8FDD008DEC0F /* commands.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A695F25229F8FDD008DEC0F /* commands.txt */; };
 		1A6DBD6223B969C600AA8924 /* BuiltinCommandsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6DBD6023B966B900AA8924 /* BuiltinCommandsController.swift */; };
 		1A6DBD6423B99B0200AA8924 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A6DBD6323B99B0200AA8924 /* InfoPlist.strings */; };
+		1A6DBD6623B9A63C00AA8924 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6DBD6523B9A63C00AA8924 /* AboutController.swift */; };
 		1AB0D0F622AD6AE400D71347 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0D0F522AD6AE400D71347 /* main.swift */; };
 		1AC14D8B22AE875100549402 /* icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14D8A22AE875100549402 /* icon.pdf */; };
 		1AC76A9D23B6D9D0009BD2D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AC76A9B23B6D9D0009BD2D7 /* InfoPlist.strings */; };
@@ -34,6 +35,7 @@
 		1A695F25229F8FDD008DEC0F /* commands.txt */ = {isa = PBXFileReference; indentWidth = 8; lastKnownFileType = text; path = commands.txt; sourceTree = "<group>"; tabWidth = 8; usesTabs = 1; };
 		1A6DBD6023B966B900AA8924 /* BuiltinCommandsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuiltinCommandsController.swift; sourceTree = "<group>"; };
 		1A6DBD6323B99B0200AA8924 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		1A6DBD6523B9A63C00AA8924 /* AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
 		1AB0D0F522AD6AE400D71347 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1AC14D8A22AE875100549402 /* icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon.pdf; sourceTree = "<group>"; };
 		1AC76A9C23B6D9D0009BD2D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				1A6DBD6023B966B900AA8924 /* BuiltinCommandsController.swift */,
 				1A16BB4C23B907E100E667C4 /* Assets.xcassets */,
 				1A16BB4E23B907E100E667C4 /* Main.storyboard */,
+				1A6DBD6523B9A63C00AA8924 /* AboutController.swift */,
 				1A16BB5123B907E100E667C4 /* Info.plist */,
 				1A6DBD6323B99B0200AA8924 /* InfoPlist.strings */,
 			);
@@ -232,6 +235,7 @@
 				1A6DBD6223B969C600AA8924 /* BuiltinCommandsController.swift in Sources */,
 				1A16BB4B23B907E000E667C4 /* CustomCommandsController.swift in Sources */,
 				1A16BB4923B907E000E667C4 /* AppDelegate.swift in Sources */,
+				1A6DBD6623B9A63C00AA8924 /* AboutController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
