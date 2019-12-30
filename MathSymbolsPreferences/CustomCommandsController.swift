@@ -58,7 +58,11 @@ class CustomCommandsController: NSViewController, NSTableViewDataSource, NSTable
       return
     }
     let column = sender.superview!.identifier!.rawValue
-    contents[row][column] = sender.stringValue
+
+    // Trim whitespace
+    let text = sender.stringValue.trimmingCharacters(in: .whitespacesAndNewlines)
+    sender.stringValue = text
+    contents[row][column] = text
     savePreferences()
   }
 
