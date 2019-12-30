@@ -375,6 +375,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				VERSION = 0.9;
 			};
 			name = Debug;
 		};
@@ -424,6 +425,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				VERSION = 0.9;
 			};
 			name = Release;
 		};
