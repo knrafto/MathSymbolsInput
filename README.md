@@ -6,11 +6,13 @@ TODO: gif
 
 # Installation
 
-Download the installer for the latest version.
-Double-click to open the installer.
+The latest version is Version 0.9. To install or update Math Symbols Input:
 
-The installer can enable the input method automatically. To configure input sources, see the macOS help page
-https://support.apple.com/guide/mac-help/type-language-mac-input-sources-mchlp1406/mac
+1. [Click here to download the installer for the latest version.]()
+2. Double-click to open the installer and continue through the installation steps.
+
+The installer can enable the input method automatically. To configure input sources, see the [macOS help page on input sources](
+https://support.apple.com/guide/mac-help/type-language-mac-input-sources-mchlp1406/mac).
 
 # Usage
 
