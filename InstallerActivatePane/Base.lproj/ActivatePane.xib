@@ -37,7 +37,7 @@
                     </connections>
                 </button>
                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ypJ-Uk-kTK">
-                    <rect key="frame" x="20" y="249" width="380" height="61"/>
+                    <rect key="frame" x="20" y="273" width="380" height="37"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" selectable="YES" title="Message" id="8PL-H9-7Bw">
                         <font key="font" metaFont="system"/>
