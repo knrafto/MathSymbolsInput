@@ -22,6 +22,7 @@
 \simeq ≃
 \~- ≃
 \in ∈
+\notin ∉
 \times ×
 \x ×
 \circ ∘
@@ -50,11 +51,34 @@
 \< ⟨
 \rangle ⟩
 \> ⟩
+\varnothing ∅
+\emptyset ∅
+\partial ∂
+\del ∇
+\nabla ∇
+\therefore ∴
+\Colon ∷
+\:: ∷
+\cup ∪
+\union ∪
+\cap ∩
+\intersection ∩
+\sqcup ⊔
+\sqcap ⊓
 
 ### Typographic symbols ###
 
 \S §
+\P ¶
 \... …
+\copyright ©
+\(c) ©
+\registered ®
+\sharp ♯
+\# ♯
+\flat ♭
+\b ♭
+\natural ♮
 
 ### Superscripts and subscripts  ###
 # Not all letters are available in Unicode.
