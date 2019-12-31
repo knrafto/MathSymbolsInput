@@ -438,7 +438,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uyX-zr-eVd">
                                 <rect key="frame" x="201" y="239" width="48" height="14"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Version" id="7Q9-Zr-BxB">
-                                    <font key="font" metaFont="system" size="11"/>
+                                    <font key="font" metaFont="smallSystem"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -446,7 +446,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9bq-kP-Q3r">
                                 <rect key="frame" x="195" y="217" width="60" height="14"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Copyright" id="wzP-cG-5Gu">
-                                    <font key="font" metaFont="system" size="11"/>
+                                    <font key="font" metaFont="smallSystem"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -479,6 +479,10 @@
                             <constraint firstItem="RkT-RD-x0G" firstAttribute="top" secondItem="9bq-kP-Q3r" secondAttribute="bottom" constant="20" id="rQx-p1-Cks"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="copyrightField" destination="9bq-kP-Q3r" id="2lS-C8-pR6"/>
+                        <outlet property="versionField" destination="uyX-zr-eVd" id="KQT-Cp-7YT"/>
+                    </connections>
                 </viewController>
                 <customObject id="fZX-TX-QeE" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
