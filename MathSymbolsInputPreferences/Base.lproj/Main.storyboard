@@ -238,7 +238,7 @@
                             </segmentedControl>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="j1h-dT-hxB">
                                 <rect key="frame" x="20" y="323" width="440" height="17"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Custom commands override any default ones." id="VD2-Cz-dLI">
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Custom commands override any default commands." id="VD2-Cz-dLI">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
