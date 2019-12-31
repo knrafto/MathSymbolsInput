@@ -30,7 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A16BB4623B907E000E667C4 /* MathSymbolsPreferences.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathSymbolsPreferences.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A16BB4623B907E000E667C4 /* Math Symbols Input - Preferences.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math Symbols Input - Preferences.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A16BB4823B907E000E667C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A16BB4A23B907E000E667C4 /* CustomCommandsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCommandsController.swift; sourceTree = "<group>"; };
 		1A16BB4C23B907E100E667C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		1AC76A9C23B6D9D0009BD2D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1ACC934122AC5CEB00D924A7 /* InputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
 		1ADC700422ACAF2600E556A4 /* Commands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commands.swift; sourceTree = "<group>"; };
-		F61A7ABB1E8182C100EBF660 /* MathSymbolsInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathSymbolsInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F61A7ABB1E8182C100EBF660 /* Math Symbols Input.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math Symbols Input.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F61A7ACC1E8182C100EBF660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F61A7AD51E818BF300EBF660 /* InputMethodKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputMethodKit.framework; path = System/Library/Frameworks/InputMethodKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -143,8 +143,8 @@
 		F61A7ABC1E8182C100EBF660 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F61A7ABB1E8182C100EBF660 /* MathSymbolsInput.app */,
-				1A16BB4623B907E000E667C4 /* MathSymbolsPreferences.app */,
+				F61A7ABB1E8182C100EBF660 /* Math Symbols Input.app */,
+				1A16BB4623B907E000E667C4 /* Math Symbols Input - Preferences.app */,
 				1A6DBD8323BA4D4D00AA8924 /* InstallerActivatePane.bundle */,
 			);
 			name = Products;
@@ -175,9 +175,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A16BB4523B907E000E667C4 /* MathSymbolsPreferences */ = {
+		1A16BB4523B907E000E667C4 /* Math Symbols Input - Preferences */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A16BB5523B907E100E667C4 /* Build configuration list for PBXNativeTarget "MathSymbolsPreferences" */;
+			buildConfigurationList = 1A16BB5523B907E100E667C4 /* Build configuration list for PBXNativeTarget "Math Symbols Input - Preferences" */;
 			buildPhases = (
 				1A16BB4223B907E000E667C4 /* Sources */,
 				1A16BB4323B907E000E667C4 /* Frameworks */,
@@ -187,9 +187,9 @@
 			);
 			dependencies = (
 			);
-			name = MathSymbolsPreferences;
-			productName = MathSymbolsPreferences;
-			productReference = 1A16BB4623B907E000E667C4 /* MathSymbolsPreferences.app */;
+			name = "Math Symbols Input - Preferences";
+			productName = "Math Symbols Input - Preferences";
+			productReference = 1A16BB4623B907E000E667C4 /* Math Symbols Input - Preferences.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1A6DBD8223BA4D4C00AA8924 /* InstallerActivatePane */ = {
@@ -209,9 +209,9 @@
 			productReference = 1A6DBD8323BA4D4D00AA8924 /* InstallerActivatePane.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		F61A7ABA1E8182C100EBF660 /* MathSymbolsInput */ = {
+		F61A7ABA1E8182C100EBF660 /* Math Symbols Input */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F61A7ACF1E8182C100EBF660 /* Build configuration list for PBXNativeTarget "MathSymbolsInput" */;
+			buildConfigurationList = F61A7ACF1E8182C100EBF660 /* Build configuration list for PBXNativeTarget "Math Symbols Input" */;
 			buildPhases = (
 				F61A7AB71E8182C100EBF660 /* Sources */,
 				F61A7AB81E8182C100EBF660 /* Frameworks */,
@@ -221,9 +221,9 @@
 			);
 			dependencies = (
 			);
-			name = MathSymbolsInput;
-			productName = MathSymbolsInput;
-			productReference = F61A7ABB1E8182C100EBF660 /* MathSymbolsInput.app */;
+			name = "Math Symbols Input";
+			productName = "Math Symbols Input";
+			productReference = F61A7ABB1E8182C100EBF660 /* Math Symbols Input.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -267,8 +267,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F61A7ABA1E8182C100EBF660 /* MathSymbolsInput */,
-				1A16BB4523B907E000E667C4 /* MathSymbolsPreferences */,
+				F61A7ABA1E8182C100EBF660 /* Math Symbols Input */,
+				1A16BB4523B907E000E667C4 /* Math Symbols Input - Preferences */,
 				1A6DBD8223BA4D4C00AA8924 /* InstallerActivatePane */,
 			);
 		};
@@ -646,7 +646,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A16BB5523B907E100E667C4 /* Build configuration list for PBXNativeTarget "MathSymbolsPreferences" */ = {
+		1A16BB5523B907E100E667C4 /* Build configuration list for PBXNativeTarget "Math Symbols Input - Preferences" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A16BB5323B907E100E667C4 /* Debug */,
@@ -673,7 +673,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F61A7ACF1E8182C100EBF660 /* Build configuration list for PBXNativeTarget "MathSymbolsInput" */ = {
+		F61A7ACF1E8182C100EBF660 /* Build configuration list for PBXNativeTarget "Math Symbols Input" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F61A7AD01E8182C100EBF660 /* Debug */,

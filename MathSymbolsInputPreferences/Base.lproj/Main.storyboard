@@ -159,7 +159,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="MathSymbolsPreferences" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Math_Symbols_Input___Preferences" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -189,7 +189,7 @@
         <!--Tab Controller-->
         <scene sceneID="u7a-0Z-6mx">
             <objects>
-                <tabViewController selectedTabViewItemIndex="0" id="eU3-8d-6Aa" customClass="TabController" customModule="MathSymbolsPreferences" customModuleProvider="target" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="0" id="eU3-8d-6Aa" customClass="TabController" customModule="Math_Symbols_Input___Preferences" customModuleProvider="target" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem label="Custom Commands" identifier="custom-commands" id="U5V-xK-k9c"/>
                         <tabViewItem label="Built-in Commands" identifier="builtin-commands" id="gdA-n9-2fP"/>
@@ -218,7 +218,7 @@
         <!--Custom Commands-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController title="Custom Commands" id="XfG-lQ-9wD" customClass="CustomCommandsController" customModule="MathSymbolsPreferences" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Custom Commands" id="XfG-lQ-9wD" customClass="CustomCommandsController" customModule="Math_Symbols_Input___Preferences" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -382,7 +382,7 @@
         <!--Built-in Commands-->
         <scene sceneID="ADd-0T-xqo">
             <objects>
-                <viewController title="Built-in Commands" id="jkV-2A-vOA" customClass="BuiltinCommandsController" customModule="MathSymbolsPreferences" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Built-in Commands" id="jkV-2A-vOA" customClass="BuiltinCommandsController" customModule="Math_Symbols_Input___Preferences" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="jyS-c3-rBU">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -528,7 +528,7 @@
         <!--About-->
         <scene sceneID="RLN-Yb-yz0">
             <objects>
-                <viewController title="About" id="Clv-Ll-Yj2" customClass="AboutController" customModule="MathSymbolsPreferences" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="About" id="Clv-Ll-Yj2" customClass="AboutController" customModule="Math_Symbols_Input___Preferences" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="fQP-tJ-I8p">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                         <autoresizingMask key="autoresizingMask"/>

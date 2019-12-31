@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F61A7ABA1E8182C100EBF660"
-               BuildableName = "MathSymbolsInput.app"
-               BlueprintName = "MathSymbolsInput"
+               BuildableName = "Math Symbols Input.app"
+               BlueprintName = "Math Symbols Input"
                ReferencedContainer = "container:MathSymbolsInput.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F61A7ABA1E8182C100EBF660"
-            BuildableName = "MathSymbolsInput.app"
-            BlueprintName = "MathSymbolsInput"
+            BuildableName = "Math Symbols Input.app"
+            BlueprintName = "Math Symbols Input"
             ReferencedContainer = "container:MathSymbolsInput.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F61A7ABA1E8182C100EBF660"
-            BuildableName = "MathSymbolsInput.app"
-            BlueprintName = "MathSymbolsInput"
+            BuildableName = "Math Symbols Input.app"
+            BlueprintName = "Math Symbols Input"
             ReferencedContainer = "container:MathSymbolsInput.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F61A7ABA1E8182C100EBF660"
-            BuildableName = "MathSymbolsInput.app"
-            BlueprintName = "MathSymbolsInput"
+            BuildableName = "Math Symbols Input.app"
+            BlueprintName = "Math Symbols Input"
             ReferencedContainer = "container:MathSymbolsInput.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
