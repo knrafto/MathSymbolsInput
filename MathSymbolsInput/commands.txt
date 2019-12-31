@@ -3,55 +3,52 @@
 
 ### Mathematical symbols ###
 
-# LaTeX commands
 \neg ¬
 \to →
+\-> →
 \mapsto ↦
+\|-> ↦
 \ne ≠
 \approx ≈
+\~~ ≈
 \equiv ≡
+\== ≡
 \leq ≤
+\le ≤
+\<= ≤
 \geq ≥
+\ge ≥
+\>= ≥
 \simeq ≃
+\~- ≃
 \in ∈
 \times ×
+\x ×
 \circ ∘
+\o ∘
 \bullet ∙
+\. ∙
 \ell ℓ
 \top ⊤
 \bot ⊥
 \int ∫
 \infty ∞
+\inf ∞
 \pm ±
 \mp ∓
 \forall ∀
+\all ∀
 \exists ∃
+\ex ∃
 \vdash ⊢
+\|- ⊢
 \star ⋆
+\* ⋆
 \uparrow ↑
 \downarrow ↓
 \langle ⟨
-\rangle ⟩
-
-# Shorthands. These should be short and easily typeable.
-\-> →
-\|-> ↦
-\~~ ≈
-\== ≡
-\le ≤
-\ge ≥
-\<= ≤
-\>= ≥
-\~- ≃
-\x ×
-\o ∘
-\. ∙
-\inf ∞
-\all ∀
-\ex ∃
-\|- ⊢
-\* ⋆
 \< ⟨
+\rangle ⟩
 \> ⟩
 
 ### Typographic symbols ###
