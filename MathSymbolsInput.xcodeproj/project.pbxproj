@@ -11,6 +11,7 @@
 		1A16BB4B23B907E000E667C4 /* CustomCommandsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A16BB4A23B907E000E667C4 /* CustomCommandsController.swift */; };
 		1A16BB4D23B907E100E667C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A16BB4C23B907E100E667C4 /* Assets.xcassets */; };
 		1A16BB5023B907E100E667C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A16BB4E23B907E100E667C4 /* Main.storyboard */; };
+		1A676D4823BAF7D60092EF01 /* HyperlinkTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A676D4723BAF7D60092EF01 /* HyperlinkTextField.m */; };
 		1A695F26229F8FDD008DEC0F /* commands.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A695F25229F8FDD008DEC0F /* commands.txt */; };
 		1A6DBD6223B969C600AA8924 /* BuiltinCommandsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6DBD6023B966B900AA8924 /* BuiltinCommandsController.swift */; };
 		1A6DBD6623B9A63C00AA8924 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6DBD6523B9A63C00AA8924 /* AboutController.swift */; };
@@ -36,6 +37,8 @@
 		1A16BB5123B907E100E667C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A5DB37A22AE8DCA000F7F92 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1A5DB37C22AE8E24000F7F92 /* install_dev_version.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install_dev_version.sh; sourceTree = "<group>"; };
+		1A676D4623BAF7D60092EF01 /* HyperlinkTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HyperlinkTextField.h; sourceTree = "<group>"; };
+		1A676D4723BAF7D60092EF01 /* HyperlinkTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HyperlinkTextField.m; sourceTree = "<group>"; };
 		1A695F25229F8FDD008DEC0F /* commands.txt */ = {isa = PBXFileReference; indentWidth = 8; lastKnownFileType = text; path = commands.txt; sourceTree = "<group>"; tabWidth = 8; usesTabs = 1; };
 		1A6DBD6023B966B900AA8924 /* BuiltinCommandsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuiltinCommandsController.swift; sourceTree = "<group>"; };
 		1A6DBD6523B9A63C00AA8924 /* AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
@@ -111,6 +114,8 @@
 				1A6DBD8B23BA4D4D00AA8924 /* Localizable.strings */,
 				1A6DBD9023BA4D4D00AA8924 /* Info.plist */,
 				1A6DBD9123BA4D4D00AA8924 /* InfoPlist.strings */,
+				1A676D4623BAF7D60092EF01 /* HyperlinkTextField.h */,
+				1A676D4723BAF7D60092EF01 /* HyperlinkTextField.m */,
 			);
 			path = InstallerActivatePane;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A676D4823BAF7D60092EF01 /* HyperlinkTextField.m in Sources */,
 				1A6DBD8723BA4D4D00AA8924 /* ActivatePane.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -61,6 +61,7 @@ static void enableInputMethod() {
     [[self message] setStringValue:messageText];
     [[self yesEnableButton] setHidden:YES];
     [[self noEnableButton] setHidden:YES];
+    [[self helpLink] setHidden:YES];
   } else {
     NSLog(@"Input source %@ is not yet enabled", kSourceID);
     NSString *messageText = [[NSBundle bundleForClass:[self class]] localizedStringForKey:@"EnableMessage" value:nil table:nil];
@@ -68,8 +69,7 @@ static void enableInputMethod() {
   }
 }
 
-- (NSString *)title
-{
+- (NSString *)title {
   return [[NSBundle bundleForClass:[self class]] localizedStringForKey:@"PaneTitle" value:nil table:nil];
 }
 
@@ -77,8 +77,7 @@ static void enableInputMethod() {
 // action are grouped together, so this puts them in the same group.
 - (IBAction)enableChanged:(id)sender {}
 
-- (void)willExitPane:(InstallerSectionDirection)dir
-{
+- (void)willExitPane:(InstallerSectionDirection)dir {
   if (!isUpgrade && dir == InstallerDirectionForward) {
     registerInputMethod();
     if ([[self yesEnableButton] state] == NSControlStateValueOn) {

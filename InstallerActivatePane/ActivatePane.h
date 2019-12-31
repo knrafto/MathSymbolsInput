@@ -7,6 +7,7 @@
 //
 
 #import <InstallerPlugins/InstallerPlugins.h>
+#import "HyperlinkTextField.h"
 
 @interface ActivatePane : InstallerPane {
   // Whether the input method was previously installed.
@@ -15,8 +16,9 @@
   BOOL shouldEnable;
 }
 
-@property (nonatomic, weak) IBOutlet NSTextField *message;
-@property (nonatomic, weak) IBOutlet NSButton *yesEnableButton;
-@property (nonatomic, weak) IBOutlet NSButton *noEnableButton;
+@property (weak) IBOutlet NSTextField *message;
+@property (weak) IBOutlet NSButton *yesEnableButton;
+@property (weak) IBOutlet NSButton *noEnableButton;
+@property (weak) IBOutlet HyperlinkTextField *helpLink;
 
 @end
