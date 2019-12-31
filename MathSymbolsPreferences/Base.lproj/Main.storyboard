@@ -90,7 +90,7 @@
                         <tabViewItem label="About" id="k9T-0a-8Pk"/>
                     </tabViewItems>
                     <viewControllerTransitionOptions key="transitionOptions" allowUserInteraction="YES"/>
-                    <tabView key="tabView" type="noTabsBezelBorder" id="rLs-nB-pjc">
+                    <tabView key="tabView" type="noTabsNoBorder" id="rLs-nB-pjc">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <font key="font" metaFont="system"/>
