@@ -192,7 +192,7 @@
                 <tabViewController selectedTabViewItemIndex="0" id="eU3-8d-6Aa" customClass="TabController" customModule="Math_Symbols_Input___Preferences" customModuleProvider="target" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem label="Custom Commands" identifier="custom-commands" id="U5V-xK-k9c"/>
-                        <tabViewItem label="Built-in Commands" identifier="builtin-commands" id="gdA-n9-2fP"/>
+                        <tabViewItem label="Default Commands" identifier="default-commands" id="gdA-n9-2fP"/>
                         <tabViewItem label="About" identifier="about" id="k9T-0a-8Pk"/>
                     </tabViewItems>
                     <viewControllerTransitionOptions key="transitionOptions" allowUserInteraction="YES"/>
@@ -238,7 +238,7 @@
                             </segmentedControl>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="j1h-dT-hxB">
                                 <rect key="frame" x="20" y="323" width="440" height="17"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Custom commands override any built-in ones." id="VD2-Cz-dLI">
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Custom commands override any default ones." id="VD2-Cz-dLI">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -379,10 +379,10 @@
             </objects>
             <point key="canvasLocation" x="-449" y="1204.5"/>
         </scene>
-        <!--Built-in Commands-->
+        <!--Default Commands-->
         <scene sceneID="ADd-0T-xqo">
             <objects>
-                <viewController title="Built-in Commands" id="jkV-2A-vOA" customClass="BuiltinCommandsController" customModule="Math_Symbols_Input___Preferences" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Default Commands" id="jkV-2A-vOA" customClass="DefaultCommandsController" customModule="Math_Symbols_Input___Preferences" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="jyS-c3-rBU">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                         <autoresizingMask key="autoresizingMask"/>

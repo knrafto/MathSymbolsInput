@@ -23,7 +23,7 @@ newline: enters symbol
 escape: enters verbatim
 most other actions (ctrl-c, use mouse, paste, arrow keys, undo) enters verbatim and then sends original command
 
-## Built-in commands
+## Default commands
 
 See text file
 See preferences

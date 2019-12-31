@@ -1,7 +1,7 @@
 import Foundation
 import Cocoa
 
-class BuiltinCommandsController : NSViewController, NSTableViewDataSource, NSTableViewDelegate {
+class DefaultCommandsController : NSViewController, NSTableViewDataSource, NSTableViewDelegate {
   @IBOutlet weak var tableView: NSTableView!
   // Table contents, as a list of (column id -> value) dictionaries.
   var contents: [[String: String]] = []
@@ -11,9 +11,9 @@ class BuiltinCommandsController : NSViewController, NSTableViewDataSource, NSTab
     super.viewDidLoad()
 
     let preferences = UserDefaults(suiteName: kSuiteName)
-    let builtinCommands = preferences?.dictionary(forKey: kBuiltinCommandsKey) ?? [:]
-    for command in Array(builtinCommands.keys).sorted() {
-      guard let replacement = builtinCommands[command] as? String else {
+    let defaultCommands = preferences?.dictionary(forKey: kDefaultCommandsKey) ?? [:]
+    for command in Array(defaultCommands.keys).sorted() {
+      guard let replacement = defaultCommands[command] as? String else {
         continue
       }
       contents.append([

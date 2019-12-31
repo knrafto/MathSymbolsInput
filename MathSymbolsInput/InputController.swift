@@ -122,8 +122,8 @@ class InputController : IMKInputController {
     openPreferences(tabId: "custom-commands")
   }
 
-  @objc func showBuiltinCommands(_ sender: Any!) {
-    openPreferences(tabId: "builtin-commands")
+  @objc func showDefaultCommands(_ sender: Any!) {
+    openPreferences(tabId: "default-commands")
   }
 
   @objc func showAbout(_ sender: Any!) {

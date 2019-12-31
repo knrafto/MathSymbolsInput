@@ -2,8 +2,8 @@ import Cocoa
 
 // Bundle identifer of the main input method.
 let kSuiteName = "com.mathsymbolsinput.inputmethod.MathSymbolsInput"
-// UserDefaults key for built-in commands.
-let kBuiltinCommandsKey = "BuiltinCommands"
+// UserDefaults key for default commands.
+let kDefaultCommandsKey = "DefaultCommands"
 // UserDefaults key for custom commands.
 let kCustomCommandsKey = "CustomCommands"
 // UserDefaults key for the preferences tab.

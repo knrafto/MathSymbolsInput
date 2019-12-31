@@ -2,12 +2,12 @@ import Foundation
 import Cocoa
 
 // Map from escape sequences to replacements.
-var builtinCommands : [String : String] = [:]
+var defaultCommands : [String : String] = [:]
 
-func loadBuiltinCommands() {
-  let path = Bundle.main.path(forResource: kBuiltinCommandsResourceName, ofType: "txt")
+func loadDefaultCommands() {
+  let path = Bundle.main.path(forResource: kDefaultCommandsResourceName, ofType: "txt")
   if path == nil {
-    NSLog("No file %@.txt in %@", kBuiltinCommandsResourceName, Bundle.main.resourcePath!)
+    NSLog("No file %@.txt in %@", kDefaultCommandsResourceName, Bundle.main.resourcePath!)
     return
   }
   NSLog("Loading commands from %@", path!)
@@ -43,28 +43,28 @@ func loadBuiltinCommands() {
       continue
     }
 
-    if builtinCommands[command] != nil {
+    if defaultCommands[command] != nil {
       NSLog("Error on line %d: command '%@' already defined",
             lineNumber, command)
       continue
     }
 
-    builtinCommands[command] = replacement
+    defaultCommands[command] = replacement
   }
 
   // Save commands to UserDefaults so the preferences app can read them easily.
-  UserDefaults.standard.set(builtinCommands, forKey: kBuiltinCommandsKey)
+  UserDefaults.standard.set(defaultCommands, forKey: kDefaultCommandsKey)
 
-  NSLog("Loaded %d built-in commands", builtinCommands.count)
+  NSLog("Loaded %d default commands", defaultCommands.count)
 }
 
 // Look up a command's replacement, first in the user's preferences and then
-// in the built-in commands.
+// in the default commands.
 func findReplacement(forCommand command: String) -> String? {
   let customCommands = UserDefaults.standard.dictionary(forKey: kCustomCommandsKey)
   var replacement = customCommands?[command] as? String
   if replacement == nil {
-    replacement = builtinCommands[command]
+    replacement = defaultCommands[command]
   }
   return replacement
 }
