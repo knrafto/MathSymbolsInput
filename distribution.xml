@@ -16,5 +16,5 @@
     <choice id="com.mathsymbolsinput.MathSymbolsInputPreferences" visible="false">
         <pkg-ref id="com.mathsymbolsinput.MathSymbolsInputPreferences"/>
     </choice>
-    <pkg-ref id="com.mathsymbolsinput.MathSymbolsInputPreferences">MathSymbolsPreferences.pkg</pkg-ref>
+    <pkg-ref id="com.mathsymbolsinput.MathSymbolsInputPreferences">MathSymbolsInputPreferences.pkg</pkg-ref>
 </installer-gui-script>

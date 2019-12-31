@@ -2,7 +2,7 @@
 
 The project has the following targets:
 * MathSymbolsInput: the core input method, installed in `/Library/Input Methods`
-* MathSymbolsPreferences: a GUI app for the "Preferences..." menu, installed in
+* MathSymbolsInputPreferences: a GUI app for the "Preferences..." menu, installed in
   `/Applications`
 * InstallerActivatePane: an installer plugin that activates the input method
   during installation
