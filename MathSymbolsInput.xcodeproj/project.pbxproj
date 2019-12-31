@@ -20,7 +20,6 @@
 		1A6DBD8A23BA4D4D00AA8924 /* ActivatePane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6DBD8823BA4D4D00AA8924 /* ActivatePane.xib */; };
 		1A6DBD8D23BA4D4D00AA8924 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A6DBD8B23BA4D4D00AA8924 /* Localizable.strings */; };
 		1A6DBD9323BA4D4D00AA8924 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A6DBD9123BA4D4D00AA8924 /* InfoPlist.strings */; };
-		1A6DBDA323BA743A00AA8924 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A6DBDA123BA743A00AA8924 /* InfoPlist.strings */; };
 		1AB0D0F622AD6AE400D71347 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0D0F522AD6AE400D71347 /* main.swift */; };
 		1AC14D8B22AE875100549402 /* icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14D8A22AE875100549402 /* icon.pdf */; };
 		1AC76A9D23B6D9D0009BD2D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AC76A9B23B6D9D0009BD2D7 /* InfoPlist.strings */; };
@@ -55,7 +54,6 @@
 		1A6DBD9C23BA62EC00AA8924 /* build_package.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_package.sh; sourceTree = "<group>"; };
 		1A6DBD9D23BA666B00AA8924 /* DEVELOPMENT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DEVELOPMENT.md; sourceTree = "<group>"; };
 		1A6DBD9E23BA6F3500AA8924 /* InstallerSections.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = InstallerSections.plist; sourceTree = "<group>"; };
-		1A6DBDA223BA743A00AA8924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1AB0D0F522AD6AE400D71347 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1AC14D8A22AE875100549402 /* icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon.pdf; sourceTree = "<group>"; };
 		1AC76A9C23B6D9D0009BD2D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -95,7 +93,6 @@
 		1A16BB4723B907E000E667C4 /* MathSymbolsInputPreferences */ = {
 			isa = PBXGroup;
 			children = (
-				1A6DBDA123BA743A00AA8924 /* InfoPlist.strings */,
 				1A16BB4823B907E000E667C4 /* AppDelegate.swift */,
 				1A16BB4A23B907E000E667C4 /* CustomCommandsController.swift */,
 				1A6DBD6023B966B900AA8924 /* BuiltinCommandsController.swift */,
@@ -280,7 +277,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A16BB4D23B907E100E667C4 /* Assets.xcassets in Resources */,
-				1A6DBDA323BA743A00AA8924 /* InfoPlist.strings in Resources */,
 				1A16BB5023B907E100E667C4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,14 +366,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				1A6DBD9223BA4D4D00AA8924 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		1A6DBDA123BA743A00AA8924 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A6DBDA223BA743A00AA8924 /* Base */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
