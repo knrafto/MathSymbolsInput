@@ -15,7 +15,10 @@
         <customObject id="Qsn-FY-4qK" customClass="ActivatePane">
             <connections>
                 <outlet property="contentView" destination="TUK-W2-vig" id="gTd-A7-dof"/>
+                <outlet property="message" destination="ypJ-Uk-kTK" id="Hig-5h-0x9"/>
+                <outlet property="noEnableButton" destination="7gI-x8-mJ3" id="laj-Cg-9nF"/>
                 <outlet property="parentSection" destination="-2" id="FB7-UV-e8k"/>
+                <outlet property="yesEnableButton" destination="Wyk-wT-Dyg" id="9ks-Gv-Quf"/>
             </connections>
         </customObject>
         <customView id="TUK-W2-vig" userLabel="View">
@@ -34,9 +37,9 @@
                     </connections>
                 </button>
                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ypJ-Uk-kTK">
-                    <rect key="frame" x="20" y="293" width="380" height="17"/>
+                    <rect key="frame" x="20" y="249" width="380" height="61"/>
                     <autoresizingMask key="autoresizingMask"/>
-                    <textFieldCell key="cell" selectable="YES" title="Do you want to enable Math Symbols Input?" id="8PL-H9-7Bw">
+                    <textFieldCell key="cell" selectable="YES" title="Message" id="8PL-H9-7Bw">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -53,15 +56,6 @@
                         <action selector="enableChanged:" target="Qsn-FY-4qK" id="fLm-4R-Otq"/>
                     </connections>
                 </button>
-                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V7j-4q-zML">
-                    <rect key="frame" x="20" y="156" width="382" height="34"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                    <textFieldCell key="cell" selectable="YES" title="Math Symbols Input has been updated. To use the newest version, log out and log back in." id="zh7-eU-Hr8">
-                        <font key="font" metaFont="system"/>
-                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                </textField>
             </subviews>
         </customView>
     </objects>

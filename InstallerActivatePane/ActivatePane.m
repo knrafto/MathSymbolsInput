@@ -57,8 +57,14 @@ static void enableInputMethod() {
   isUpgrade = isInputMethodRegistered();
   if (isUpgrade) {
     NSLog(@"Input source %@ is already enabled", kSourceID);
+    NSString *messageText = [[NSBundle bundleForClass:[self class]] localizedStringForKey:@"UpdateMessage" value:nil table:nil];
+    [[self message] setStringValue:messageText];
+    [[self yesEnableButton] setHidden:YES];
+    [[self noEnableButton] setHidden:YES];
   } else {
     NSLog(@"Input source %@ is not yet enabled", kSourceID);
+    NSString *messageText = [[NSBundle bundleForClass:[self class]] localizedStringForKey:@"EnableMessage" value:nil table:nil];
+    [[self message] setStringValue:messageText];
   }
 }
 
@@ -75,8 +81,9 @@ static void enableInputMethod() {
 {
   if (!isUpgrade && dir == InstallerDirectionForward) {
     registerInputMethod();
-    // TODO: only when user selects
-    enableInputMethod();
+    if ([[self yesEnableButton] state] == NSControlStateValueOn) {
+      enableInputMethod();
+    }
   }
 }
 @end

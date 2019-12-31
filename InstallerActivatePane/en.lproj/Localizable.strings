@@ -1,3 +1,5 @@
 /* Localized versions of Info.plist keys */
 
 "PaneTitle" = "Enable Math Symbols Input";
+"EnableMessage" = "Do you want to enable Math Symbols Input?";
+"UpdateMessage" = "Math Symbols Input has been updated. To use the newest version, log out and log back in.";
