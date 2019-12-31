@@ -5,7 +5,7 @@
     <choices-outline>
         <line choice="default">
             <line choice="com.mathsymbolsinput.inputmethod.MathSymbolsInput"/>
-            <line choice="com.mathsymbolsinput.MathSymbolsPreferences"/>
+            <line choice="com.mathsymbolsinput.MathSymbolsInputPreferences"/>
         </line>
     </choices-outline>
     <choice id="default"/>
@@ -13,8 +13,8 @@
         <pkg-ref id="com.mathsymbolsinput.inputmethod.MathSymbolsInput"/>
     </choice>
     <pkg-ref id="com.mathsymbolsinput.inputmethod.MathSymbolsInput">MathSymbolsInput.pkg</pkg-ref>
-    <choice id="com.mathsymbolsinput.MathSymbolsPreferences" visible="false">
-        <pkg-ref id="com.mathsymbolsinput.MathSymbolsPreferences"/>
+    <choice id="com.mathsymbolsinput.MathSymbolsInputPreferences" visible="false">
+        <pkg-ref id="com.mathsymbolsinput.MathSymbolsInputPreferences"/>
     </choice>
-    <pkg-ref id="com.mathsymbolsinput.MathSymbolsPreferences">MathSymbolsPreferences.pkg</pkg-ref>
+    <pkg-ref id="com.mathsymbolsinput.MathSymbolsInputPreferences">MathSymbolsPreferences.pkg</pkg-ref>
 </installer-gui-script>
