@@ -67,11 +67,9 @@ static void enableInputMethod() {
   return [[NSBundle bundleForClass:[self class]] localizedStringForKey:@"PaneTitle" value:nil table:nil];
 }
 
-- (void)didEnterPane:(InstallerSectionDirection)dir
-{
-  // TODO: if upgrade, show message. Else, show option to enable.
-  NSLog(@"ActivatePane didEnterPane");
-}
+// Called when the enable choice changes. Radio buttons with the same
+// action are grouped together, so this puts them in the same group.
+- (IBAction)enableChanged:(id)sender {}
 
 - (void)willExitPane:(InstallerSectionDirection)dir
 {
@@ -81,5 +79,4 @@ static void enableInputMethod() {
     enableInputMethod();
   }
 }
-
 @end

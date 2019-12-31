@@ -11,5 +11,7 @@
 @interface ActivatePane : InstallerPane {
   // Whether the input method was previously installed.
   BOOL isUpgrade;
+  // Whether to automatically enable.
+  BOOL shouldEnable;
 }
 @end
