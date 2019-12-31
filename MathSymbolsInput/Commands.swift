@@ -1,11 +1,3 @@
-//
-//  Commands.swift
-//  MathSymbolsInput
-//
-//  Created by Kyle Raftogianis on 6/8/19.
-//  Copyright © 2019 Kyle Raftogianis. All rights reserved.
-//
-
 import Foundation
 import Cocoa
 

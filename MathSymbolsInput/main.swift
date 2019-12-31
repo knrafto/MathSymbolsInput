@@ -1,11 +1,3 @@
-//
-//  main.swift
-//  MathSymbolsInput
-//
-//  Created by Kyle Raftogianis on 6/9/19.
-//  Copyright © 2019 Kyle Raftogianis. All rights reserved.
-//
-
 import Cocoa
 import InputMethodKit
 

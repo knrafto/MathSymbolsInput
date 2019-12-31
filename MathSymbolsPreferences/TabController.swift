@@ -1,11 +1,3 @@
-//
-//  TabController.swift
-//  MathSymbolsPreferences
-//
-//  Created by Kyle Raftogianis on 12/31/19.
-//  Copyright © 2019 Kyle Raftogianis. All rights reserved.
-//
-
 import Foundation
 import Cocoa
 

@@ -1,8 +1,1 @@
-/* 
-  InfoPlist.strings
-  MathSymbolsInput
-
-  Created by Kyle Raftogianis on 12/27/19.
-  Copyright © 2019 Kyle Raftogianis. All rights reserved.
-*/
 CFBundleName = "Math Symbols";
