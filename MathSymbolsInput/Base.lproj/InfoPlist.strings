@@ -1,1 +1,1 @@
-CFBundleName = "Math Symbols";
+CFBundleName = "$(PRODUCT_NAME)";
