@@ -19,13 +19,17 @@ let kPreferencesAppBundleIdentifier = "com.mathsymbolsinput.MathSymbolsPreferenc
 let kBuiltinCommandsKey = "BuiltinCommands"
 // UserDefaults key for custom commands.
 let kCustomCommandsKey = "CustomCommands"
+// UserDefaults key for the preferences tab.
+let kPreferencesTabKey = "PreferencesTab"
 
 // Load the replacements.
 loadBuiltinCommands()
 
 // Set up the menu in the menu bar.
 let mainMenu = NSMenu()
-mainMenu.addItem(withTitle: "Preferences...", action: #selector(InputController.showPreferences(_:)), keyEquivalent: "")
+mainMenu.addItem(withTitle: "Edit Custom Commands...", action: #selector(InputController.showCustomCommands(_:)), keyEquivalent: "")
+mainMenu.addItem(withTitle: "View Built-in Commands...", action: #selector(InputController.showBuiltinCommands(_:)), keyEquivalent: "")
+mainMenu.addItem(withTitle: "About", action: #selector(InputController.showAbout(_:)), keyEquivalent: "")
 
 // Server that accepts connections from client applications. It will create an
 // InputController instance to handle each client connection.

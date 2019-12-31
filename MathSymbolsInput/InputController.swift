@@ -114,13 +114,27 @@ class InputController : IMKInputController {
     return mainMenu
   }
 
-  // Called when the "Preferences..." menu item is selected.
-  override func showPreferences(_ sender: Any!) {
+  // Opens the preferences app the the given tab, which is communicated to the
+  // preferences app via UserDefaults.
+  func openPreferences(tabId: String) {
+    UserDefaults.standard.set(tabId, forKey: kPreferencesTabKey)
     guard let url = NSWorkspace.shared.urlForApplication(withBundleIdentifier: kPreferencesAppBundleIdentifier) else {
       NSLog("Could not find preferences application with bundle id %@", kPreferencesAppBundleIdentifier)
       return
     }
-    NSLog("Opening URL: %@", url.absoluteString)
+    NSLog("Opening preferences tab %@ with URL: %@", tabId, url.absoluteString)
     NSWorkspace.shared.open(url)
+  }
+
+  @objc func showCustomCommands(_ sender: Any!) {
+    openPreferences(tabId: "custom-commands")
+  }
+
+  @objc func showBuiltinCommands(_ sender: Any!) {
+    openPreferences(tabId: "builtin-commands")
+  }
+
+  @objc func showAbout(_ sender: Any!) {
+    openPreferences(tabId: "about")
   }
 }
