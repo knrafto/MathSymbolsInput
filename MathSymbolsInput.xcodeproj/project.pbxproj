@@ -92,7 +92,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A16BB4723B907E000E667C4 /* MathSymbolsPreferences */ = {
+		1A16BB4723B907E000E667C4 /* MathSymbolsInputPreferences */ = {
 			isa = PBXGroup;
 			children = (
 				1A6DBDA123BA743A00AA8924 /* InfoPlist.strings */,
@@ -105,7 +105,7 @@
 				1A16BB5123B907E100E667C4 /* Info.plist */,
 				1A676D4923BBAA730092EF01 /* TabController.swift */,
 			);
-			path = MathSymbolsPreferences;
+			path = MathSymbolsInputPreferences;
 			sourceTree = "<group>";
 		};
 		1A6DBD8423BA4D4D00AA8924 /* InstallerActivatePane */ = {
@@ -133,7 +133,7 @@
 				1A5DB37A22AE8DCA000F7F92 /* README.md */,
 				1A6DBD9D23BA666B00AA8924 /* DEVELOPMENT.md */,
 				F61A7ABD1E8182C100EBF660 /* MathSymbolsInput */,
-				1A16BB4723B907E000E667C4 /* MathSymbolsPreferences */,
+				1A16BB4723B907E000E667C4 /* MathSymbolsInputPreferences */,
 				1A6DBD8423BA4D4D00AA8924 /* InstallerActivatePane */,
 				F61A7ABC1E8182C100EBF660 /* Products */,
 				F61A7AD41E818BF300EBF660 /* Frameworks */,
@@ -406,7 +406,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "$(SRCROOT)/MathSymbolsPreferences/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MathSymbolsInputPreferences/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -435,7 +435,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "$(SRCROOT)/MathSymbolsPreferences/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MathSymbolsInputPreferences/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
