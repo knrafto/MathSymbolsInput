@@ -513,7 +513,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = build/Debug;
-				COPYRIGHT = "Copyright © 2019-2020 Kyle Raftogianis";
+				COPYRIGHT = "Copyright © 2020 Kyle Raftogianis";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -571,7 +571,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = build/Release;
-				COPYRIGHT = "Copyright © 2019-2020 Kyle Raftogianis";
+				COPYRIGHT = "Copyright © 2020 Kyle Raftogianis";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
