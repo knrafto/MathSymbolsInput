@@ -43,8 +43,6 @@
 \ex ∃
 \vdash ⊢
 \|- ⊢
-\star ⋆
-\* ⋆
 \uparrow ↑
 \downarrow ↓
 \langle ⟨
