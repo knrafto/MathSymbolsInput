@@ -15,34 +15,39 @@ https://support.apple.com/guide/mac-help/type-language-mac-input-sources-mchlp14
 
 # Usage
 
-Type a backslash to start a command. The text should appear underlined to show the input method is active.
+Type a backslash `\` to start a command. The text should appear underlined while the command is being typed to show the input method is active. While the input method is active:
 
-when active:
-backslash inserts, reactivates with backslash
-space: automatically enters symbol, inserts space
-newline: enters symbol
-escape: enters verbatim
-most other actions (ctrl-c, use mouse, paste, arrow keys, undo) enters verbatim and then sends original command
+* Typing normally by pressing letters, symbols, or the backspace key will edit the command.
+* **Enter** or **tab** will replace the command with its math symbol. If the command does not have an associated math symbol, the command text will be inserted verbatim instead.
+* **Space** will replace the command and insert a space afterward.
+* **Backslash** will replace the command and start a new command.
+* **Escape** will insert the command text verbatim (e.g. if you need to type `\alpha` instead of `α`).
+
+Most other actions (e.g., copy, paste, or using the mouse) will insert the command text before that action is performed.
 
 ## Default commands
 
-See text file
-See preferences
+To view a searchable list of all default commands, click the Math Input Symbols `∀` icon in the menu bar and select `View Default Commands...`.
+You may need to [enable the input menu in the macOS System Preferences](https://support.apple.com/guide/mac-help/type-language-mac-input-sources-mchlp1406/mac) first.
+The default commands are also listed in [this text file](https://github.com/knrafto/MathSymbolsInput/blob/master/MathSymbolsInput/commands.txt).
+
+If you think some command would be broadly usable and should be a default command, consider opening an issue or pull request.
 
 ## Custom commands
 
-See preferences
-If you think your commands would be broadly usable, consider opening an issue or pull request.
+To add your own commands, click the Math Input Symbols `∀` icon in the menu bar and select `Edit Custom Commands...`.
+You may need to [enable the input menu in the macOS System Preferences](https://support.apple.com/guide/mac-help/type-language-mac-input-sources-mchlp1406/mac) first.
+New commands should take effect immediately.
 
 # FAQ
-
-## Will it work with a custom keyboard layout?
-
-Yes, by default, macOS uses the last selected keyboard layout when an input method is active.
 
 ## Are there Windows or Linux versions?
 
 Not yet, but hopefully soon.
+
+## Can I use a custom keyboard layout?
+
+Yes, by default, macOS uses the last selected keyboard layout when an input method is active.
 
 # Inspirations
 
