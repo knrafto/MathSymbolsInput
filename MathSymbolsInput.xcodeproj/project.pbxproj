@@ -57,6 +57,7 @@
 		1AB0D0F522AD6AE400D71347 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1AC14D8A22AE875100549402 /* icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon.pdf; sourceTree = "<group>"; };
 		1AC76A9C23B6D9D0009BD2D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1AC9635C23BCFB7F00A67BC1 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		1ACC934122AC5CEB00D924A7 /* InputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
 		1ADC700422ACAF2600E556A4 /* Commands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commands.swift; sourceTree = "<group>"; };
 		F61A7ABB1E8182C100EBF660 /* Math Symbols Input.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math Symbols Input.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +124,7 @@
 		F61A7AB21E8182C100EBF660 = {
 			isa = PBXGroup;
 			children = (
+				1AC9635C23BCFB7F00A67BC1 /* LICENSE */,
 				1A6DBD9E23BA6F3500AA8924 /* InstallerSections.plist */,
 				1A6DBD9C23BA62EC00AA8924 /* build_package.sh */,
 				1A6DBD9B23BA62EC00AA8924 /* distribution.xml */,
