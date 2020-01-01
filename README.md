@@ -1,4 +1,5 @@
-Math Symbols Input is a macOS [input method](https://en.wikipedia.org/wiki/Input_method) for typing mathematical symbols with LaTeX-style commands.
+**Math Symbols Input** is a macOS [input method](https://en.wikipedia.org/wiki/Input_method) for typing mathematical symbols with LaTeX-style commands.
+It works seamlessly with any macOS app.
 
 ![Math Symbols Input Demo](demo.gif)
 
@@ -35,20 +36,18 @@ If you think your commands would be broadly usable, consider opening an issue or
 
 # FAQ
 
-Does this work with a custom keyboard layout?
+## Will it work with a custom keyboard layout?
 
-Yes, by default, macOS uses the last used keyboard layout when an input method is active.
+Yes, by default, macOS uses the last selected keyboard layout when an input method is active.
 
-Are there Windows or Linux versions?
+## Are there Windows or Linux versions?
 
-Not yet. Hopefully soon.
+Not yet, but hopefully soon.
 
 # Inspirations
 
-Many languages have functionality to type mathematical symbols, including:
+Many programming languages have functionality to type mathematical symbols, but these are usually limited to a single app. These include:
 
-* Agda https://github.com/agda/agda/blob/master/src/data/emacs-mode/agda-input.el#L196
-* Julia https://docs.julialang.org/en/v1/manual/unicode-input/
-* Lean https://github.com/leanprover/vscode-lean/blob/99e753c8bfa12136c6e94bcdf358ad53f5e9731c/translations.json
-
-However, these are usually limited to a single app. By using an input method integrated into the OS, we can type math symbols into any app: email, private notes, documents, and messages.
+* [Agda](https://agda.readthedocs.io/en/latest/tools/emacs-mode.html#unicode-input)
+* [Julia](https://docs.julialang.org/en/v1/manual/unicode-input/)
+* [Lean](https://leanprover.github.io/reference/using_lean.html#features)
