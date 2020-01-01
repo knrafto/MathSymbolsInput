@@ -19,8 +19,8 @@ loadDefaultCommands()
 
 // Set up the menu in the menu bar.
 let mainMenu = NSMenu()
-mainMenu.addItem(withTitle: "Edit Custom Commands...", action: #selector(InputController.showCustomCommands(_:)), keyEquivalent: "")
 mainMenu.addItem(withTitle: "View Default Commands...", action: #selector(InputController.showDefaultCommands(_:)), keyEquivalent: "")
+mainMenu.addItem(withTitle: "Edit Custom Commands...", action: #selector(InputController.showCustomCommands(_:)), keyEquivalent: "")
 mainMenu.addItem(withTitle: "About", action: #selector(InputController.showAbout(_:)), keyEquivalent: "")
 
 // Server that accepts connections from client applications. It will create an

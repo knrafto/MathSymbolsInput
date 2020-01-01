@@ -118,12 +118,12 @@ class InputController : IMKInputController {
     NSWorkspace.shared.open(url)
   }
 
-  @objc func showCustomCommands(_ sender: Any!) {
-    openPreferences(tabId: "custom-commands")
-  }
-
   @objc func showDefaultCommands(_ sender: Any!) {
     openPreferences(tabId: "default-commands")
+  }
+
+  @objc func showCustomCommands(_ sender: Any!) {
+    openPreferences(tabId: "custom-commands")
   }
 
   @objc func showAbout(_ sender: Any!) {

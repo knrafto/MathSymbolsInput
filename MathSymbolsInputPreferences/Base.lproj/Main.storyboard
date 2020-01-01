@@ -191,8 +191,8 @@
             <objects>
                 <tabViewController selectedTabViewItemIndex="0" id="eU3-8d-6Aa" customClass="TabController" customModule="Math_Symbols_Input___Preferences" customModuleProvider="target" sceneMemberID="viewController">
                     <tabViewItems>
-                        <tabViewItem label="Custom Commands" identifier="custom-commands" id="U5V-xK-k9c"/>
                         <tabViewItem label="Default Commands" identifier="default-commands" id="gdA-n9-2fP"/>
+                        <tabViewItem label="Custom Commands" identifier="custom-commands" id="U5V-xK-k9c"/>
                         <tabViewItem label="About" identifier="about" id="k9T-0a-8Pk"/>
                     </tabViewItems>
                     <viewControllerTransitionOptions key="transitionOptions" allowUserInteraction="YES"/>
@@ -206,8 +206,8 @@
                     </tabView>
                     <connections>
                         <outlet property="tabView" destination="rLs-nB-pjc" id="aJc-21-zEh"/>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="tabItems" id="4Q4-hu-bNw"/>
                         <segue destination="jkV-2A-vOA" kind="relationship" relationship="tabItems" id="irg-K8-RSc"/>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="tabItems" id="4Q4-hu-bNw"/>
                         <segue destination="Clv-Ll-Yj2" kind="relationship" relationship="tabItems" id="uRm-0A-rcK"/>
                     </connections>
                 </tabViewController>
@@ -378,7 +378,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-449" y="1204.5"/>
+            <point key="canvasLocation" x="75" y="1204"/>
         </scene>
         <!--Default Commands-->
         <scene sceneID="ADd-0T-xqo">
@@ -524,7 +524,7 @@
                 </viewController>
                 <customObject id="xkI-ch-TBC" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="1204"/>
+            <point key="canvasLocation" x="-442" y="1204"/>
         </scene>
         <!--About-->
         <scene sceneID="RLN-Yb-yz0">
