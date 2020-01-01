@@ -1,6 +1,6 @@
 Math Symbols Input is a macOS [input method](https://en.wikipedia.org/wiki/Input_method) for typing mathematical symbols with LaTeX-style commands.
 
-TODO: gif
+![Math Symbols Input Demo](demo.gif)
 
 # Installation
 

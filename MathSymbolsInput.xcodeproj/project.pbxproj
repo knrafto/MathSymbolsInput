@@ -23,6 +23,7 @@
 		1AB0D0F622AD6AE400D71347 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0D0F522AD6AE400D71347 /* main.swift */; };
 		1AC14D8B22AE875100549402 /* icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14D8A22AE875100549402 /* icon.pdf */; };
 		1AC76A9D23B6D9D0009BD2D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AC76A9B23B6D9D0009BD2D7 /* InfoPlist.strings */; };
+		1AC9635F23BCFFCA00A67BC1 /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1AC9635E23BCFFC900A67BC1 /* demo.gif */; };
 		1ACC934222AC5CEB00D924A7 /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC934122AC5CEB00D924A7 /* InputController.swift */; };
 		1ADC700522ACAF2600E556A4 /* Commands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADC700422ACAF2600E556A4 /* Commands.swift */; };
 		F61A7AD61E818BF300EBF660 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61A7AD51E818BF300EBF660 /* InputMethodKit.framework */; };
@@ -58,6 +59,7 @@
 		1AC14D8A22AE875100549402 /* icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon.pdf; sourceTree = "<group>"; };
 		1AC76A9C23B6D9D0009BD2D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1AC9635C23BCFB7F00A67BC1 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1AC9635E23BCFFC900A67BC1 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
 		1ACC934122AC5CEB00D924A7 /* InputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
 		1ADC700422ACAF2600E556A4 /* Commands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commands.swift; sourceTree = "<group>"; };
 		F61A7ABB1E8182C100EBF660 /* Math Symbols Input.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math Symbols Input.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +126,7 @@
 		F61A7AB21E8182C100EBF660 = {
 			isa = PBXGroup;
 			children = (
+				1AC9635E23BCFFC900A67BC1 /* demo.gif */,
 				1AC9635C23BCFB7F00A67BC1 /* LICENSE */,
 				1A6DBD9E23BA6F3500AA8924 /* InstallerSections.plist */,
 				1A6DBD9C23BA62EC00AA8924 /* build_package.sh */,
@@ -298,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A695F26229F8FDD008DEC0F /* commands.txt in Resources */,
+				1AC9635F23BCFFCA00A67BC1 /* demo.gif in Resources */,
 				1AC14D8B22AE875100549402 /* icon.pdf in Resources */,
 				1AC76A9D23B6D9D0009BD2D7 /* InfoPlist.strings in Resources */,
 			);
