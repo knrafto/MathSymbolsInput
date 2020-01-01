@@ -7,10 +7,10 @@ It works seamlessly with any macOS app.
 
 The latest version is Version 0.9. To install or update Math Symbols Input:
 
-1. [Click here to download the installer for the latest version.](https://github.com/knrafto/MathSymbolsInput/releases/download/v0.9/MathSymbolsInput.pkg)
+1. [Click here](https://github.com/knrafto/MathSymbolsInput/releases/download/v0.9/MathSymbolsInput.pkg) to download the installer for the latest version.
 2. Double-click to open the installer and continue through the installation steps.
 
-The installer can enable the input method automatically. To configure input sources, see the [macOS help page on input sources](
+The installer can enable the input method automatically. If you want to configure input sources, see the [macOS help page on input sources](
 https://support.apple.com/guide/mac-help/type-language-mac-input-sources-mchlp1406/mac).
 
 # Usage
@@ -22,8 +22,6 @@ Type a backslash `\` to start a command. The text should appear underlined while
 * **Space** will replace the command and insert a space afterward.
 * **Backslash** will replace the command and start a new command.
 * **Escape** will insert the command text verbatim (e.g. if you need to type `\alpha` instead of `α`).
-
-Most other actions (e.g., copy, paste, or using the mouse) will insert the command text before that action is performed.
 
 ## Default commands
 
@@ -37,7 +35,7 @@ If you think some command would be broadly usable and should be a default comman
 
 To add your own commands, click the Math Input Symbols `∀` icon in the menu bar and select `Edit Custom Commands...`.
 You may need to [enable the input menu in the macOS System Preferences](https://support.apple.com/guide/mac-help/type-language-mac-input-sources-mchlp1406/mac) first.
-New commands should take effect immediately.
+New commands will take effect immediately.
 
 # FAQ
 
@@ -45,13 +43,13 @@ New commands should take effect immediately.
 
 Not yet, but hopefully soon.
 
-## Can I use a custom keyboard layout?
+## Can I use a custom keyboard layout instead of QWERTY?
 
-Yes, by default, macOS uses the last selected keyboard layout when an input method is active.
+Yes. By default, macOS uses the last selected keyboard layout.
 
 # Inspirations
 
-Many programming languages have functionality to type mathematical symbols, but these are usually limited to a single app. These include:
+Many programming languages are capable of inputting mathematical symbols, but this is usually limited to a single app. These include:
 
 * [Agda](https://agda.readthedocs.io/en/latest/tools/emacs-mode.html#unicode-input)
 * [Julia](https://docs.julialang.org/en/v1/manual/unicode-input/)
