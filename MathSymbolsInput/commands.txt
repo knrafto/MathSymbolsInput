@@ -3,58 +3,98 @@
 
 ### Mathematical symbols ###
 
-\neg ¬
+# Arrows
+\rightarrow →
 \to →
 \-> →
+\leftarrow ←
+\<- ←
+\leftrightarrow ↔
+\<-> ↔
+\uparrow ↑
+\downarrow ↓
+\Leftrightarrow ⇔
+\<=> ⇔
+\Rightarrow ⇒
+\=> ⇒
+\Leftarrow ⇐
+\Longrightarrow ⟹
+\implies ⟹
+\Longleftarrow ⟸
+\impliedby ⟸
+\Longleftrightarrow ⟺
+\iff ⟺
 \mapsto ↦
 \|-> ↦
+
+# Equality
 \ne ≠
 \approx ≈
 \~~ ≈
 \equiv ≡
 \== ≡
+\simeq ≃
+\~- ≃
+\cong ≅
+\~= ≅
+
+# Order
 \leq ≤
 \le ≤
 \<= ≤
 \geq ≥
 \ge ≥
 \>= ≥
-\simeq ≃
-\~- ≃
+\subset ⊂
+\supset ⊃
+\subseteq ⊆
+\supseteq ⊇
+\sqsubset ⊏
+\sqsupset ⊐
+\sqsubseteq ⊑
+\sqsupseteq ⊒
+
+# Sets and logic
+\neg ¬
 \in ∈
 \notin ∉
-\times ×
-\x ×
-\circ ∘
-\o ∘
-\bullet ∙
-\. ∙
-\ell ℓ
 \top ⊤
 \bot ⊥
-\int ∫
-\infty ∞
-\inf ∞
-\pm ±
-\mp ∓
 \forall ∀
 \all ∀
 \exists ∃
 \ex ∃
 \vdash ⊢
 \|- ⊢
-\uparrow ↑
-\downarrow ↓
-\langle ⟨
-\< ⟨
-\rangle ⟩
-\> ⟩
 \varnothing ∅
 \emptyset ∅
+\wedge ∧
+\and ∧
+\vee ∨
+\or ∨
+\v ∨
+
+# Numbers and calculus
+\int ∫
 \partial ∂
 \del ∇
 \nabla ∇
-\therefore ∴
+\infty ∞
+\inf ∞
+\pm ±
+\mp ∓
+\lfloor ⌊
+\rfloor ⌋
+\lceil ⌈
+\rceil ⌉
+
+# Operators
+\times ×
+\x ×
+\circ ∘
+\o ∘
+\bullet ∙
+\. ∙
 \Colon ∷
 \:: ∷
 \cup ∪
@@ -63,6 +103,31 @@
 \intersection ∩
 \sqcup ⊔
 \sqcap ⊓
+\surd √
+\sqrt √
+\oplus ⊕
+\o+ ⊕
+\ominus ⊖
+\o- ⊖
+\otimes ⊗
+\ox ⊗
+\vartriangleleft ⊲
+\<| ⊲
+\vartriangleright ⊳
+\|> ⊳
+
+# Brackets
+\langle ⟨
+\< ⟨
+\rangle ⟩
+\> ⟩
+\ulcorner ⌜
+\urcorner ⌝
+\llcorner ⌞
+\lrcorner ⌟
+
+# Misc
+\ell ℓ
 
 ### Typographic symbols ###
 
