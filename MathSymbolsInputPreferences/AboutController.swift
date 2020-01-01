@@ -15,4 +15,12 @@ class AboutController : NSViewController {
       copyrightField.stringValue = copyright!
     }
   }
+
+  @IBAction func visitHomepage(_ sender: Any) {
+    NSWorkspace.shared.open(URL(string: "https://github.com/knrafto/MathSymbolsInput")!)
+  }
+
+  @IBAction func checkForUpdates(_ sender: Any) {
+    NSWorkspace.shared.open(URL(string: "https://github.com/knrafto/MathSymbolsInput#Installation")!)
+  }
 }

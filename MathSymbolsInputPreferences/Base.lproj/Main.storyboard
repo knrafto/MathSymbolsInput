@@ -563,13 +563,19 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="visitHomepage:" target="Clv-Ll-Yj2" id="eYC-QF-rRl"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="alU-nh-r5q">
-                                <rect key="frame" x="148" y="196" width="185" height="32"/>
-                                <buttonCell key="cell" type="push" title="Download latest version" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fA1-ky-ypL">
+                                <rect key="frame" x="164" y="196" width="152" height="32"/>
+                                <buttonCell key="cell" type="push" title="Check for updates" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fA1-ky-ypL">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="checkForUpdates:" target="Clv-Ll-Yj2" id="Jut-8T-6nl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
