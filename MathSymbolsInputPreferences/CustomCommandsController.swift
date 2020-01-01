@@ -44,6 +44,10 @@ class CustomCommandsController: NSViewController, NSTableViewDataSource, NSTable
   }
 
   func addItem() {
+    // End any current editing.
+    tableView.window?.makeFirstResponder(nil)
+
+    // Add a new row.
     contents.append([
       "command": "\\",
       "replacement": "",
