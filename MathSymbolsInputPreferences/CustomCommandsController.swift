@@ -66,10 +66,10 @@ class CustomCommandsController: NSViewController, NSTableViewDataSource, NSTable
   }
 
   func removeItem() {
-    if tableView.selectedRow == -1 {
-      return
+    // Remove indices in reverse order so items don't move around while we remove them.
+    for i in tableView.selectedRowIndexes.sorted(by: >) {
+      contents.remove(at: i)
     }
-    contents.remove(at: tableView.selectedRow)
 
     tableView.reloadData()
     savePreferences()
