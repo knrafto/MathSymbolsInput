@@ -339,6 +339,7 @@
                                                 </tableColumn>
                                             </tableColumns>
                                             <connections>
+                                                <action trigger="doubleAction" selector="doubleClicked:" target="XfG-lQ-9wD" id="alB-Wq-udF"/>
                                                 <outlet property="dataSource" destination="XfG-lQ-9wD" id="abA-DF-zfU"/>
                                                 <outlet property="delegate" destination="XfG-lQ-9wD" id="Bxf-rm-bDZ"/>
                                             </connections>

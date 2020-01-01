@@ -43,6 +43,34 @@ class CustomCommandsController: NSViewController, NSTableViewDataSource, NSTable
     return view
   }
 
+  func addItem() {
+    contents.append([
+      "command": "\\",
+      "replacement": "",
+      ])
+    tableView.reloadData()
+
+    // Automatically select and edit the new item.
+    let newRow = contents.count - 1
+    tableView.selectRowIndexes(IndexSet(integer: newRow), byExtendingSelection: false)
+    let view = tableView.view(atColumn: 0, row: newRow, makeIfNecessary: true) as! NSTableCellView
+    view.textField?.becomeFirstResponder()
+    let range = view.textField?.currentEditor()?.selectedRange
+    view.textField?.currentEditor()?.selectedRange = NSMakeRange(range?.length ?? 0, 0)
+
+    savePreferences()
+  }
+
+  func removeItem() {
+    if tableView.selectedRow == -1 {
+      return
+    }
+    contents.remove(at: tableView.selectedRow)
+
+    tableView.reloadData()
+    savePreferences()
+  }
+
   // Called when a table cell is edited.
   @IBAction func doneEditing(_ sender: NSTextField) {
     let row = tableView.row(for: sender.superview!)
@@ -67,32 +95,16 @@ class CustomCommandsController: NSViewController, NSTableViewDataSource, NSTable
     }
   }
 
-  func addItem() {
-    contents.append([
-      "command": "\\",
-      "replacement": "",
-    ])
-    tableView.reloadData()
-
-    // Automatically select and edit the new item.
-    let newRow = contents.count - 1
-    tableView.selectRowIndexes(IndexSet(integer: newRow), byExtendingSelection: false)
-    let view = tableView.view(atColumn: 0, row: newRow, makeIfNecessary: true) as! NSTableCellView
-    view.textField?.becomeFirstResponder()
-    let range = view.textField?.currentEditor()?.selectedRange
-    view.textField?.currentEditor()?.selectedRange = NSMakeRange(range?.length ?? 0, 0)
-
-    savePreferences()
-  }
-
-  func removeItem() {
-    if tableView.selectedRow == -1 {
-      return
+  // Called when the table is double-clicked.
+  @IBAction func doubleClicked(_ sender: Any) {
+    if tableView.clickedRow == -1 && tableView.clickedColumn == -1 {
+      // The user clicked outside a row.
+      addItem()
+    } else if tableView.clickedRow != -1 && tableView.clickedColumn != -1 {
+      // The user double-clicked a row. Edit the cell.
+      let view = tableView.view(atColumn: tableView.clickedColumn, row: tableView.clickedRow, makeIfNecessary: true) as! NSTableCellView
+      view.textField?.becomeFirstResponder()
     }
-    contents.remove(at: tableView.selectedRow)
-
-    tableView.reloadData()
-    savePreferences()
   }
 }
 
