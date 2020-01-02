@@ -29,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A10FC3423BD7EBE00556BCE /* uninstall.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = uninstall.sh; sourceTree = "<group>"; };
 		1A16BB4623B907E000E667C4 /* Math Symbols Input - Preferences.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math Symbols Input - Preferences.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A16BB4823B907E000E667C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A16BB4A23B907E000E667C4 /* CustomCommandsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCommandsController.swift; sourceTree = "<group>"; };
@@ -36,7 +37,7 @@
 		1A16BB4F23B907E100E667C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A16BB5123B907E100E667C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A5DB37A22AE8DCA000F7F92 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		1A5DB37C22AE8E24000F7F92 /* install_dev_version.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install_dev_version.sh; sourceTree = "<group>"; };
+		1A5DB37C22AE8E24000F7F92 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		1A676D4623BAF7D60092EF01 /* HyperlinkTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HyperlinkTextField.h; sourceTree = "<group>"; };
 		1A676D4723BAF7D60092EF01 /* HyperlinkTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HyperlinkTextField.m; sourceTree = "<group>"; };
 		1A676D4923BBAA730092EF01 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
@@ -51,7 +52,7 @@
 		1A6DBD9023BA4D4D00AA8924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A6DBD9223BA4D4D00AA8924 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A6DBD9B23BA62EC00AA8924 /* distribution.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = distribution.xml; sourceTree = "<group>"; };
-		1A6DBD9C23BA62EC00AA8924 /* build_package.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_package.sh; sourceTree = "<group>"; };
+		1A6DBD9C23BA62EC00AA8924 /* package.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = package.sh; sourceTree = "<group>"; };
 		1A6DBD9D23BA666B00AA8924 /* DEVELOPMENT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DEVELOPMENT.md; sourceTree = "<group>"; };
 		1A6DBD9E23BA6F3500AA8924 /* InstallerSections.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = InstallerSections.plist; sourceTree = "<group>"; };
 		1AB0D0F522AD6AE400D71347 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -129,8 +130,9 @@
 				1A5DB37A22AE8DCA000F7F92 /* README.md */,
 				1A6DBD9D23BA666B00AA8924 /* DEVELOPMENT.md */,
 				1AC9635E23BCFFC900A67BC1 /* demo.gif */,
-				1A5DB37C22AE8E24000F7F92 /* install_dev_version.sh */,
-				1A6DBD9C23BA62EC00AA8924 /* build_package.sh */,
+				1A5DB37C22AE8E24000F7F92 /* install.sh */,
+				1A10FC3423BD7EBE00556BCE /* uninstall.sh */,
+				1A6DBD9C23BA62EC00AA8924 /* package.sh */,
 				1A6DBD9E23BA6F3500AA8924 /* InstallerSections.plist */,
 				1A6DBD9B23BA62EC00AA8924 /* distribution.xml */,
 				F61A7ABD1E8182C100EBF660 /* MathSymbolsInput */,

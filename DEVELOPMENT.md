@@ -14,22 +14,13 @@ work to test.
 ## Testing the input method
 
 To update the input method with your local debug build, first switch to a
-different input method, run `./install_dev_version.sh`, and switch back. To view
-`NSLog` output, open Console.app and search for MathSymbolsInput.
-
-Sometimes running `./install_dev_version.sh` too many times will cause the OS to
-report that the input method has crashed, and will refuse to restart it. When
-this happens, you must log out and log back in. I'm not sure how to prevent
-this. 
+different input method, run `./install.sh`, and switch back. To view
+`NSLog` output, open Console.app and search for "Math Symbols Input".
 
 ## Testing the installer
 
-Run `./build_package.sh` to create a release build and package it into a `.pkg`
-file for the macOS installer.
-
-To perform an installation, first `rm -rf build` to delete the build directory
-(otherwise the installer will try to overwrite the apps there instead of
-installing into the correct locations) and `open MathSymbolsInputInstaller.pkg`.
+Run `./package` to create a release build and package it into a `.pkg`
+file for the macOS installer. Run `open MathSymbolsInput.pkg` to perform an install.
 
 ## Reference documentation
 

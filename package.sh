@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# Generates MathSymbolsInput.pkg in the current directory.
-
-set -euxo pipefail
+set -eux
 
 xcodebuild -alltargets -configuration Release
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-
-set -euxo pipefail
+set -eux
 
 sudo cp -r "build/Debug/Math Symbols Input.app" "/Library/Input Methods"
+sudo cp -r "build/Debug/Math Symbols Input - Preferences.app" "/Applications"
 killall -9 "Math Symbols Input"
