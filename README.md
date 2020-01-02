@@ -26,7 +26,6 @@ Type a backslash `\` to start a command. The text should appear underlined while
 ## Default commands
 
 To view a searchable list of all default commands, click the Math Input Symbols `∀` icon in the menu bar and select `View Default Commands...`.
-You may need to [enable the input menu in the macOS System Preferences](https://support.apple.com/guide/mac-help/type-language-mac-input-sources-mchlp1406/mac) first.
 The default commands are also listed in [this text file](https://github.com/knrafto/MathSymbolsInput/blob/master/MathSymbolsInput/commands.txt).
 
 If you think some command would be broadly usable and should be a default command, consider opening an issue or pull request.
@@ -34,7 +33,6 @@ If you think some command would be broadly usable and should be a default comman
 ## Custom commands
 
 To add your own commands, click the Math Input Symbols `∀` icon in the menu bar and select `Edit Custom Commands...`.
-You may need to [enable the input menu in the macOS System Preferences](https://support.apple.com/guide/mac-help/type-language-mac-input-sources-mchlp1406/mac) first.
 New commands will take effect immediately.
 
 # FAQ
