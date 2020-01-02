@@ -125,14 +125,14 @@
 		F61A7AB21E8182C100EBF660 = {
 			isa = PBXGroup;
 			children = (
-				1AC9635E23BCFFC900A67BC1 /* demo.gif */,
 				1AC9635C23BCFB7F00A67BC1 /* LICENSE */,
-				1A6DBD9E23BA6F3500AA8924 /* InstallerSections.plist */,
-				1A6DBD9C23BA62EC00AA8924 /* build_package.sh */,
-				1A6DBD9B23BA62EC00AA8924 /* distribution.xml */,
-				1A5DB37C22AE8E24000F7F92 /* install_dev_version.sh */,
 				1A5DB37A22AE8DCA000F7F92 /* README.md */,
 				1A6DBD9D23BA666B00AA8924 /* DEVELOPMENT.md */,
+				1AC9635E23BCFFC900A67BC1 /* demo.gif */,
+				1A5DB37C22AE8E24000F7F92 /* install_dev_version.sh */,
+				1A6DBD9C23BA62EC00AA8924 /* build_package.sh */,
+				1A6DBD9E23BA6F3500AA8924 /* InstallerSections.plist */,
+				1A6DBD9B23BA62EC00AA8924 /* distribution.xml */,
 				F61A7ABD1E8182C100EBF660 /* MathSymbolsInput */,
 				1A16BB4723B907E000E667C4 /* MathSymbolsInputPreferences */,
 				1A6DBD8423BA4D4D00AA8924 /* InstallerActivatePane */,
