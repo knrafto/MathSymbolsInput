@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A10FC3723BD824C00556BCE /* MathSymbolsInputPreferences-components.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A10FC3523BD824C00556BCE /* MathSymbolsInputPreferences-components.plist */; };
+		1A10FC3823BD824C00556BCE /* MathSymbolsInput-components.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A10FC3623BD824C00556BCE /* MathSymbolsInput-components.plist */; };
 		1A16BB4923B907E000E667C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A16BB4823B907E000E667C4 /* AppDelegate.swift */; };
 		1A16BB4B23B907E000E667C4 /* CustomCommandsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A16BB4A23B907E000E667C4 /* CustomCommandsController.swift */; };
 		1A16BB4D23B907E100E667C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A16BB4C23B907E100E667C4 /* Assets.xcassets */; };
@@ -30,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		1A10FC3423BD7EBE00556BCE /* uninstall.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = uninstall.sh; sourceTree = "<group>"; };
+		1A10FC3523BD824C00556BCE /* MathSymbolsInputPreferences-components.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MathSymbolsInputPreferences-components.plist"; sourceTree = "<group>"; };
+		1A10FC3623BD824C00556BCE /* MathSymbolsInput-components.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MathSymbolsInput-components.plist"; sourceTree = "<group>"; };
 		1A16BB4623B907E000E667C4 /* Math Symbols Input - Preferences.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math Symbols Input - Preferences.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A16BB4823B907E000E667C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A16BB4A23B907E000E667C4 /* CustomCommandsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCommandsController.swift; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 				1A5DB37C22AE8E24000F7F92 /* install.sh */,
 				1A10FC3423BD7EBE00556BCE /* uninstall.sh */,
 				1A6DBD9C23BA62EC00AA8924 /* package.sh */,
+				1A10FC3623BD824C00556BCE /* MathSymbolsInput-components.plist */,
+				1A10FC3523BD824C00556BCE /* MathSymbolsInputPreferences-components.plist */,
 				1A6DBD9E23BA6F3500AA8924 /* InstallerSections.plist */,
 				1A6DBD9B23BA62EC00AA8924 /* distribution.xml */,
 				F61A7ABD1E8182C100EBF660 /* MathSymbolsInput */,
@@ -302,7 +308,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A695F26229F8FDD008DEC0F /* commands.txt in Resources */,
+				1A10FC3823BD824C00556BCE /* MathSymbolsInput-components.plist in Resources */,
 				1AC14D8B22AE875100549402 /* icon.pdf in Resources */,
+				1A10FC3723BD824C00556BCE /* MathSymbolsInputPreferences-components.plist in Resources */,
 				1AC76A9D23B6D9D0009BD2D7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
