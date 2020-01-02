@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A10FC3723BD824C00556BCE /* MathSymbolsInputPreferences-components.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A10FC3523BD824C00556BCE /* MathSymbolsInputPreferences-components.plist */; };
-		1A10FC3823BD824C00556BCE /* MathSymbolsInput-components.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A10FC3623BD824C00556BCE /* MathSymbolsInput-components.plist */; };
 		1A16BB4923B907E000E667C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A16BB4823B907E000E667C4 /* AppDelegate.swift */; };
 		1A16BB4B23B907E000E667C4 /* CustomCommandsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A16BB4A23B907E000E667C4 /* CustomCommandsController.swift */; };
 		1A16BB4D23B907E100E667C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A16BB4C23B907E100E667C4 /* Assets.xcassets */; };
@@ -308,9 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A695F26229F8FDD008DEC0F /* commands.txt in Resources */,
-				1A10FC3823BD824C00556BCE /* MathSymbolsInput-components.plist in Resources */,
 				1AC14D8B22AE875100549402 /* icon.pdf in Resources */,
-				1A10FC3723BD824C00556BCE /* MathSymbolsInputPreferences-components.plist in Resources */,
 				1AC76A9D23B6D9D0009BD2D7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
