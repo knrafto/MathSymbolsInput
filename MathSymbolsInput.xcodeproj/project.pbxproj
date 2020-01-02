@@ -23,7 +23,6 @@
 		1AB0D0F622AD6AE400D71347 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0D0F522AD6AE400D71347 /* main.swift */; };
 		1AC14D8B22AE875100549402 /* icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14D8A22AE875100549402 /* icon.pdf */; };
 		1AC76A9D23B6D9D0009BD2D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AC76A9B23B6D9D0009BD2D7 /* InfoPlist.strings */; };
-		1AC9635F23BCFFCA00A67BC1 /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1AC9635E23BCFFC900A67BC1 /* demo.gif */; };
 		1ACC934222AC5CEB00D924A7 /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC934122AC5CEB00D924A7 /* InputController.swift */; };
 		1ADC700522ACAF2600E556A4 /* Commands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADC700422ACAF2600E556A4 /* Commands.swift */; };
 		F61A7AD61E818BF300EBF660 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61A7AD51E818BF300EBF660 /* InputMethodKit.framework */; };
@@ -301,7 +300,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A695F26229F8FDD008DEC0F /* commands.txt in Resources */,
-				1AC9635F23BCFFCA00A67BC1 /* demo.gif in Resources */,
 				1AC14D8B22AE875100549402 /* icon.pdf in Resources */,
 				1AC76A9D23B6D9D0009BD2D7 /* InfoPlist.strings in Resources */,
 			);
