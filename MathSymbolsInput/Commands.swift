@@ -21,21 +21,22 @@ func loadDefaultCommands() {
   }
 
   var lineNumber = 0
-  for line in contents.components(separatedBy: "\n") {
+  for line in contents.split(whereSeparator: { $0 == "\n" || $0 == "\r\n" }) {
     lineNumber += 1
     // Blank or comment line
     if line.isEmpty || line.starts(with: "#") {
       continue
     }
 
-    let components = line.components(separatedBy: " ")
+    let components = line.split(separator: " ", maxSplits: 1)
     if components.count != 2 {
       NSLog("Syntax error on line %d: expected exactly two words separated by whitespace",
             lineNumber)
       continue
     }
-    let command = components[0]
-    let replacement = components[1]
+    // TODO: validate command and replacement.
+    let command = String(components[0])
+    let replacement = String(components[1])
 
     if !command.starts(with: "\\") {
       NSLog("Syntax error on line %d: command must start with a backslash",
