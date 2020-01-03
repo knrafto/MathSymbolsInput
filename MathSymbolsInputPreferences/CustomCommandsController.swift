@@ -1,5 +1,15 @@
 import Cocoa
 
+let kMaxStringLength = 1000
+
+func isValidCommandCharacter(_ c: Character) -> Bool {
+  return c != " " && c != "\r" && c != "\n" && c != "\r\n"
+}
+
+func isValidReplacementCharacter(_ c: Character) -> Bool {
+  return c != "\r" && c != "\n" && c != "\r\n"
+}
+
 class CustomCommandsController: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
   @IBOutlet weak var tableView: NSTableView!
   var preferences: UserDefaults?
@@ -83,8 +93,19 @@ class CustomCommandsController: NSViewController, NSTableViewDataSource, NSTable
     }
     let column = sender.superview!.identifier!.rawValue
 
-    // Trim whitespace
-    let text = sender.stringValue.trimmingCharacters(in: .whitespacesAndNewlines)
+    // Make sure the text is valid.
+    // Technically we trim by extended grapheme clusters instead of code points, but whatever.
+    var text = sender.stringValue
+    if column == "command" {
+      text = text.filter(isValidCommandCharacter)
+      if text.isEmpty || text.first! != "\\" {
+        text = "\\" + text
+      }
+      text = String(text.prefix(kMaxStringLength))
+    } else if column == "replacement" {
+      text = text.filter(isValidReplacementCharacter)
+      text = String(text.prefix(kMaxStringLength))
+    }
     sender.stringValue = text
     contents[row][column] = text
     savePreferences()
