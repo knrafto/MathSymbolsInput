@@ -153,7 +153,8 @@
 \natural ♮
 
 ### Superscripts and subscripts  ###
-# Not all letters are available in Unicode.
+# Not all letters are available in Unicode, and the ones that are there often
+# come from different ranges and are rendered inconsistently in most fonts.
 
 \^0 ⁰
 \^1 ¹
