@@ -28,3 +28,20 @@ file for the macOS installer. Run `open MathSymbolsInput.pkg` to perform an inst
 * Apple tech note on input methods: http://mirror.informatimago.com/next/developer.apple.com/technotes/tn2005/tn2128.html
 * InputMethodKit documentation: https://developer.apple.com/documentation/inputmethodkit
 * Cocoa text editing overview: https://developer.apple.com/library/archive/documentation/TextFonts/Conceptual/CocoaTextArchitecture/TextEditing/TextEditing.html
+
+## Text format
+
+The text format is a line-oriented UTF-8 text file, with lines ending in either `\r\n` or `\n`. Each line is either:
+
+* Empty
+* A comment line, beginning with `#`
+* A command and a replacement, separated by a single space.
+
+Commands:
+* must start with `\`
+* cannot contain space, `\r`, or `\n` characters
+* are at most 1000 Unicode code points long.
+
+Replacements:
+* cannot contain `\r` or `\n` characters (but they can contain space characters)
+* are at most 1000 Unicode code points long.
