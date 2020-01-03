@@ -91,6 +91,7 @@
 # Operators
 \times ×
 \x ×
+\div ÷
 \circ ∘
 \o ∘
 \bullet ∙
@@ -128,15 +129,23 @@
 
 # Misc
 \ell ℓ
+\degree °
 
 ### Typographic symbols ###
 
 \S §
 \P ¶
 \... …
+\dagger †
+\ddagger ‡
 \copyright ©
 \(c) ©
 \registered ®
+\(r) ®
+\trademark ™
+\tm ™
+
+### Music ###
 \sharp ♯
 \# ♯
 \flat ♭
