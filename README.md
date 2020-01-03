@@ -1,5 +1,5 @@
 **Math Symbols Input** is a macOS [input method](https://en.wikipedia.org/wiki/Input_method) for typing mathematical symbols with LaTeX-style commands.
-It works seamlessly with any macOS app.
+It works seamlessly with any Mac app.
 
 ![Math Symbols Input Demo](demo.gif)
 
@@ -41,9 +41,11 @@ New commands will take effect immediately.
 
 Not yet, but hopefully soon.
 
-## Can I use a custom keyboard layout instead of QWERTY?
+## Can I use a different keyboard layout besides the US keyboard layout?
 
-Yes. By default, macOS uses the last selected keyboard layout.
+Yes. By default, Math Symbols Input uses the last selected keyboard layout.
+However, [dead keys](https://en.wikipedia.org/wiki/Dead_key) and press-and-hold unfortunately do not work while the input method is active,
+so you'll need to switch away from the input method to type letters with diacritics.
 
 # Inspirations
 
