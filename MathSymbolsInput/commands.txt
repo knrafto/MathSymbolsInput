@@ -59,10 +59,18 @@
 \sqsupset ⊐
 \sqsubseteq ⊑
 \sqsupseteq ⊒
+\prec ≺
+\preceq ≼
+\succ ≻
+\succeq ≽
 \triangleleft ⊲
 \<| ⊲
 \triangleright ⊳
 \|> ⊳
+\trianglelefteq ⊴
+\<|= ⊴
+\trianglerighteq ⊵
+\|>= ⊵
 
 # Sets and logic
 \neg ¬
