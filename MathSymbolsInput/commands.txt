@@ -165,7 +165,12 @@
 
 \S §
 \P ¶
+\ldots …
 \... …
+\vdots ⋮
+\cdots ⋯
+\adots ⋰
+\ddots ⋱
 \dagger †
 \ddagger ‡
 \copyright ©
