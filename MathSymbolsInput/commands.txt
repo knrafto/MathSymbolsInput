@@ -59,6 +59,10 @@
 \sqsupset ⊐
 \sqsubseteq ⊑
 \sqsupseteq ⊒
+\triangleleft ⊲
+\<| ⊲
+\triangleright ⊳
+\|> ⊳
 
 # Sets and logic
 \neg ¬
@@ -127,10 +131,6 @@
 \o- ⊖
 \otimes ⊗
 \ox ⊗
-\vartriangleleft ⊲
-\<| ⊲
-\vartriangleright ⊳
-\|> ⊳
 \wr ≀
 \veebar ⊻
 \Box □
