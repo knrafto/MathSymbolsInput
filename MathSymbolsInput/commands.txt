@@ -76,6 +76,7 @@
 \neg ¬
 \in ∈
 \notin ∉
+\ni ∋
 \top ⊤
 \bot ⊥
 \forall ∀
@@ -124,8 +125,11 @@
 \:: ∷
 \cup ∪
 \union ∪
+\u ∪
 \cap ∩
 \intersection ∩
+\uplus ⊎
+\u+ ⊎
 \setminus ∖
 \sqcup ⊔
 \sqcap ⊓
