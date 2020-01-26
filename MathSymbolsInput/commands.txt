@@ -82,14 +82,10 @@
 \|= ⊨
 \varnothing ∅
 \emptyset ∅
-\wedge ∧
-\and ∧
-\vee ∨
-\or ∨
-\v ∨
 \therefore ∴
 \because ∵
 \qed ∎
+\lightning ↯
 
 # Numbers and calculus
 \int ∫
@@ -131,10 +127,23 @@
 \o- ⊖
 \otimes ⊗
 \ox ⊗
+\odot ⊙
+\o. ⊙
 \wr ≀
+\wedge ∧
+\and ∧
+\land ∧
+\vee ∨
+\or ∨
+\lor ∨
+\v ∨
 \veebar ⊻
 \Box □
 \box □
+\ltimes ⋉
+\rtimes ⋊
+\bowtie ⋈
+\coprod ∐
 
 # Brackets
 \langle ⟨
