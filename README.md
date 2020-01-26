@@ -41,7 +41,7 @@ New commands will take effect immediately.
 
 Not yet, but hopefully soon.
 
-## Can I use a different keyboard layout besides the US keyboard layout?
+## Can I use a keyboard layout other than the US layout?
 
 Yes. By default, Math Symbols Input uses the last selected keyboard layout.
 However, [dead keys](https://en.wikipedia.org/wiki/Dead_key) and press-and-hold unfortunately do not work while the input method is active,
