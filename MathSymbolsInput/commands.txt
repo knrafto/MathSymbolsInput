@@ -29,6 +29,7 @@
 
 # Equality
 \ne ≠
+\neq ≠
 \approx ≈
 \~~ ≈
 \equiv ≡
@@ -37,6 +38,7 @@
 \~- ≃
 \cong ≅
 \~= ≅
+\propto ∝
 
 # Order
 \leq ≤
@@ -45,6 +47,10 @@
 \geq ≥
 \ge ≥
 \>= ≥
+\ll ≪
+\<< ≪
+\gg ≫
+\>> ≫
 \subset ⊂
 \supset ⊃
 \subseteq ⊆
@@ -66,6 +72,10 @@
 \ex ∃
 \vdash ⊢
 \|- ⊢
+\dashv ⊣
+\-| ⊣
+\vDash ⊨
+\|= ⊨
 \varnothing ∅
 \emptyset ∅
 \wedge ∧
@@ -73,9 +83,13 @@
 \vee ∨
 \or ∨
 \v ∨
+\therefore ∴
+\because ∵
+\qed ∎
 
 # Numbers and calculus
 \int ∫
+\oint ∮
 \partial ∂
 \del ∇
 \nabla ∇
@@ -102,6 +116,7 @@
 \union ∪
 \cap ∩
 \intersection ∩
+\setminus ∖
 \sqcup ⊔
 \sqcap ⊓
 \surd √
@@ -116,12 +131,18 @@
 \<| ⊲
 \vartriangleright ⊳
 \|> ⊳
+\wr ≀
+\veebar ⊻
+\Box □
+\box □
 
 # Brackets
 \langle ⟨
 \< ⟨
 \rangle ⟩
 \> ⟩
+\Vert ‖
+\|| ‖
 \ulcorner ⌜
 \urcorner ⌝
 \llcorner ⌞
