@@ -82,6 +82,8 @@
 \|= ⊨
 \varnothing ∅
 \emptyset ∅
+\aleph ℵ
+\beth ℶ
 \therefore ∴
 \because ∵
 \qed ∎
