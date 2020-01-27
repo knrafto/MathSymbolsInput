@@ -7,8 +7,8 @@ It works seamlessly with any Mac app.
 
 The latest version is Version 1.1. To install or update Math Symbols Input:
 
-1. [Click here](https://github.com/knrafto/MathSymbolsInput/releases/download/v1.1/MathSymbolsInput.pkg) to download the installer for the latest version.
-2. Double-click to open the installer and continue through the installation steps.
+1. Download the [installer for the latest version](https://github.com/knrafto/MathSymbolsInput/releases/latest/download/MathSymbolsInput.pkg).
+2. Open the installer and continue through the installation steps.
 
 The installer can enable the input method automatically. If you want to configure input sources, see the [macOS help page on input sources](
 https://support.apple.com/guide/mac-help/type-language-mac-input-sources-mchlp1406/mac).
