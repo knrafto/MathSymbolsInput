@@ -20,6 +20,7 @@ func loadDefaultCommands() {
     return
   }
 
+  var errors = 0
   var lineNumber = 0
   for line in contents.split(whereSeparator: { $0 == "\n" || $0 == "\r\n" }) {
     lineNumber += 1
@@ -32,6 +33,7 @@ func loadDefaultCommands() {
     if components.count != 2 {
       NSLog("Syntax error on line %d: expected exactly two words separated by whitespace",
             lineNumber)
+      errors += 1
       continue
     }
     // TODO: validate command and replacement.
@@ -41,12 +43,14 @@ func loadDefaultCommands() {
     if !command.starts(with: "\\") {
       NSLog("Syntax error on line %d: command must start with a backslash",
             lineNumber)
+      errors += 1
       continue
     }
 
     if defaultCommands[command] != nil {
       NSLog("Error on line %d: command '%@' already defined",
             lineNumber, command)
+      errors += 1
       continue
     }
 
@@ -56,7 +60,7 @@ func loadDefaultCommands() {
   // Save commands to UserDefaults so the preferences app can read them easily.
   UserDefaults.standard.set(defaultCommands, forKey: kDefaultCommandsKey)
 
-  NSLog("Loaded %d default commands", defaultCommands.count)
+  NSLog("Loaded %d default commands with %d errors", defaultCommands.count, errors)
 }
 
 // Look up a command's replacement, first in the user's preferences and then
