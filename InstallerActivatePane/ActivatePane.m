@@ -25,6 +25,10 @@ static void registerInputMethod() {
   CFURLRef url = CFURLCreateFromFileSystemRepresentation(NULL, (const UInt8 *) kInstallLocation, strlen(kInstallLocation), NO);
   if (url) {
     TISRegisterInputSource(url);
+    // macOS Catalina seems to have a bug where registering an input source in this way won't
+    // start it, leaving it broken until the user reboots. Starting it ourselves seems to fix
+    // this though.
+    [[NSWorkspace sharedWorkspace] openURL:(__bridge NSURL*) url];
     NSLog(@"Registered input source from %s", kInstallLocation);
   }
 }
