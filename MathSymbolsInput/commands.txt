@@ -7,6 +7,8 @@
 \rightarrow →
 \to →
 \-> →
+\hookrightarrow ↪
+\inj ↪
 \leftarrow ←
 \<- ←
 \leftrightarrow ↔
@@ -23,6 +25,7 @@
 \Longleftarrow ⟸
 \impliedby ⟸
 \Longleftrightarrow ⟺
+\<==> ⟺
 \iff ⟺
 \mapsto ↦
 \|-> ↦
@@ -35,9 +38,11 @@
 \equiv ≡
 \== ≡
 \simeq ≃
+\iso ≃
 \~- ≃
 \cong ≅
 \~= ≅
+\=? ≟
 \propto ∝
 
 # Order
@@ -121,6 +126,7 @@
 \o ∘
 \bullet ∙
 \. ∙
+\cdot ⋅
 \Colon ∷
 \:: ∷
 \cup ∪
@@ -173,7 +179,9 @@
 
 # Misc
 \ell ℓ
+\deg °
 \degree °
+\checkmark ✓
 
 ### Typographic symbols ###
 
@@ -358,7 +366,7 @@
 \Gd δ
 \Ge ε
 \Gz ζ
-# \eta
+\Gh η
 \Gth θ
 \Gi ι
 \Gk κ
