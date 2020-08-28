@@ -23,6 +23,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     return true
   }
 
+  func applicationWillResignActive(_ notification: Notification) {
+    // Ensure any currently-edited command gets saved
+    NSApp.mainWindow?.makeFirstResponder(NSApp.mainWindow?.initialFirstResponder);
+    NSApp.terminate(nil);
+  }
+
   func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
     return true
   }
