@@ -595,25 +595,13 @@
                                     <action selector="visitHomepage:" target="Clv-Ll-Yj2" id="eYC-QF-rRl"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="alU-nh-r5q">
-                                <rect key="frame" x="164" y="196" width="152" height="32"/>
-                                <buttonCell key="cell" type="push" title="Check for updates" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fA1-ky-ypL">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="checkForUpdates:" target="Clv-Ll-Yj2" id="Jut-8T-6nl"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="yzO-oN-HAa" firstAttribute="centerX" secondItem="uyX-zr-eVd" secondAttribute="centerX" id="0b1-GU-z98"/>
                             <constraint firstItem="yzO-oN-HAa" firstAttribute="centerX" secondItem="fQP-tJ-I8p" secondAttribute="centerX" id="1u5-cj-jFw"/>
                             <constraint firstItem="9bq-kP-Q3r" firstAttribute="centerX" secondItem="RkT-RD-x0G" secondAttribute="centerX" id="4Se-Px-0Yj"/>
                             <constraint firstItem="uyX-zr-eVd" firstAttribute="top" secondItem="yzO-oN-HAa" secondAttribute="bottom" constant="8" symbolic="YES" id="JrJ-uN-L6N"/>
-                            <constraint firstItem="RkT-RD-x0G" firstAttribute="centerX" secondItem="alU-nh-r5q" secondAttribute="centerX" id="RbW-IO-WpT"/>
                             <constraint firstItem="uyX-zr-eVd" firstAttribute="centerX" secondItem="9bq-kP-Q3r" secondAttribute="centerX" id="cP4-4n-zOe"/>
-                            <constraint firstItem="alU-nh-r5q" firstAttribute="top" secondItem="RkT-RD-x0G" secondAttribute="bottom" constant="12" symbolic="YES" id="coh-T8-L2r"/>
                             <constraint firstItem="9bq-kP-Q3r" firstAttribute="top" secondItem="uyX-zr-eVd" secondAttribute="bottom" constant="8" symbolic="YES" id="h9E-MJ-Blc"/>
                             <constraint firstItem="yzO-oN-HAa" firstAttribute="top" secondItem="fQP-tJ-I8p" secondAttribute="top" constant="20" symbolic="YES" id="p1Y-ND-77m"/>
                             <constraint firstItem="RkT-RD-x0G" firstAttribute="top" secondItem="9bq-kP-Q3r" secondAttribute="bottom" constant="20" id="rQx-p1-Cks"/>

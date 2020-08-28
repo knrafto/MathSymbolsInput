@@ -19,8 +19,4 @@ class AboutController : NSViewController {
   @IBAction func visitHomepage(_ sender: Any) {
     NSWorkspace.shared.open(URL(string: "https://github.com/knrafto/MathSymbolsInput")!)
   }
-
-  @IBAction func checkForUpdates(_ sender: Any) {
-    NSWorkspace.shared.open(URL(string: "https://github.com/knrafto/MathSymbolsInput#Installation")!)
-  }
 }
