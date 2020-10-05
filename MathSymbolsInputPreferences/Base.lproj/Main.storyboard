@@ -573,16 +573,8 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9bq-kP-Q3r">
-                                <rect key="frame" x="210" y="277" width="60" height="14"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Copyright" id="wzP-cG-5Gu">
-                                    <font key="font" metaFont="smallSystem"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RkT-RD-x0G">
-                                <rect key="frame" x="173" y="229" width="134" height="32"/>
+                                <rect key="frame" x="173" y="251" width="134" height="32"/>
                                 <buttonCell key="cell" type="push" title="Visit homepage" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="u1m-5P-39b">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -595,16 +587,13 @@
                         <constraints>
                             <constraint firstItem="yzO-oN-HAa" firstAttribute="centerX" secondItem="uyX-zr-eVd" secondAttribute="centerX" id="0b1-GU-z98"/>
                             <constraint firstItem="yzO-oN-HAa" firstAttribute="centerX" secondItem="fQP-tJ-I8p" secondAttribute="centerX" id="1u5-cj-jFw"/>
-                            <constraint firstItem="9bq-kP-Q3r" firstAttribute="centerX" secondItem="RkT-RD-x0G" secondAttribute="centerX" id="4Se-Px-0Yj"/>
+                            <constraint firstItem="yzO-oN-HAa" firstAttribute="centerX" secondItem="RkT-RD-x0G" secondAttribute="centerX" id="4Se-Px-0Yj"/>
                             <constraint firstItem="uyX-zr-eVd" firstAttribute="top" secondItem="yzO-oN-HAa" secondAttribute="bottom" constant="8" symbolic="YES" id="JrJ-uN-L6N"/>
-                            <constraint firstItem="uyX-zr-eVd" firstAttribute="centerX" secondItem="9bq-kP-Q3r" secondAttribute="centerX" id="cP4-4n-zOe"/>
-                            <constraint firstItem="9bq-kP-Q3r" firstAttribute="top" secondItem="uyX-zr-eVd" secondAttribute="bottom" constant="8" symbolic="YES" id="h9E-MJ-Blc"/>
                             <constraint firstItem="yzO-oN-HAa" firstAttribute="top" secondItem="fQP-tJ-I8p" secondAttribute="top" constant="20" symbolic="YES" id="p1Y-ND-77m"/>
-                            <constraint firstItem="RkT-RD-x0G" firstAttribute="top" secondItem="9bq-kP-Q3r" secondAttribute="bottom" constant="20" id="rQx-p1-Cks"/>
+                            <constraint firstItem="RkT-RD-x0G" firstAttribute="top" secondItem="uyX-zr-eVd" secondAttribute="bottom" constant="20" id="rQx-p1-Cks"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="copyrightField" destination="9bq-kP-Q3r" id="2lS-C8-pR6"/>
                         <outlet property="versionField" destination="uyX-zr-eVd" id="KQT-Cp-7YT"/>
                     </connections>
                 </viewController>

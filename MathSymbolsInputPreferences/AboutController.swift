@@ -10,10 +10,6 @@ class AboutController : NSViewController {
     if version != nil {
       versionField.stringValue = "Version " + version!
     }
-    let copyright = Bundle.main.object(forInfoDictionaryKey: "NSHumanReadableCopyright") as? String
-    if copyright != nil {
-      copyrightField.stringValue = copyright!
-    }
   }
 
   @IBAction func visitHomepage(_ sender: Any) {
