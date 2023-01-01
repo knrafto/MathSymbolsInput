@@ -22,6 +22,12 @@ class DefaultCommandsController : NSViewController, NSTableViewDataSource, NSTab
       ])
     }
     filteredContents = contents
+    tableView.reloadData()
+
+    // Work around macOS bug where the header obscures the first row
+    if (tableView.numberOfRows > 0) {
+      tableView.scrollRowToVisible(0)
+    }
   }
 
   // For NSTableViewDataSource.
