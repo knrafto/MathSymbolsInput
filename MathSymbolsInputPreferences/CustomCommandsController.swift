@@ -72,7 +72,8 @@ class CustomCommandsController: NSViewController, NSTableViewDataSource, NSTable
     let range = view.textField?.currentEditor()?.selectedRange
     view.textField?.currentEditor()?.selectedRange = NSMakeRange(range?.length ?? 0, 0)
 
-    savePreferences()
+    // Ensure new row is visible.
+    tableView.scrollRowToVisible(newRow)
   }
 
   func removeItem() {
