@@ -10,8 +10,9 @@ let kCustomCommandsKey = "CustomCommands"
 let kPreferencesTabKey = "PreferencesTab"
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
   func applicationDidFinishLaunching(_ notification: Notification) {
+    NSApp.mainWindow?.delegate = self
     NSApp.activate(ignoringOtherApps: true)
   }
 
@@ -24,13 +25,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   }
 
   func applicationWillResignActive(_ notification: Notification) {
-    // Ensure any currently-edited command gets saved
-    NSApp.mainWindow?.makeFirstResponder(NSApp.mainWindow?.initialFirstResponder);
-    NSApp.terminate(nil);
+    NSApp.mainWindow?.close()
   }
 
   func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
     return true
+  }
+
+  func windowWillClose(_ notification: Notification) {
+    // Ensure any currently-edited command gets saved
+    NSApp.mainWindow?.makeFirstResponder(NSApp.mainWindow?.initialFirstResponder);
   }
 }
 
