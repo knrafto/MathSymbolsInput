@@ -13,6 +13,9 @@
 		1A16BB5023B907E100E667C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A16BB4E23B907E100E667C4 /* Main.storyboard */; };
 		1A676D4823BAF7D60092EF01 /* HyperlinkTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A676D4723BAF7D60092EF01 /* HyperlinkTextField.m */; };
 		1A676D4A23BBAA730092EF01 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A676D4923BBAA730092EF01 /* TabController.swift */; };
+		1A67768F2968D5B7007D5C04 /* Commands.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A67768E2968D5B7007D5C04 /* Commands.m */; };
+		1A6776922968E5CF007D5C04 /* InputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6776912968E5CF007D5C04 /* InputController.m */; };
+		1A6776952968ECBA007D5C04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6776942968ECBA007D5C04 /* main.m */; };
 		1A695F26229F8FDD008DEC0F /* commands.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A695F25229F8FDD008DEC0F /* commands.txt */; };
 		1A6DBD6223B969C600AA8924 /* DefaultCommandsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6DBD6023B966B900AA8924 /* DefaultCommandsController.swift */; };
 		1A6DBD6623B9A63C00AA8924 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6DBD6523B9A63C00AA8924 /* AboutController.swift */; };
@@ -20,11 +23,8 @@
 		1A6DBD8A23BA4D4D00AA8924 /* ActivatePane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6DBD8823BA4D4D00AA8924 /* ActivatePane.xib */; };
 		1A6DBD8D23BA4D4D00AA8924 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A6DBD8B23BA4D4D00AA8924 /* Localizable.strings */; };
 		1A6DBD9323BA4D4D00AA8924 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A6DBD9123BA4D4D00AA8924 /* InfoPlist.strings */; };
-		1AB0D0F622AD6AE400D71347 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0D0F522AD6AE400D71347 /* main.swift */; };
 		1AC14D8B22AE875100549402 /* icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14D8A22AE875100549402 /* icon.pdf */; };
 		1AC76A9D23B6D9D0009BD2D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AC76A9B23B6D9D0009BD2D7 /* InfoPlist.strings */; };
-		1ACC934222AC5CEB00D924A7 /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC934122AC5CEB00D924A7 /* InputController.swift */; };
-		1ADC700522ACAF2600E556A4 /* Commands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADC700422ACAF2600E556A4 /* Commands.swift */; };
 		F61A7AD61E818BF300EBF660 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61A7AD51E818BF300EBF660 /* InputMethodKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +43,11 @@
 		1A676D4623BAF7D60092EF01 /* HyperlinkTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HyperlinkTextField.h; sourceTree = "<group>"; };
 		1A676D4723BAF7D60092EF01 /* HyperlinkTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HyperlinkTextField.m; sourceTree = "<group>"; };
 		1A676D4923BBAA730092EF01 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		1A67768E2968D5B7007D5C04 /* Commands.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Commands.m; sourceTree = "<group>"; };
+		1A6776902968D5C5007D5C04 /* Commands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Commands.h; sourceTree = "<group>"; };
+		1A6776912968E5CF007D5C04 /* InputController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputController.m; sourceTree = "<group>"; };
+		1A6776932968E5E9007D5C04 /* InputController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputController.h; sourceTree = "<group>"; };
+		1A6776942968ECBA007D5C04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1A695F25229F8FDD008DEC0F /* commands.txt */ = {isa = PBXFileReference; indentWidth = 8; lastKnownFileType = text; path = commands.txt; sourceTree = "<group>"; tabWidth = 8; usesTabs = 1; };
 		1A6DBD6023B966B900AA8924 /* DefaultCommandsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCommandsController.swift; sourceTree = "<group>"; };
 		1A6DBD6523B9A63C00AA8924 /* AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
@@ -57,13 +62,10 @@
 		1A6DBD9C23BA62EC00AA8924 /* package.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = package.sh; sourceTree = "<group>"; };
 		1A6DBD9D23BA666B00AA8924 /* DEVELOPMENT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DEVELOPMENT.md; sourceTree = "<group>"; };
 		1A6DBD9E23BA6F3500AA8924 /* InstallerSections.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = InstallerSections.plist; sourceTree = "<group>"; };
-		1AB0D0F522AD6AE400D71347 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1AC14D8A22AE875100549402 /* icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon.pdf; sourceTree = "<group>"; };
 		1AC76A9C23B6D9D0009BD2D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1AC9635C23BCFB7F00A67BC1 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		1AC9635E23BCFFC900A67BC1 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
-		1ACC934122AC5CEB00D924A7 /* InputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
-		1ADC700422ACAF2600E556A4 /* Commands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commands.swift; sourceTree = "<group>"; };
 		F61A7ABB1E8182C100EBF660 /* Math Symbols Input.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math Symbols Input.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F61A7ACC1E8182C100EBF660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F61A7AD51E818BF300EBF660 /* InputMethodKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputMethodKit.framework; path = System/Library/Frameworks/InputMethodKit.framework; sourceTree = SDKROOT; };
@@ -98,13 +100,13 @@
 		1A16BB4723B907E000E667C4 /* MathSymbolsInputPreferences */ = {
 			isa = PBXGroup;
 			children = (
-				1A16BB4823B907E000E667C4 /* AppDelegate.swift */,
-				1A16BB4A23B907E000E667C4 /* CustomCommandsController.swift */,
-				1A6DBD6023B966B900AA8924 /* DefaultCommandsController.swift */,
+				1A16BB5123B907E100E667C4 /* Info.plist */,
 				1A16BB4C23B907E100E667C4 /* Assets.xcassets */,
 				1A16BB4E23B907E100E667C4 /* Main.storyboard */,
 				1A6DBD6523B9A63C00AA8924 /* AboutController.swift */,
-				1A16BB5123B907E100E667C4 /* Info.plist */,
+				1A16BB4823B907E000E667C4 /* AppDelegate.swift */,
+				1A16BB4A23B907E000E667C4 /* CustomCommandsController.swift */,
+				1A6DBD6023B966B900AA8924 /* DefaultCommandsController.swift */,
 				1A676D4923BBAA730092EF01 /* TabController.swift */,
 			);
 			path = MathSymbolsInputPreferences;
@@ -113,12 +115,12 @@
 		1A6DBD8423BA4D4D00AA8924 /* InstallerActivatePane */ = {
 			isa = PBXGroup;
 			children = (
-				1A6DBD8523BA4D4D00AA8924 /* ActivatePane.h */,
-				1A6DBD8623BA4D4D00AA8924 /* ActivatePane.m */,
-				1A6DBD8823BA4D4D00AA8924 /* ActivatePane.xib */,
-				1A6DBD8B23BA4D4D00AA8924 /* Localizable.strings */,
 				1A6DBD9023BA4D4D00AA8924 /* Info.plist */,
 				1A6DBD9123BA4D4D00AA8924 /* InfoPlist.strings */,
+				1A6DBD8B23BA4D4D00AA8924 /* Localizable.strings */,
+				1A6DBD8823BA4D4D00AA8924 /* ActivatePane.xib */,
+				1A6DBD8523BA4D4D00AA8924 /* ActivatePane.h */,
+				1A6DBD8623BA4D4D00AA8924 /* ActivatePane.m */,
 				1A676D4623BAF7D60092EF01 /* HyperlinkTextField.h */,
 				1A676D4723BAF7D60092EF01 /* HyperlinkTextField.m */,
 			);
@@ -160,13 +162,15 @@
 		F61A7ABD1E8182C100EBF660 /* MathSymbolsInput */ = {
 			isa = PBXGroup;
 			children = (
-				1AC14D8A22AE875100549402 /* icon.pdf */,
 				F61A7ACC1E8182C100EBF660 /* Info.plist */,
-				1A695F25229F8FDD008DEC0F /* commands.txt */,
-				1ACC934122AC5CEB00D924A7 /* InputController.swift */,
-				1ADC700422ACAF2600E556A4 /* Commands.swift */,
-				1AB0D0F522AD6AE400D71347 /* main.swift */,
 				1AC76A9B23B6D9D0009BD2D7 /* InfoPlist.strings */,
+				1A695F25229F8FDD008DEC0F /* commands.txt */,
+				1AC14D8A22AE875100549402 /* icon.pdf */,
+				1A6776902968D5C5007D5C04 /* Commands.h */,
+				1A67768E2968D5B7007D5C04 /* Commands.m */,
+				1A6776932968E5E9007D5C04 /* InputController.h */,
+				1A6776912968E5CF007D5C04 /* InputController.m */,
+				1A6776942968ECBA007D5C04 /* main.m */,
 			);
 			path = MathSymbolsInput;
 			sourceTree = "<group>";
@@ -256,7 +260,7 @@
 					};
 					F61A7ABA1E8182C100EBF660 = {
 						CreatedOnToolsVersion = 8.2.1;
-						LastSwiftMigration = 1030;
+						LastSwiftMigration = 1320;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -339,9 +343,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ADC700522ACAF2600E556A4 /* Commands.swift in Sources */,
-				1AB0D0F622AD6AE400D71347 /* main.swift in Sources */,
-				1ACC934222AC5CEB00D924A7 /* InputController.swift in Sources */,
+				1A67768F2968D5B7007D5C04 /* Commands.m in Sources */,
+				1A6776952968ECBA007D5C04 /* main.m in Sources */,
+				1A6776922968E5CF007D5C04 /* InputController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,9 +623,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mathsymbolsinput.inputmethod.MathSymbolsInput;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -640,8 +641,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mathsymbolsinput.inputmethod.MathSymbolsInput;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
