@@ -2,6 +2,12 @@
 
 #import "Commands.h"
 
+#ifdef DEBUG
+#define DLog(...) NSLog(__VA_ARGS__)
+#else
+#define DLog(...)
+#endif
+
 // Preferences app name.
 static NSString *kPreferencesAppBundleIdentifier = @"com.mathsymbolsinput.MathSymbolsInputPreferences";
 // NSUserDefaults key for the preferences tab.
@@ -83,6 +89,7 @@ static NSString *kPreferencesTabKey = @"PreferencesTab";
 //   * space (if active): accept current selection, insert space
 //   * all other characters (if active): append to buffer
 - (BOOL)inputText:(NSString*)string client:(id)sender {
+  DLog(@"inputText string:%@ client:%@", string, [[self client] bundleIdentifier]);
   if ([string isEqualToString:@"\\"]) {
     [self accept];
     [compositionBuffer appendString:string];
@@ -106,6 +113,7 @@ static NSString *kPreferencesTabKey = @"PreferencesTab";
 //   escape: deactivate (insert composition as-is)
 //   arrow keys (while candidates window is open): move candidate selection
 - (BOOL)didCommandBySelector:(SEL)aSelector client:(id)sender {
+  DLog(@"didCommandBySelector selector:%@ client:%@", NSStringFromSelector(aSelector), [[self client] bundleIdentifier]);
   if ([self isActive]) {
     if (aSelector == @selector(insertNewline:) ||
         aSelector == @selector(insertTab:)) {
@@ -128,6 +136,7 @@ static NSString *kPreferencesTabKey = @"PreferencesTab";
 // (e.g. the user selected a new input method, or clicked outside of the marked
 // text).
 - (void)commitComposition:(id)sender {
+  DLog(@"commitComposition client:%@", [[self client] bundleIdentifier]);
   [self deactivate];
 }
 
