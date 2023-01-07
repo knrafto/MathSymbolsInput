@@ -3,7 +3,7 @@
 #import <Carbon/Carbon.h>
 
 static const char *kInstallLocation = "/Library/Input Methods/MathSymbolsInput.app";
-static NSString *const kSourceID = @"com.mathsymbolsinput.inputmethod.MathSymbolsInput";
+static NSString *kSourceID = @"com.mathsymbolsinput.inputmethod.MathSymbolsInput";
 
 // Returns whether the input method is already registered.
 static BOOL isInputMethodRegistered() {
@@ -28,7 +28,7 @@ static void registerInputMethod() {
     // macOS Catalina seems to have a bug where registering an input source in this way won't
     // start it, leaving it broken until the user reboots. Starting it ourselves seems to fix
     // this though.
-    [[NSWorkspace sharedWorkspace] openURL:(__bridge NSURL*) url];
+    [[NSWorkspace sharedWorkspace] openURL:(__bridge NSURL *) url];
     NSLog(@"Registered input source from %s", kInstallLocation);
   }
 }
@@ -47,7 +47,12 @@ static void enableInputMethod() {
   }
 }
 
-@implementation ActivatePane
+@implementation ActivatePane {
+  // Whether the input method was previously installed.
+  BOOL isUpgrade;
+  // Whether to automatically enable the input method.
+  BOOL shouldEnable;
+}
 
 - (void)awakeFromNib {
   isUpgrade = isInputMethodRegistered();
@@ -81,4 +86,5 @@ static void enableInputMethod() {
     }
   }
 }
+
 @end
