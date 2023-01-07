@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+
+# Creates an installer package for distribution. Before running, create an
+# "app-specific password" for notarytool and store it in the keychain:
+#
+# xcrun notarytool store-credentials "AC_PASSWORD" --apple-id <email> --team-id <team-id> --password <password>
+
 if [[ $# -ne 1 ]] ; then
   echo 'usage: ./package.sh IDENTITY'
   echo 'e.g. ./package.sh "John Doe (12345ABCDE)"'
@@ -48,3 +54,6 @@ productbuild \
   --plugins build/Plugins \
   --sign "Developer ID Installer: $IDENTITY" \
   MathSymbolsInput.pkg
+
+xcrun notarytool submit MathSymbolsInput.pkg --keychain-profile "AC_PASSWORD" --wait
+xcrun stapler staple MathSymbolsInput.pkg
