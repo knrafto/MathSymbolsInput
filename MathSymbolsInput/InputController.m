@@ -140,6 +140,17 @@ static NSString *kPreferencesTabKey = @"PreferencesTab";
   [self deactivate];
 }
 
+// Called by InputMethodKit when the client gains focus.
+- (void)activateServer:(id)sender {
+  DLog(@"activateServer client:%@", [[self client] bundleIdentifier]);
+}
+
+// Called by InputMethodKit when the client loses focus.
+- (void)deactivateServer:(id)sender {
+  DLog(@"deactivateServer client:%@", [[self client] bundleIdentifier]);
+  [self deactivate];
+}
+
 // Called by InputMethodKit to display a menu in the menu bar.
 - (NSMenu *)menu {
   return menu;
