@@ -43,9 +43,9 @@ Not yet, but hopefully soon.
 
 ## Can I use a keyboard layout other than the US layout?
 
-Yes. By default, Math Symbols Input uses the last selected keyboard layout.
-However, [dead keys](https://en.wikipedia.org/wiki/Dead_key) and press-and-hold unfortunately do not work while the input method is active,
-so you'll need to switch away from the input method to type letters with diacritics.
+Yes, Math Symbols Input uses the last selected keyboard layout. [Dead keys](https://en.wikipedia.org/wiki/Dead_key)
+will continue to work, but the macOS's press-and-hold [accent menu](https://support.apple.com/guide/mac-help/enter-characters-with-accent-marks-on-mac-mh27474/mac)
+unfortunately will not.
 
 # Inspirations
 
