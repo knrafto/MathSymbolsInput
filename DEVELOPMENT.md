@@ -4,6 +4,8 @@ The project has the following targets:
 * MathSymbolsInput: the core input method, installed in `/Library/Input Methods`
 * MathSymbolsInputPreferences: a GUI app for the "Preferences..." menu, installed in
   `/Applications`
+* activate: a command-line tool to enable and select the input method after an install
+  or upgrade
 
 These are configured to build into the `build/` directory. The preferences app
 can be run normally from Xcode during development. The others require a bit more

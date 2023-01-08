@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F61A7ABA1E8182C100EBF660"
-               BuildableName = "Math Symbols Input.app"
-               BlueprintName = "Math Symbols Input"
+               BlueprintIdentifier = "1A8EF34B296B6A030006D7FC"
+               BuildableName = "activate"
+               BlueprintName = "activate"
                ReferencedContainer = "container:MathSymbolsInput.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -27,15 +27,6 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F61A7ABA1E8182C100EBF660"
-            BuildableName = "Math Symbols Input.app"
-            BlueprintName = "Math Symbols Input"
-            ReferencedContainer = "container:MathSymbolsInput.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <Testables>
       </Testables>
    </TestAction>
@@ -53,9 +44,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F61A7ABA1E8182C100EBF660"
-            BuildableName = "Math Symbols Input.app"
-            BlueprintName = "Math Symbols Input"
+            BlueprintIdentifier = "1A8EF34B296B6A030006D7FC"
+            BuildableName = "activate"
+            BlueprintName = "activate"
             ReferencedContainer = "container:MathSymbolsInput.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -70,9 +61,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F61A7ABA1E8182C100EBF660"
-            BuildableName = "Math Symbols Input.app"
-            BlueprintName = "Math Symbols Input"
+            BlueprintIdentifier = "1A8EF34B296B6A030006D7FC"
+            BuildableName = "activate"
+            BlueprintName = "activate"
             ReferencedContainer = "container:MathSymbolsInput.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

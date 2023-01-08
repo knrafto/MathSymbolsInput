@@ -18,10 +18,23 @@
 		1A695F26229F8FDD008DEC0F /* commands.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A695F25229F8FDD008DEC0F /* commands.txt */; };
 		1A6DBD6223B969C600AA8924 /* DefaultCommandsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6DBD6023B966B900AA8924 /* DefaultCommandsController.swift */; };
 		1A6DBD6623B9A63C00AA8924 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6DBD6523B9A63C00AA8924 /* AboutController.swift */; };
+		1A8EF34F296B6A030006D7FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8EF34E296B6A030006D7FC /* main.m */; };
 		1AC14D8B22AE875100549402 /* icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14D8A22AE875100549402 /* icon.pdf */; };
 		1AC76A9D23B6D9D0009BD2D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AC76A9B23B6D9D0009BD2D7 /* InfoPlist.strings */; };
 		F61A7AD61E818BF300EBF660 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61A7AD51E818BF300EBF660 /* InputMethodKit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A8EF34A296B6A030006D7FC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1A10FC3423BD7EBE00556BCE /* uninstall.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = uninstall.sh; sourceTree = "<group>"; };
@@ -48,6 +61,8 @@
 		1A6DBD9C23BA62EC00AA8924 /* package.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = package.sh; sourceTree = "<group>"; };
 		1A6DBD9D23BA666B00AA8924 /* DEVELOPMENT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DEVELOPMENT.md; sourceTree = "<group>"; };
 		1A6DBD9E23BA6F3500AA8924 /* InstallerSections.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = InstallerSections.plist; sourceTree = "<group>"; };
+		1A8EF34C296B6A030006D7FC /* activate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = activate; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A8EF34E296B6A030006D7FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1AC14D8A22AE875100549402 /* icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon.pdf; sourceTree = "<group>"; };
 		1AC76A9C23B6D9D0009BD2D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1AC9635C23BCFB7F00A67BC1 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -59,6 +74,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		1A16BB4323B907E000E667C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A8EF349296B6A030006D7FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -91,6 +113,14 @@
 			path = MathSymbolsInputPreferences;
 			sourceTree = "<group>";
 		};
+		1A8EF34D296B6A030006D7FC /* activate */ = {
+			isa = PBXGroup;
+			children = (
+				1A8EF34E296B6A030006D7FC /* main.m */,
+			);
+			path = activate;
+			sourceTree = "<group>";
+		};
 		F61A7AB21E8182C100EBF660 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +137,7 @@
 				1A6DBD9B23BA62EC00AA8924 /* distribution.xml */,
 				F61A7ABD1E8182C100EBF660 /* MathSymbolsInput */,
 				1A16BB4723B907E000E667C4 /* MathSymbolsInputPreferences */,
+				1A8EF34D296B6A030006D7FC /* activate */,
 				F61A7ABC1E8182C100EBF660 /* Products */,
 				F61A7AD41E818BF300EBF660 /* Frameworks */,
 			);
@@ -117,6 +148,7 @@
 			children = (
 				F61A7ABB1E8182C100EBF660 /* Math Symbols Input.app */,
 				1A16BB4623B907E000E667C4 /* Math Symbols Input - Preferences.app */,
+				1A8EF34C296B6A030006D7FC /* activate */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,6 +197,23 @@
 			productReference = 1A16BB4623B907E000E667C4 /* Math Symbols Input - Preferences.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1A8EF34B296B6A030006D7FC /* activate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A8EF352296B6A030006D7FC /* Build configuration list for PBXNativeTarget "activate" */;
+			buildPhases = (
+				1A8EF348296B6A030006D7FC /* Sources */,
+				1A8EF349296B6A030006D7FC /* Frameworks */,
+				1A8EF34A296B6A030006D7FC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = activate;
+			productName = activate;
+			productReference = 1A8EF34C296B6A030006D7FC /* activate */;
+			productType = "com.apple.product-type.tool";
+		};
 		F61A7ABA1E8182C100EBF660 /* Math Symbols Input */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F61A7ACF1E8182C100EBF660 /* Build configuration list for PBXNativeTarget "Math Symbols Input" */;
@@ -189,7 +238,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					1A16BB4523B907E000E667C4 = {
@@ -199,6 +248,9 @@
 								enabled = 0;
 							};
 						};
+					};
+					1A8EF34B296B6A030006D7FC = {
+						CreatedOnToolsVersion = 13.2.1;
 					};
 					F61A7ABA1E8182C100EBF660 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -222,6 +274,7 @@
 			targets = (
 				F61A7ABA1E8182C100EBF660 /* Math Symbols Input */,
 				1A16BB4523B907E000E667C4 /* Math Symbols Input - Preferences */,
+				1A8EF34B296B6A030006D7FC /* activate */,
 			);
 		};
 /* End PBXProject section */
@@ -258,6 +311,14 @@
 				1A16BB4B23B907E000E667C4 /* CustomCommandsController.swift in Sources */,
 				1A16BB4923B907E000E667C4 /* AppDelegate.swift in Sources */,
 				1A6DBD6623B9A63C00AA8924 /* AboutController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A8EF348296B6A030006D7FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A8EF34F296B6A030006D7FC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +407,39 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1A8EF350296B6A030006D7FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1A8EF351296B6A030006D7FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -505,6 +599,15 @@
 			buildConfigurations = (
 				1A16BB5323B907E100E667C4 /* Debug */,
 				1A16BB5423B907E100E667C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A8EF352296B6A030006D7FC /* Build configuration list for PBXNativeTarget "activate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A8EF350296B6A030006D7FC /* Debug */,
+				1A8EF351296B6A030006D7FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -17,31 +17,44 @@ set -eux
 
 xcodebuild -alltargets -configuration Release
 
-mkdir -p build/Package
-
-# Order matters! The .app bundle must be signed last.
+# Order matters when signing: .app bundles must be signed last.
 codesign $CODESIGN_FLAGS --sign "Developer ID Application: $IDENTITY" "build/Release/Math Symbols Input.app/Contents/MacOS/Math Symbols Input"
 find "build/Release/Math Symbols Input.app" -name "*.dylib" -exec codesign $CODESIGN_FLAGS --sign "Developer ID Application: $IDENTITY" {} \;
 codesign $CODESIGN_FLAGS --sign "Developer ID Application: $IDENTITY" "build/Release/Math Symbols Input.app"
-mkdir -p build/Root/MathSymbolsInput
-cp -R "build/Release/Math Symbols Input.app" build/Root/MathSymbolsInput
-pkgbuild \
-  --root build/Root/MathSymbolsInput \
-  --component-plist MathSymbolsInput-components.plist \
-  --install-location "/Library/Input Methods" \
-  build/Package/MathSymbolsInput.pkg
 
 codesign $CODESIGN_FLAGS --sign "Developer ID Application: $IDENTITY" "build/Release/Math Symbols Input - Preferences.app/Contents/MacOS/Math Symbols Input - Preferences"
 find "build/Release/Math Symbols Input - Preferences.app" -name "*.dylib" -exec codesign $CODESIGN_FLAGS --sign "Developer ID Application: $IDENTITY" {} \;
 codesign $CODESIGN_FLAGS --sign "Developer ID Application: $IDENTITY" "build/Release/Math Symbols Input - Preferences.app"
-mkdir -p build/root/MathSymbolsInputPreferences
-cp -R "build/Release/Math Symbols Input - Preferences.app" build/root/MathSymbolsInputPreferences
+
+codesign $CODESIGN_FLAGS --sign "Developer ID Application: $IDENTITY" build/Release/activate
+
+mkdir -p build/Root/MathSymbolsInput
+cp -R "build/Release/Math Symbols Input.app" build/Root/MathSymbolsInput
+
+mkdir -p build/Root/MathSymbolsInputPreferences
+cp -R "build/Release/Math Symbols Input - Preferences.app" build/Root/MathSymbolsInputPreferences
+
+mkdir -p build/Root/Scripts
+cp build/Release/activate build/Root/Scripts/activate
+cat > build/Root/Scripts/postinstall <<'EOF'
+#!/bin/bash
+LOGIN_USER=$(/usr/bin/stat -f%Su /dev/console)
+/usr/bin/sudo -u "$LOGIN_USER" ./activate
+EOF
+chmod +x build/Root/Scripts/postinstall
+
+mkdir -p build/Package
 pkgbuild \
-  --root build/root/MathSymbolsInputPreferences \
+  --root build/Root/MathSymbolsInput \
+  --component-plist MathSymbolsInput-components.plist \
+  --install-location "/Library/Input Methods" \
+  --scripts build/Root/Scripts \
+  build/Package/MathSymbolsInput.pkg
+pkgbuild \
+  --root build/Root/MathSymbolsInputPreferences \
   --component-plist MathSymbolsInputPreferences-components.plist \
   --install-location /Applications \
   build/Package/MathSymbolsInputPreferences.pkg
-
 productbuild \
   --distribution distribution.xml \
   --package-path build/Package \
