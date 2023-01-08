@@ -475,7 +475,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = build/Debug;
-				COPYRIGHT = "Copyright © 2020 Kyle Raftogianis";
+				COPYRIGHT = "Copyright © 2020-2023 Kyle Raftogianis";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -498,7 +498,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				VERSION = 1.2;
+				VERSION = 1.3;
 			};
 			name = Debug;
 		};
@@ -534,7 +534,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = build/Release;
-				COPYRIGHT = "Copyright © 2020 Kyle Raftogianis";
+				COPYRIGHT = "Copyright © 2020-2023 Kyle Raftogianis";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -551,7 +551,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				VERSION = 1.2;
+				VERSION = 1.3;
 			};
 			name = Release;
 		};
