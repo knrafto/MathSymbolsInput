@@ -42,16 +42,9 @@ pkgbuild \
   --install-location /Applications \
   build/Package/MathSymbolsInputPreferences.pkg
 
-codesign $CODESIGN_FLAGS --sign "Developer ID Application: $IDENTITY" build/Release/InstallerActivatePane.bundle/Contents/MacOS/InstallerActivatePane
-codesign $CODESIGN_FLAGS --sign "Developer ID Application: $IDENTITY" build/Release/InstallerActivatePane.bundle
-mkdir -p build/Plugins
-cp -R build/Release/InstallerActivatePane.bundle build/Plugins
-cp InstallerSections.plist build/Plugins
-
 productbuild \
   --distribution distribution.xml \
   --package-path build/Package \
-  --plugins build/Plugins \
   --sign "Developer ID Installer: $IDENTITY" \
   MathSymbolsInput.pkg
 

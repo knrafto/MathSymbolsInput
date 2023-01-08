@@ -11,7 +11,6 @@
 		1A16BB4B23B907E000E667C4 /* CustomCommandsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A16BB4A23B907E000E667C4 /* CustomCommandsController.swift */; };
 		1A16BB4D23B907E100E667C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A16BB4C23B907E100E667C4 /* Assets.xcassets */; };
 		1A16BB5023B907E100E667C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A16BB4E23B907E100E667C4 /* Main.storyboard */; };
-		1A676D4823BAF7D60092EF01 /* HyperlinkTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A676D4723BAF7D60092EF01 /* HyperlinkTextField.m */; };
 		1A676D4A23BBAA730092EF01 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A676D4923BBAA730092EF01 /* TabController.swift */; };
 		1A67768F2968D5B7007D5C04 /* Commands.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A67768E2968D5B7007D5C04 /* Commands.m */; };
 		1A6776922968E5CF007D5C04 /* InputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6776912968E5CF007D5C04 /* InputController.m */; };
@@ -19,10 +18,6 @@
 		1A695F26229F8FDD008DEC0F /* commands.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A695F25229F8FDD008DEC0F /* commands.txt */; };
 		1A6DBD6223B969C600AA8924 /* DefaultCommandsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6DBD6023B966B900AA8924 /* DefaultCommandsController.swift */; };
 		1A6DBD6623B9A63C00AA8924 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6DBD6523B9A63C00AA8924 /* AboutController.swift */; };
-		1A6DBD8723BA4D4D00AA8924 /* ActivatePane.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6DBD8623BA4D4D00AA8924 /* ActivatePane.m */; };
-		1A6DBD8A23BA4D4D00AA8924 /* ActivatePane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6DBD8823BA4D4D00AA8924 /* ActivatePane.xib */; };
-		1A6DBD8D23BA4D4D00AA8924 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A6DBD8B23BA4D4D00AA8924 /* Localizable.strings */; };
-		1A6DBD9323BA4D4D00AA8924 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A6DBD9123BA4D4D00AA8924 /* InfoPlist.strings */; };
 		1AC14D8B22AE875100549402 /* icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AC14D8A22AE875100549402 /* icon.pdf */; };
 		1AC76A9D23B6D9D0009BD2D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AC76A9B23B6D9D0009BD2D7 /* InfoPlist.strings */; };
 		F61A7AD61E818BF300EBF660 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61A7AD51E818BF300EBF660 /* InputMethodKit.framework */; };
@@ -40,8 +35,6 @@
 		1A16BB5123B907E100E667C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A5DB37A22AE8DCA000F7F92 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1A5DB37C22AE8E24000F7F92 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
-		1A676D4623BAF7D60092EF01 /* HyperlinkTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HyperlinkTextField.h; sourceTree = "<group>"; };
-		1A676D4723BAF7D60092EF01 /* HyperlinkTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HyperlinkTextField.m; sourceTree = "<group>"; };
 		1A676D4923BBAA730092EF01 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		1A67768E2968D5B7007D5C04 /* Commands.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Commands.m; sourceTree = "<group>"; };
 		1A6776902968D5C5007D5C04 /* Commands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Commands.h; sourceTree = "<group>"; };
@@ -51,13 +44,6 @@
 		1A695F25229F8FDD008DEC0F /* commands.txt */ = {isa = PBXFileReference; indentWidth = 8; lastKnownFileType = text; path = commands.txt; sourceTree = "<group>"; tabWidth = 8; usesTabs = 1; };
 		1A6DBD6023B966B900AA8924 /* DefaultCommandsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCommandsController.swift; sourceTree = "<group>"; };
 		1A6DBD6523B9A63C00AA8924 /* AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
-		1A6DBD8323BA4D4D00AA8924 /* InstallerActivatePane.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstallerActivatePane.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A6DBD8523BA4D4D00AA8924 /* ActivatePane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivatePane.h; sourceTree = "<group>"; };
-		1A6DBD8623BA4D4D00AA8924 /* ActivatePane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivatePane.m; sourceTree = "<group>"; };
-		1A6DBD8923BA4D4D00AA8924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ActivatePane.xib; sourceTree = "<group>"; };
-		1A6DBD8C23BA4D4D00AA8924 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		1A6DBD9023BA4D4D00AA8924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A6DBD9223BA4D4D00AA8924 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A6DBD9B23BA62EC00AA8924 /* distribution.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = distribution.xml; sourceTree = "<group>"; };
 		1A6DBD9C23BA62EC00AA8924 /* package.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = package.sh; sourceTree = "<group>"; };
 		1A6DBD9D23BA666B00AA8924 /* DEVELOPMENT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DEVELOPMENT.md; sourceTree = "<group>"; };
@@ -73,13 +59,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		1A16BB4323B907E000E667C4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A6DBD8023BA4D4C00AA8924 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -112,21 +91,6 @@
 			path = MathSymbolsInputPreferences;
 			sourceTree = "<group>";
 		};
-		1A6DBD8423BA4D4D00AA8924 /* InstallerActivatePane */ = {
-			isa = PBXGroup;
-			children = (
-				1A6DBD9023BA4D4D00AA8924 /* Info.plist */,
-				1A6DBD9123BA4D4D00AA8924 /* InfoPlist.strings */,
-				1A6DBD8B23BA4D4D00AA8924 /* Localizable.strings */,
-				1A6DBD8823BA4D4D00AA8924 /* ActivatePane.xib */,
-				1A6DBD8523BA4D4D00AA8924 /* ActivatePane.h */,
-				1A6DBD8623BA4D4D00AA8924 /* ActivatePane.m */,
-				1A676D4623BAF7D60092EF01 /* HyperlinkTextField.h */,
-				1A676D4723BAF7D60092EF01 /* HyperlinkTextField.m */,
-			);
-			path = InstallerActivatePane;
-			sourceTree = "<group>";
-		};
 		F61A7AB21E8182C100EBF660 = {
 			isa = PBXGroup;
 			children = (
@@ -143,7 +107,6 @@
 				1A6DBD9B23BA62EC00AA8924 /* distribution.xml */,
 				F61A7ABD1E8182C100EBF660 /* MathSymbolsInput */,
 				1A16BB4723B907E000E667C4 /* MathSymbolsInputPreferences */,
-				1A6DBD8423BA4D4D00AA8924 /* InstallerActivatePane */,
 				F61A7ABC1E8182C100EBF660 /* Products */,
 				F61A7AD41E818BF300EBF660 /* Frameworks */,
 			);
@@ -154,7 +117,6 @@
 			children = (
 				F61A7ABB1E8182C100EBF660 /* Math Symbols Input.app */,
 				1A16BB4623B907E000E667C4 /* Math Symbols Input - Preferences.app */,
-				1A6DBD8323BA4D4D00AA8924 /* InstallerActivatePane.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -203,23 +165,6 @@
 			productReference = 1A16BB4623B907E000E667C4 /* Math Symbols Input - Preferences.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1A6DBD8223BA4D4C00AA8924 /* InstallerActivatePane */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1A6DBD9623BA4D4D00AA8924 /* Build configuration list for PBXNativeTarget "InstallerActivatePane" */;
-			buildPhases = (
-				1A6DBD7F23BA4D4C00AA8924 /* Sources */,
-				1A6DBD8023BA4D4C00AA8924 /* Frameworks */,
-				1A6DBD8123BA4D4C00AA8924 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = InstallerActivatePane;
-			productName = InstallerActivatePane;
-			productReference = 1A6DBD8323BA4D4D00AA8924 /* InstallerActivatePane.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 		F61A7ABA1E8182C100EBF660 /* Math Symbols Input */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F61A7ACF1E8182C100EBF660 /* Build configuration list for PBXNativeTarget "Math Symbols Input" */;
@@ -255,9 +200,6 @@
 							};
 						};
 					};
-					1A6DBD8223BA4D4C00AA8924 = {
-						CreatedOnToolsVersion = 10.3;
-					};
 					F61A7ABA1E8182C100EBF660 = {
 						CreatedOnToolsVersion = 8.2.1;
 						LastSwiftMigration = 1320;
@@ -280,7 +222,6 @@
 			targets = (
 				F61A7ABA1E8182C100EBF660 /* Math Symbols Input */,
 				1A16BB4523B907E000E667C4 /* Math Symbols Input - Preferences */,
-				1A6DBD8223BA4D4C00AA8924 /* InstallerActivatePane */,
 			);
 		};
 /* End PBXProject section */
@@ -292,16 +233,6 @@
 			files = (
 				1A16BB4D23B907E100E667C4 /* Assets.xcassets in Resources */,
 				1A16BB5023B907E100E667C4 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A6DBD8123BA4D4C00AA8924 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A6DBD8A23BA4D4D00AA8924 /* ActivatePane.xib in Resources */,
-				1A6DBD9323BA4D4D00AA8924 /* InfoPlist.strings in Resources */,
-				1A6DBD8D23BA4D4D00AA8924 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,15 +261,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A6DBD7F23BA4D4C00AA8924 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A676D4823BAF7D60092EF01 /* HyperlinkTextField.m in Sources */,
-				1A6DBD8723BA4D4D00AA8924 /* ActivatePane.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F61A7AB71E8182C100EBF660 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,30 +280,6 @@
 				1A16BB4F23B907E100E667C4 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1A6DBD8823BA4D4D00AA8924 /* ActivatePane.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A6DBD8923BA4D4D00AA8924 /* Base */,
-			);
-			name = ActivatePane.xib;
-			sourceTree = "<group>";
-		};
-		1A6DBD8B23BA4D4D00AA8924 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A6DBD8C23BA4D4D00AA8924 /* en */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		1A6DBD9123BA4D4D00AA8924 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A6DBD9223BA4D4D00AA8924 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		1AC76A9B23B6D9D0009BD2D7 /* InfoPlist.strings */ = {
@@ -448,51 +346,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		1A6DBD9423BA4D4D00AA8924 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "$(inherited)";
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = InstallerActivatePane/Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mathsymbolsinput.InstallerActivatePane;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		1A6DBD9523BA4D4D00AA8924 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "$(inherited)";
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = InstallerActivatePane/Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mathsymbolsinput.InstallerActivatePane;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -652,15 +505,6 @@
 			buildConfigurations = (
 				1A16BB5323B907E100E667C4 /* Debug */,
 				1A16BB5423B907E100E667C4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1A6DBD9623BA4D4D00AA8924 /* Build configuration list for PBXNativeTarget "InstallerActivatePane" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A6DBD9423BA4D4D00AA8924 /* Debug */,
-				1A6DBD9523BA4D4D00AA8924 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
